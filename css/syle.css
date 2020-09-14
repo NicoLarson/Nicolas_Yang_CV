@@ -1,0 +1,39 @@
+header h1{
+    padding: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+header nav ul{
+    display: flex;
+    outline: none;
+    overflow-y: hidden;
+}
+header nav ul li{
+    padding: 0 1rem;
+    text-align: center;
+}
+
+
+section{
+    padding: 2rem;
+}
+
+#skills h3{
+    text-align: center;
+    padding: 1rem 0;
+}
+section ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section ul li{
+    padding:  0 1rem 1rem;
+}
+
+
+
+
+img{
+    max-width: 100%;
+}
