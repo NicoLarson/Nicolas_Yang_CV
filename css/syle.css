@@ -15,10 +15,11 @@ header nav ul li{
 
 
 section{
-    padding: 2rem;
+    padding: 2rem 2rem 0;
 }
-
-#skills h3{
+section h2{
+padding-bottom:1rem;}
+section h3{
     text-align: center;
     padding: 1rem 0;
 }
@@ -31,8 +32,17 @@ section ul li{
     padding:  0 1rem 1rem;
 }
 
+section dl{
+	padding:1rem;
+}
+section dl dt{
+	padding:.8rem 0 .2rem;
+	font-weight:600;
+}
 
-
+section h3{
+	padding: 0 0 .8rem;
+}
 
 img{
     max-width: 100%;
