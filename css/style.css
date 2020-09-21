@@ -20,7 +20,7 @@ header nav ul {
   outline: none;
   overflow-y: hidden;
   padding: 0.6rem;
-  scrollbar-color:red;
+  scrollbar-color: red;
 }
 header nav ul li {
   display: flex;
@@ -34,13 +34,16 @@ header a {
   color: var(--color-white);
 }
 /* Main */
+.table{
+  display: none;
+}
 section {
   padding: 2rem;
   border-bottom: solid 0.1px var(--color-black);
 }
 section h2 {
   font-size: 1.6rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 section h3 {
   padding: 1rem 0;
@@ -54,7 +57,7 @@ section ul {
 section ul li {
   padding: 0 1rem 1rem;
 }
-section ul li i{
+section ul li i {
   font-size: 2rem;
 }
 
@@ -70,34 +73,34 @@ section h3 {
   padding: 0 0 0.8rem;
 }
 
-#xp section {
+.xp section {
   padding-top: 0;
   border-bottom: none;
 }
-#xp ul li {
+.xp ul li {
   padding: 0.4rem;
   list-style: "-";
 }
-#portfolio ul li {
+.portfolio ul li {
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
   padding: 1rem;
   margin: 1rem 0;
   text-align: center;
-
 }
-#portfolio ul li figcaption p{
+.portfolio ul li figcaption p {
   padding: 1rem;
   font-size: 2rem;
 }
-#portfolio ul li figcaption i{
+.portfolio ul li figcaption i {
   font-size: 3.2rem;
   padding: 1rem;
 }
-#portfolio ul li img,#portfolio ul li{
+.portfolio ul li img,
+.portfolio ul li {
   border-radius: 1.2%;
 }
-#about p {
+.about p {
   line-height: 1.6rem;
   text-align: center;
 }
@@ -124,9 +127,35 @@ footer p sup {
   font-size: 0.32rem;
 }
 /* Laptop */
+@media screen and (min-width: 700px) {
+  header h1{
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:var(--color-black);
+    z-index: 0;
+  }
+  header nav ul {
+    justify-content: space-around;
+  }
+  .no-table{
+    display: none;
+  }
+  .table{
+    display: block;
+  }
+  .table table{
+    max-width: 80vw;
+  }
+  td{
+    background-color: bisque;
+    padding: 1.6rem;
+  }
+}
 
-
-/* #portfolio ul li:hover{
+/* .portfolio ul li:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }

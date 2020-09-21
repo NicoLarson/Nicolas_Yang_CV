@@ -31,7 +31,104 @@
         </nav>
     </header>
     <main>
-        <section id="skills">
+        <section class="skills table">
+            <h2>Compétences</h2>
+            <table>
+                <tr>
+                    <th>Web</th>
+                    <th>BDD</th>
+                    <th>Framworks</th>
+                    <th>Outils</th>
+                    <th>OS</th>
+                    <th>Pack Office</th>
+                    <th>Langue</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td rowspan="5">SQL</td>
+                    <td>Bootstrap</td>
+                    <td>Git</td>
+                    <td>Debian</td>
+                    <td>Excel</td>
+                    <td rowspan="5">Anglais - Niveau B1</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>SASS</td>
+                    <td>GitHub</td>
+                    <td>Windows 10</td>
+                    <td>Word</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Jquery (notions)</td>
+                    <td>VSCode</td>
+                    <td>Ubuntu</td>
+                    <td>PowerPoint</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>GSAP</td>
+                    <td>VIM</td>
+                    <td>Raspbian</td>
+                    <td>Publisher</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <!-- <table>
+                <tr>
+                    <th>Web</th>
+                    <th>BDD</th>
+                    <th>Framworks</th>
+                    <th>Outils</th>
+                    <th>OS</th>
+                    <th>Pack Office</th>
+                    <th>Langue</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JavaScript</td>
+                    <td>Sass</td>
+                    <td>PHP</td>
+
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>Jquery (notions)</td>
+                    <td>GSAP</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>GitHub</td>
+                    <td>VSCode</td>
+                    <td>VIM</td>
+                </tr>
+                <tr>
+                    <td>Linux (Debian, Ubuntu)</td>
+                    <td>Windows</td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td>Word</td>
+                    <td>PowerPoint</td>
+                    <td>Publisher</td>
+                </tr>
+                <tr>
+                    <td>Anglais - Niveau B1</td>
+                </tr>
+            </table> -->
+        </section>
+        <section class="skills no-table">
             <h2>Compétences</h2>
             <h3>Web</h3>
             <ul>
@@ -52,7 +149,7 @@
                 <li>GSAP</li>
             </ul>
 
-            <h3 id="tools">Outils</h3>
+            <h3 class="tools">Outils</h3>
             <ul>
                 <li> <i class="devicon-visualstudio-plain"></i>VSCode</li>
                 <li> <i class="devicon-git-plain"></i>Git</li>
@@ -66,7 +163,7 @@
                 <li> <i class="devicon-ubuntu-plain"></i>Ubuntu</li>
             </ul>
         </section>
-        <section id="diploma">
+        <section class="diploma">
             <h2>Diplômes</h2>
             <dl>
                 <dt><time datetime="2021">2019-2021</time></dt>
@@ -81,7 +178,7 @@
                 <dd>Baccarauréar Economique et Social <br><em> Lycée Français de Bangkok Thaïlande</em></dd>
             </dl>
         </section>
-        <section id="xp">
+        <section class="xp">
             <h2>Experience Professionnel</h2>
             <section>
                 <h3>Stage</h3>
@@ -111,12 +208,12 @@
                 </dl>
             </section>
         </section>
-        <section id="portfolio">
+        <section class="portfolio">
             <h2>Portfolio</h2>
             <ul>
                 <li>
                     <figure>
-                        <a href="./portfolio/jay_gallery/index.html">
+                        <a href="https://nicolarson.github.io/Jay_Gallery/">
                             <img src="./assets/img/portfolio/jay_galery.jpg" alt="Jay galery">
                         </a>
                         <figcaption>
@@ -129,7 +226,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href="./portfolio/rockPaperScissors/index.html">
+                        <a href="https://nicolarson.github.io/Rock-Paper-Scissors/">
                             <img src="./assets/img/portfolio/rockPaperScissors.png" alt="Rock paper scissor">
                         </a>
                         <figcaption>
@@ -143,8 +240,8 @@
                 </li>
                 <li>
                     <figure>
-                        <a href="./portfolio/bikeWheelChartsGSAP/index.html">
-                            <img src="./assets/img/portfolio/gsap.png" alt="Bike wheel charts">
+                        <a href="https://nicolarson.github.io/Bike_Wheel_Charts_GSAP" />
+                        <img src="./assets/img/portfolio/gsap.png" alt="Bike wheel charts">
                         </a>
                         <figcaption>
                             <p>SVG - GSAP</p>
@@ -160,7 +257,7 @@
                             <img src="./assets/img/portfolio/aymelineYang.png" alt="Site AymelineYang">
                         </a>
                         <figcaption>
-                            <p>aymelineyang.fr</p>
+                            <p>CV Aymeline Yang</p>
                             <i class="devicon-html5-plain-wordmark"></i>
                             <i class="devicon-css3-plain-wordmark"></i><i class="devicon-sass-original"></i>
                         </figcaption>
@@ -169,7 +266,7 @@
                 </li>
             </ul>
         </section>
-        <section id="about">
+        <section class="about">
             <h2>A propos</h2>
             <p>
                 Nicolas YANG, cuisinier de formation car passionné de cuisine. J'ai travaillé pendant 4 ans dans les
