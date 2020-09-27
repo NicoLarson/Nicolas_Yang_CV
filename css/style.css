@@ -4,9 +4,9 @@
   --color-grey: grey;
   --color-valid: #2ecc71;
   --color-error: red;
-  --color-send:#C4E538;
+  --color-send: #c4e538;
 }
-/* Header */
+/* HEADER */
 header {
   background-color: var(--color-black);
   color: var(--color-white);
@@ -21,7 +21,7 @@ header nav {
   background-color: var(--color-black);
   position: fixed;
   bottom: 0;
-  width: 100%;
+  max-width: 100%;
   height: 3.8rem;
 }
 header nav ul {
@@ -42,8 +42,7 @@ header a {
   text-align: center;
   color: var(--color-white);
 }
-/* Main */
-
+/* MAIN */
 section {
   padding: 2rem;
   border-bottom: solid 0.1px var(--color-black);
@@ -75,17 +74,23 @@ section dl dt {
   padding: 0.8rem 0 0.2rem;
   font-weight: 600;
 }
+section dl dd {
+  line-height: 1.6rem;
+}
 section h3 {
   padding: 0 0 0.8rem;
 }
 /* XP */
 #xp > section {
-  padding-top: 0;
+  padding: 0;
   border-bottom: none;
 }
 #xp ul li {
+  display: inline;
   padding: 0.4rem;
-  list-style: "-";
+}
+#xp ul li::before {
+  content: "- ";
 }
 /* PORTFOLIO */
 #portfolio ul li {
@@ -109,7 +114,8 @@ section h3 {
 }
 /* ABOUT */
 #about p {
-  line-height: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   text-align: center;
 }
 img {
@@ -127,7 +133,7 @@ footer ul {
 footer ul li a {
   color: var(--color-white);
 }
-footer #contact{
+footer #contact {
   height: 100vh;
 }
 footer form div {
@@ -150,13 +156,14 @@ footer form textarea {
   color: var(--color-black);
 }
 footer section div:last-child input {
-  padding: 0.8rem;
+  padding: 0.6rem;
   background-color: var(--color-send);
   font-weight: bolder;
   color: var(--color-black);
   border: var(--color-send) 1px solid;
   border-radius: 4%;
-  box-shadow: 0 0 0.2rem var(--color-send), 0 0 1rem var(--color-send);
+  box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
+    0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
 }
 #copyright {
   text-align: center;
@@ -166,8 +173,91 @@ footer section div:last-child input {
 #copyright p sup {
   font-size: 0.4rem;
 }
-/* Laptop 
+
+/** PC */
 @media screen and (min-width: 700px) {
-  
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    position: initial;
+  }
+  header nav ul {
+    height: 100%;
+  }
+  header nav ul li {
+    font-size: 1.4rem;
+    padding: 0 2rem;
+  }
+  /* MAIN */
+  section {
+    padding: 4rem;
+  }
+  section h2 {
+    font-size: 2.4rem;
+  }
+  section h3 {
+    font-size: 1.6rem;
+  }
+  section ul {
+    justify-content: flex-start;
+    padding: 1.2rem 0 4rem;
+  }
+  section ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-right: 8rem;
+  }
+  section ul li i {
+    font-size: 4rem;
+    padding: 0 0.4rem 1rem;
+  }
+  section dl dt {
+    font-size: 1.6rem;
+    padding: 0.8rem 0 0.2rem;
+    font-weight: 600;
+  }
+  section dl dd {
+    font-size: 1.6rem;
+    padding: 1rem 0 2rem;
+  }
+  /* WELCOME */
+  #welcome {
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  #welcome video {
+    background: cover fixed;
+    width: 100%;
+  }
+  #diploma dl dd {
+    line-height: 2.4rem;
+  }
+  /* XP */
+  #xp section dl dd ul {
+    display: block;
+  }
+  #xp section dl dd ul li {
+    display: block;
+    text-align: left;
+    line-height: 2rem;
+  }
+  /* ABOUT */
+  #about p {
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    text-indent: 4rem;
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
 }
-*/
