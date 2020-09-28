@@ -4,6 +4,7 @@
   --color-grey: grey;
   --color-valid: #2ecc71;
   --color-error: red;
+  --color-nav-background: #111;
   --color-send: #c4e538;
 }
 /* HEADER */
@@ -18,7 +19,7 @@ header h1 {
   font-weight: 500;
 }
 header nav {
-  background-color: var(--color-black);
+  background-color: var(--color-nav-background);
   position: fixed;
   bottom: 0;
   max-width: 100%;
@@ -34,6 +35,7 @@ header nav ul li {
   padding: 0 1rem;
   text-align: center;
   margin: auto;
+  font-weight: 900;
 }
 
 header a {
@@ -135,11 +137,14 @@ footer ul li a {
 footer #contact {
   height: 100vh;
 }
-footer form div {
-  padding: 0.8rem;
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+footer form label {
+  padding: 1.2rem 0 0;
 }
 footer form input {
-  max-width: 60vw;
   padding: 0.4rem;
   color: var(--color-white);
   background-color: var(--color-black);
@@ -151,26 +156,27 @@ footer form textarea {
   max-width: 80vw;
   height: 40vh;
   padding: 0.4rem;
+  margin-top: 1rem;
   font-size: 1.2rem;
   color: var(--color-black);
   border-radius: 0.2rem;
 }
-footer section div:last-child input {
-  padding: 0.6rem;
+footer section input:last-child {
+  margin-top: 1.6rem;
   background-color: var(--color-send);
-  font-weight: bolder;
+  font-weight: 900;
   color: var(--color-black);
   border: var(--color-send) 1px solid;
   border-radius: 4%;
   box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
     0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
 }
-#copyright {
+footer p {
   text-align: center;
   padding: 1rem 0 3.8rem;
   font-size: 0.6rem;
 }
-#copyright p sup {
+footer p sup {
   font-size: 0.4rem;
 }
 
@@ -275,7 +281,7 @@ footer section div:last-child input {
     width: (100%3)-8rem;
     padding: 0;
   }
-  footer > section {
+  footer {
     display: flex;
     justify-content: space-around;
   }
