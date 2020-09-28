@@ -29,12 +29,11 @@ header nav ul {
   outline: none;
   overflow-y: hidden;
   padding: 0.8rem;
-  scrollbar-color: red;
 }
 header nav ul li {
-  display: flex;
   padding: 0 1rem;
   text-align: center;
+  margin: auto;
 }
 
 header a {
@@ -178,20 +177,19 @@ footer section div:last-child input {
 /** PC */
 @media screen and (min-width: 700px) {
   /* HEADER */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   header nav {
     position: initial;
+    height: 100%;
   }
   header nav ul {
+    display: initial;
     height: 100%;
   }
   header nav ul li {
+    display: inline-block;
     font-size: 1.4rem;
-    padding: 0 2rem;
+    padding: 2rem;
+    margin: 0 auto;
   }
   /* MAIN */
   section {
@@ -260,12 +258,11 @@ footer section div:last-child input {
     padding-top: 2rem;
     text-indent: 4rem;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 4rem;
   }
   /* FOOTER */
   footer {
-    border-top: 1rem #fafafa solid;
     padding: 0;
     margin: 0;
   }
@@ -278,18 +275,24 @@ footer section div:last-child input {
     width: (100%3)-8rem;
     padding: 0;
   }
+  footer > section {
+    display: flex;
+    justify-content: space-around;
+  }
   footer #contact {
     height: 100%;
   }
   footer #contact textarea {
-    max-width: 100%;
+    width: 100%;
     line-height: 2rem;
   }
   footer #logo ul {
     flex-direction: row;
+    justify-content: flex-start;
   }
   footer #logo ul li {
     font-size: 1.6rem;
+    padding-left: 0;
   }
   footer #logo ul li i {
     font-size: 2rem;
