@@ -9,7 +9,7 @@
     <meta name="keywords" content="Portfolio, Web, Développeur, Nicolas, Yang" />
     <meta name="author" content="Nicolas Yang" />
     <title>Portfolio Nicolas Yang</title>
-    <link rel="icon" type="image/png" href="./asset/img/logo3.png" />
+    <link rel="icon" type="image/png" href="./assets/img/logo3.png" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
@@ -19,87 +19,93 @@
 </head>
 
 <body>
-    <header>
-        <h1>Nicolas Yang </h1>
+    <header itemscope itemtype="https://schema.org/Person">
+        <h1 itemprop="name">Nicolas Yang</h1>
         <nav>
-            <ul>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#tools">Outils</a></li>
-                <li><a href="#xp">Expériences</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">A propos</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul itemscope itemtype="https://schema.org/WebPage">
+                <li itemprop="breadcrumb"><a href="#skills">Compétences</a></li>
+                <li itemprop="breadcrumb"><a href="#tools">Outils</a></li>
+                <li itemprop="breadcrumb"><a href="#xp">Expériences</a></li>
+                <li itemprop="breadcrumb"><a href="#portfolio">Portfolio</a></li>
+                <li itemprop="breadcrumb"><a href="#about">A propos</a></li>
+                <li itemprop="breadcrumb"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- <section id="welcome">
-            <p>Bienvenu</p>
+            <p itemprop="name">Bienvenu</p>
             <video autoplay="" loop="">
                 <source src="./assets/vdo/Source Code - 4733.mp4" type="video/mp4">
             </video>
         </section> -->
     <main>
-        <section id="skills" itemscope itemtype="https://schema.org/WebPage">
-            <h2>Compétences</h2>
-            <h3 >Web</h3>
-            <ul>
+        <section id="skills" itemscope itemtype="https://schema.org/LearningResource">
+            <h2 itemprop="name">Compétences</h2>
+            <h3>Web</h3>
+            <ul itemscope itemtype="https://schema.org/Property">
                 <li itemprop="skills"> <i class="devicon-html5-plain"></i>HTML</li>
                 <li itemprop="skills"> <i class="devicon-css3-plain"></i>CSS</li>
                 <li itemprop="skills"> <i class="devicon-javascript-plain"></i>JavaScript</li>
                 <li itemprop="skills"> <i class="devicon-sass-original"></i>Sass</li>
                 <li itemprop="skills"> <i class="devicon-php-plain"></i>PHP</li>
             </ul>
-            <h3>BDD</h3>
+            <h3 itemprop="about skills">BDD</h3>
             <ul>
-                <li><i class="fas fa-database"></i>SQL</li>
+                <li itemprop="skills"><i class="fas fa-database"></i>SQL</li>
             </ul>
-            <h3>Frameworks</h3>
+            <h3 itemprop="about name">Frameworks</h3>
             <ul>
-                <li> <i class="devicon-bootstrap-plain"></i>Bootstrap</li>
-                <li> <i class="devicon-jquery-plain"></i>Jquery(notion)</li>
-                <li>GSAP</li>
+                <li itemprop="skills"> <i class="devicon-bootstrap-plain"></i>Bootstrap</li>
+                <li itemprop="skills"> <i class="devicon-jquery-plain"></i>Jquery(notion)</li>
+                <li itemprop="skills">GSAP</li>
             </ul>
         </section>
-        <section id="tools">
-            <h2>Outils</h2>
-            <ul>
-                <li> <i class="devicon-visualstudio-plain"></i>VSCode</li>
-                <li> <i class="devicon-git-plain"></i>Git</li>
-                <li> <i class="devicon-github-plain"></i>GitHub</li>
-                <li> <i class="devicon-vim-plain"></i>Vim</li>
+        <section itemscope itemtype="https://schema.org/LearningResource" id="tools">
+            <h2 itemprop="about name">Outils</h2>
+            <ul itemscope itemtype="https://schema.org/Property">
+                <li itemprop="skills"> <i class="devicon-visualstudio-plain"></i>VSCode</li>
+                <li itemprop="skills"> <i class="devicon-git-plain"></i>Git</li>
+                <li itemprop="skills"> <i class="devicon-github-plain"></i>GitHub</li>
+                <li itemprop="skills"> <i class="devicon-vim-plain"></i>Vim</li>
             </ul>
-            <h3>OS</h3>
-            <ul>
-                <li> <i class="devicon-windows8-original"></i>Windows</li>
-                <li> <i class="devicon-debian-plain"></i>Debian</li>
-                <li> <i class="devicon-ubuntu-plain"></i>Ubuntu</li>
+            <h3 itemprop="about name">OS</h3>
+            <ul itemscope itemtype="https://schema.org/Property">
+                <li itemprop="skills"> <i class="devicon-windows8-original"></i>Windows</li>
+                <li itemprop="skills"> <i class="devicon-debian-plain"></i>Debian</li>
+                <li itemprop="skills"> <i class="devicon-ubuntu-plain"></i>Ubuntu</li>
             </ul>
         </section>
 
-        <section id="diploma">
-            <h2>Diplômes et certifications</h2>
+        <section id="diploma" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+            <h2 itemprop="credentialCategory">Diplômes et certifications</h2>
             <dl>
                 <dt><time datetime="2021">2019-2021</time></dt>
-                <dd>BTS Services Informatiques aux organisations (option SLAM) <br><em> Ecole ITIC Paris</em></dd>
+                <dd itemprop="educationalLevel name">BTS Services Informatiques aux organisations (option SLAM) <br><em>
+                        Ecole ITIC Paris</em></dd>
                 <dt><time datetime="2020-02-01">Février 2020</time></dt>
-                <dd><a href="https://www.freecodecamp.org/certification/nicolasyang/responsive-web-design">Responsive
+                <dd itemprop="educationalLevel name"><a itemprop="url"
+                        href="https://www.freecodecamp.org/certification/nicolasyang/responsive-web-design">Responsive
                         Web
                         Design Certification </a><br><em> freeCodeCamp.org</em></dd>
                 <dt><time datetime="2018">2018</time></dt>
-                <dd>CAP Cuisine (Formation en un an)<br><em> Lycée Belliard Paris</em></dd>
+                <dd itemprop="educationalLevel name">CAP Cuisine (Formation en un an)<br><em> Lycée Belliard Paris</em>
+                </dd>
                 <dt><time datetime="2010">2010</time></dt>
-                <dd>Baccalauréat Économique et Social <br><em> Lycée Français de Bangkok Thaïlande</em></dd>
+                <dd itemprop="educationalLevel name">Baccalauréat Économique et Social <br><em> Lycée Français de
+                        Bangkok
+                        Thaïlande</em></dd>
             </dl>
         </section>
-        <section id="xp">
+        <section itemscope itemtype="https://schema.org/EducationalOccupationalCredential" id="xp">
             <h2>Expériences Professionnel</h2>
-            <section  itemscope itemtype="https://schema.org/Person">
-                <h3>Stage</h3>
+            <section>
+                <h3 itemprop="name">Stage</h3>
                 <dl>
-                    <dt itemprop="hasOccupation"><time datetime="2020-05-16">Mai</time> - <time datetime="2020-07-16">Juillet 2020</time></dt>
-                    <dd itemprop="jobTitle">Développeur Intégrateur Web - Agence OPINACA - Montpellier
-                        <ul>
+                    <dt><time datetime="2020-05-16">Mai</time> - <time datetime="2020-07-16">Juillet 2020</time></dt>
+                    <dd>
+                        <h4 itemprop="jobTitle">Développeur Intégrateur Web - Agence OPINACA - Montpellier</h4>
+                        <ul itemprop="description">
                             <li>Utilisation du Framework GASP</li>
                             <li>Création de composantes d'animations (JavaScript/CSS)</li>
                             <li>Intégration des créations dans WordPress</li>
@@ -108,11 +114,12 @@
                 </dl>
             </section>
             <section>
-                <h3>CDI CDD Intérim Auto-entrepreneur</h3>
+                <h3 itemprop="name">CDI CDD Intérim Auto-entrepreneur</h3>
                 <dl>
-                    <dt itemprop="hasOccupation">5 ans de cuisines dans différentes structures</dt>
-                    <dd itemprop="jobTitle">Cuisinier (Commis de cuisine & Chef de partie) - Paris
-                        <ul>
+                    <dt>5 ans de cuisines dans différentes structures</dt>
+                    <dd>
+                        <h4 itemprop="jobTitle">Cuisinier (Commis de cuisine & Chef de partie) - Paris</h4>
+                        <ul itemprop="description">
                             <li>Hôtels 5 et 4 étoiles (Pullman Tour Eiffel & Charles de Gaulle, The Hoxton, Hilton la
                                 Défense, Le Jardin du Marais…)</li>
                             <li>Restaurant gastronomique (La Scène Thèleme)</li>
@@ -122,67 +129,68 @@
                 </dl>
             </section>
         </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
+        <section id="portfolio" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 itemprop="about">Portfolio</h2>
             <ul>
                 <li>
-                    <figure>
-                        <a href="https://nicolarson.github.io/Jay_Gallery/">
-                            <img src="./assets/img/portfolio/jay_galery.jpg" alt="Jay galery">
+                    <figure itemscope itemtype="https://schema.org/Thing">
+                        <a itemprop="url" href="https://nicolarson.github.io/Jay_Gallery/">
+                            <img itemprop="image" src="./assets/img/portfolio/jay_galery.jpg" alt="Jay galery">
                         </a>
-                        <figcaption>
-                            <p>Jay Gallery</p>
-                            <i class="devicon-html5-plain-wordmark"></i>
-                            <i class="devicon-css3-plain-wordmark"></i>
+                        <figcaption itemprop="description">
+                            <p itemprop="name">Jay Gallery</p>
+                            <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
+                            <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
                         </figcaption>
 
                     </figure>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://nicolarson.github.io/Rock-Paper-Scissors/">
-                            <img src="./assets/img/portfolio/rockPaperScissors.png" alt="Rock paper scissor">
+                    <figure itemscope itemtype="https://schema.org/Thing">
+                        <a itemprop="url" href="https://nicolarson.github.io/Rock-Paper-Scissors/">
+                            <img itemprop="image" src="./assets/img/portfolio/rockPaperScissors.png"
+                                alt="Rock paper scissor">
                         </a>
-                        <figcaption>
-                            <p>Pierre Feuille Ciseaux</p>
-                            <i class="devicon-html5-plain-wordmark"></i>
-                            <i class="devicon-css3-plain-wordmark"></i>
-                            <i class="devicon-javascript-plain"></i>
+                        <figcaption itemprop="description">
+                            <p itemprop="name">Pierre Feuille Ciseaux</p>
+                            <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
+                            <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
+                            <i itemprop="instrument" class="devicon-javascript-plain"></i>
                         </figcaption>
 
                     </figure>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://nicolarson.github.io/Bike_Wheel_Charts_GSAP/">
-                            <img src="./assets/img/portfolio/gsap.png" alt="Bike wheel charts">
+                    <figure itemscope itemtype="https://schema.org/Thing">
+                        <a itemprop="url" href="https://nicolarson.github.io/Bike_Wheel_Charts_GSAP/">
+                            <img itemprop="image" src="./assets/img/portfolio/gsap.png" alt="Bike wheel charts">
                         </a>
-                        <figcaption>
-                            <p>SVG - GSAP</p>
-                            <i class="devicon-html5-plain-wordmark"></i>
-                            <i class="devicon-javascript-plain"></i>
+                        <figcaption itemprop="description">
+                            <p itemprop="name">SVG - GSAP</p>
+                            <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
+                            <i itemprop="instrument" class="devicon-javascript-plain"></i>
                         </figcaption>
 
                     </figure>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://aymelineyang.fr/">
-                            <img src="./assets/img/portfolio/aymelineYang.png" alt="Site AymelineYang">
+                    <figure itemscope itemtype="https://schema.org/Thing">
+                        <a itemprop="url" href="https://aymelineyang.fr/">
+                            <img itemprop="image" src="./assets/img/portfolio/aymelineYang.png" alt="Site AymelineYang">
                         </a>
-                        <figcaption>
-                            <p>CV Aymeline Yang</p>
-                            <i class="devicon-html5-plain-wordmark"></i>
-                            <i class="devicon-css3-plain-wordmark"></i><i id="devicon-sass-original"></i>
+                        <figcaption itemprop="description">
+                            <p itemprop="name">CV Aymeline Yang</p>
+                            <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
+                            <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
                         </figcaption>
 
                     </figure>
                 </li>
             </ul>
         </section>
-        <section id="about">
-            <h2>A propos</h2>
-            <p>
+        <section itemscope itemtype="https://schema.org/WebPage" id="about">
+            <h2 itemprop="about">A propos</h2>
+            <p itemprop="text">
                 Je suis Nicolas YANG, cuisinier de formation car passionné de cuisine. J'ai
                 travaillé pendant 4 ans dans les
                 hôtels à
@@ -203,10 +211,10 @@
                 toutes les
                 bases pour devenir un bon développeur web.
                 <br />
-                En complément de mes cours, je suis des modules de formation sur les sites <a
-                    href="https://openclassrooms.com/">openclassroom</a>, <a
+                En complément de mes cours, je suis des modules de formation sur les sites <a itemprop="url"
+                    href="https://openclassrooms.com/">openclassroom</a>, <a itemprop="url"
                     href="https://www.freecodecamp.org/">freecodecamp</a>
-                et <a href="https://www.theodinproject.com/">theodinproject</a>. Je
+                et <a itemprop="url" href="https://www.theodinproject.com/">theodinproject</a>. Je
                 connais aujourd'hui les bases en HTML/CSS et JavaScript.<br />
                 Au plaisir d'échanger avec vous. À bientôt!<br /><br />
             </p>
@@ -226,12 +234,13 @@ J'aimerai qu'on travail ensemble...</textarea>
                 <input type="submit" name="submit" value="Envoyer">
             </form>
         </section>
-        <section id="logo">
+        <section itemscop itemtype="https://schema.org/WebPage" id="logo">
             <h3>YANG <br>C<i class="fas fa-yin-yang"></i>DE</h3>
             <ul>
-                <li> <a href="https://www.linkedin.com/in/nicolas-yang-dev"><i
+                <li> <a itemprop="url" href="https://www.linkedin.com/in/nicolas-yang-dev"><i
                             class="devicon-linkedin-plain"></i>Linkedin</a></li>
-                <li> <a href="https://github.com/NicoLarson"><i class="devicon-github-plain"></i>GitHub</a>
+                <li> <a itemprop="url" href="https://github.com/NicoLarson"><i
+                            class="devicon-github-plain"></i>GitHub</a>
                 </li>
             </ul>
         </section>
@@ -247,7 +256,8 @@ J'aimerai qu'on travail ensemble...</textarea>
             </ul>
         </section>
 
-        <p>© 2020-2021 YANG C<i class="fas fa-yin-yang"></i>DE<sup>TM</sup>. All right reserved.</p>
+        <p itemscope itemtype="https://schema.org/copyrightHolder" itemprop="copyrightHolder copyrightYear">© 2020-2021
+            YANG C<i class="fas fa-yin-yang"></i>DE<sup>TM</sup>. All right reserved.</p>
     </footer>
     <script src="./src/app.js"></script>
 </body>

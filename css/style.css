@@ -4,7 +4,7 @@
   --color-grey: grey;
   --color-valid: #2ecc71;
   --color-error: red;
-  --color-nav-background: #111;
+  --color-nav-background: #222;
   --color-send: #c4e538;
 }
 /* HEADER */
@@ -29,15 +29,25 @@ header nav ul {
   display: flex;
   outline: none;
   overflow-y: hidden;
-  padding: 0.8rem;
 }
 header nav ul li {
   padding: 0 1rem;
   text-align: center;
   margin: auto;
-  font-weight: 900;
+  padding: 1.2rem;
+  height: 100%;
+  border-left: 1px solid var(--color-white);
 }
-
+header nav ul li:nth-child(5) {
+  padding: 0.7rem;
+}
+header nav ul li:nth-child(1),
+header nav ul li:nth-child(5) {
+  border-left: none;
+}
+header nav ul li:nth-child(4) {
+  border-right: 1px solid var(--color-white);
+}
 header a {
   margin: auto;
   text-align: center;
@@ -94,6 +104,8 @@ section h3 {
   content: "- ";
 }
 /* PORTFOLIO */
+#portfolio figure figcaption li {
+}
 #portfolio ul li {
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
