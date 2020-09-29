@@ -58,7 +58,7 @@
             <ul>
                 <li itemprop="skills"> <i class="devicon-bootstrap-plain"></i>Bootstrap</li>
                 <li itemprop="skills"> <i class="devicon-jquery-plain"></i>Jquery(notion)</li>
-                <li itemprop="skills">GSAP</li>
+                <li itemprop="skills"><img src="./assets/img/gsap-logo.png" alt="GSAP logo"> GSAP</li>
             </ul>
         </section>
         <section itemscope itemtype="https://schema.org/LearningResource" id="tools">
@@ -138,7 +138,7 @@
                             <img itemprop="image" src="./assets/img/portfolio/jay_galery.jpg" alt="Jay galery">
                         </a>
                         <figcaption itemprop="description">
-                            <p itemprop="name">Jay Gallery</p>
+                            <h4 itemprop="name">Jay Galery</h4>
                             <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                             <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
                         </figcaption>
@@ -152,7 +152,7 @@
                                 alt="Rock paper scissor">
                         </a>
                         <figcaption itemprop="description">
-                            <p itemprop="name">Pierre Feuille Ciseaux</p>
+                            <h4 itemprop="name">Pierre Feuille Ciseaux</h4>
                             <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                             <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
                             <i itemprop="instrument" class="devicon-javascript-plain"></i>
@@ -166,7 +166,7 @@
                             <img itemprop="image" src="./assets/img/portfolio/gsap.png" alt="Bike wheel charts">
                         </a>
                         <figcaption itemprop="description">
-                            <p itemprop="name">SVG - GSAP</p>
+                            <h4 itemprop="name">SVG - GSAP</h4>
                             <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                             <i itemprop="instrument" class="devicon-javascript-plain"></i>
                         </figcaption>
@@ -179,7 +179,7 @@
                             <img itemprop="image" src="./assets/img/portfolio/aymelineYang.png" alt="Site AymelineYang">
                         </a>
                         <figcaption itemprop="description">
-                            <p itemprop="name">CV Aymeline Yang</p>
+                            <h4 itemprop="name">CV Aymeline Yang</h4>
                             <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                             <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
                         </figcaption>
@@ -229,14 +229,14 @@
                 <label for="email">Email :</label>
                 <input type="email" name="email" id="email" required>
                 <label for="message">Message</label>
-                <textarea type="message" id="message" name="message" aria-required="true">Bonjour Nicolas 
-J'aimerai qu'on travail ensemble...</textarea>
+                <textarea id="message" name="message"
+                    placeholder="Bonjour Nicolas, J'aimerai qu'on travail ensemble..." required minlength="50"></textarea>
                 <input type="submit" name="submit" value="Envoyer">
             </form>
         </section>
-        <section itemscop itemtype="https://schema.org/WebPage" id="logo">
-            <h3>YANG <br>C<i class="fas fa-yin-yang"></i>DE</h3>
-            <ul>
+        <section id="logo">
+            <h3>Nicolas Yang</h3>
+            <ul itemscope itemtype="https://schema.org/WebPage">
                 <li> <a itemprop="url" href="https://www.linkedin.com/in/nicolas-yang-dev"><i
                             class="devicon-linkedin-plain"></i>Linkedin</a></li>
                 <li> <a itemprop="url" href="https://github.com/NicoLarson"><i
@@ -256,8 +256,8 @@ J'aimerai qu'on travail ensemble...</textarea>
             </ul>
         </section>
 
-        <p itemscope itemtype="https://schema.org/copyrightHolder" itemprop="copyrightHolder copyrightYear">© 2020-2021
-            YANG C<i class="fas fa-yin-yang"></i>DE<sup>TM</sup>. All right reserved.</p>
+        <p>© 2020-2021
+            Nicolas Yang. All right reserved.</p>
     </footer>
     <script src="./src/app.js"></script>
 </body>

@@ -4,8 +4,12 @@
   --color-grey: grey;
   --color-valid: #2ecc71;
   --color-error: red;
-  --color-nav-background: #222;
-  --color-send: #c4e538;
+  --color-send: #38e555;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.6rem;
+  --font-size-h3: 1.2rem;
+  --font-size-h4: 1.2rem;
+  --font-size-p: 0.8rem;
 }
 /* HEADER */
 header {
@@ -13,13 +17,13 @@ header {
   color: var(--color-white);
 }
 header h1 {
-  padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem 1.2rem;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: var(--font-size-h1);
   font-weight: 500;
 }
 header nav {
-  background-color: var(--color-nav-background);
+  background-color: var(--color-black);
   position: fixed;
   bottom: 0;
   max-width: 100%;
@@ -29,25 +33,15 @@ header nav ul {
   display: flex;
   outline: none;
   overflow-y: hidden;
+  padding: 0.8rem;
 }
 header nav ul li {
   padding: 0 1rem;
   text-align: center;
   margin: auto;
-  padding: 1.2rem;
-  height: 100%;
-  border-left: 1px solid var(--color-white);
+  font-weight: 500;
 }
-header nav ul li:nth-child(5) {
-  padding: 0.7rem;
-}
-header nav ul li:nth-child(1),
-header nav ul li:nth-child(5) {
-  border-left: none;
-}
-header nav ul li:nth-child(4) {
-  border-right: 1px solid var(--color-white);
-}
+
 header a {
   margin: auto;
   text-align: center;
@@ -59,11 +53,12 @@ section {
   border-bottom: solid 0.1px var(--color-black);
 }
 section h2 {
-  font-size: 1.6rem;
+  font-size: var(--font-size-h2);
   margin-bottom: 1rem;
 }
 section h3 {
   padding: 1rem 0;
+  font-size: var(--font-size-h3);
 }
 section ul {
   display: flex;
@@ -72,7 +67,7 @@ section ul {
   padding-bottom: 1rem;
 }
 section ul li {
-  padding: 0 1rem 1rem;
+  padding: 1rem;
 }
 section ul li i {
   font-size: 2.4rem;
@@ -91,21 +86,28 @@ section dl dd {
 section h3 {
   padding: 0 0 0.8rem;
 }
+/* SKILL */
+#skills ul img {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin: .4rem;
+}
 /* XP */
 #xp > section {
   padding: 0;
   border-bottom: none;
 }
+#xp ul {
+  justify-content: right;
+}
 #xp ul li {
-  display: inline;
+  width: 100%;
   padding: 0.4rem;
 }
 #xp ul li::before {
   content: "- ";
 }
 /* PORTFOLIO */
-#portfolio figure figcaption li {
-}
 #portfolio ul li {
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
@@ -113,9 +115,10 @@ section h3 {
   margin: 1rem 0;
   text-align: center;
 }
-#portfolio ul li figcaption p {
+#portfolio ul li figcaption h4 {
   padding: 1rem;
-  font-size: 2rem;
+  font-size: var(--font-size-h4);
+  font-weight: 400;
 }
 #portfolio ul li figcaption i {
   font-size: 3.2rem;
@@ -138,7 +141,7 @@ img {
 footer {
   background-color: var(--color-black);
   color: var(--color-white);
-  padding: 1.2rem 1.2rem 0.4rem 0;
+  padding: 1.2rem 0;
 }
 footer ul {
   display: block;
@@ -165,7 +168,6 @@ footer form input {
   font-size: 1.2rem;
 }
 footer form textarea {
-  max-width: 80vw;
   height: 40vh;
   padding: 0.4rem;
   margin-top: 1rem;
@@ -174,50 +176,77 @@ footer form textarea {
   border-radius: 0.2rem;
 }
 footer section input:last-child {
+  width: 8rem;
   margin-top: 1.6rem;
-  background-color: var(--color-send);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+  /*  background-color: var(--color-send);
   font-weight: 900;
   color: var(--color-black);
   border: var(--color-send) 1px solid;
   border-radius: 4%;
   box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
     0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
+ */
 }
 footer p {
   text-align: center;
   padding: 1rem 0 3.8rem;
-  font-size: 0.6rem;
+  font-size: var(--font-size-p);
 }
-footer p sup {
-  font-size: 0.4rem;
+footer #logo h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.025rem;
 }
-
+footer #logo ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.2rem 0rem;
+}
 /** PC */
 @media screen and (min-width: 700px) {
   /* HEADER */
-  header nav {
-    position: initial;
-    height: 100%;
+  header {
+    display: flex;
+    justify-content: space-between;
   }
+  header h1 {
+    display: inline-block;
+  }
+  header nav {
+    background-color: var(--color-black);
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    height: 3.8rem;
+  }
+  header nav {
+    display: inline-block;
+    position: initial;
+    padding: 1rem;
+  }
+
   header nav ul {
-    display: initial;
-    height: 100%;
+    display: block;
+    padding: 0.8rem;
   }
   header nav ul li {
     display: inline-block;
-    font-size: 1.4rem;
-    padding: 2rem;
+    float: right;
+    font-size: 1.2rem;
     margin: 0 auto;
+    padding: 0.4rem 1.2rem;
   }
+
   /* MAIN */
   section {
     padding: 4rem;
-  }
-  section h2 {
-    font-size: 2.4rem;
-  }
-  section h3 {
-    font-size: 1.6rem;
   }
   section ul {
     justify-content: flex-start;
@@ -254,7 +283,7 @@ footer p sup {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-right: 8rem;
   }
   /* DIPLOME */
@@ -269,6 +298,11 @@ footer p sup {
     text-align: left;
     line-height: 2rem;
   }
+  /* PORTFOLIO */
+  #portfolio img {
+    width: 20rem;
+    height: 20rem;
+  }
   /* ABOUT */
   #about p {
     width: 80%;
@@ -276,7 +310,7 @@ footer p sup {
     padding-top: 2rem;
     text-indent: 4rem;
     text-align: justify;
-    font-size: 1.6rem;
+    font-size: var(--font-size-p);
     line-height: 4rem;
   }
   /* FOOTER */
@@ -284,18 +318,9 @@ footer p sup {
     padding: 0;
     margin: 0;
   }
-  footer > section:first-child {
-    padding: 4rem;
-    height: 100vh;
-  }
-  footer > section:first-child section {
-    display: inline-block;
-    width: (100%3)-8rem;
-    padding: 0;
-  }
-  footer {
-    display: flex;
-    justify-content: space-around;
+  footer section {
+    height: 100%;
+    width: (100%/3);
   }
   footer #contact {
     height: 100%;
@@ -320,5 +345,8 @@ footer p sup {
   }
   footer #plan nav ul li {
     margin: 0 auto;
+  }
+  footer p {
+    padding: 1rem;
   }
 }
