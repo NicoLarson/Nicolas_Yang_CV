@@ -148,7 +148,7 @@ footer section h2 {
   font-size: var(--font-size-h2);
   letter-spacing: 0.025rem;
 }
-footer section section{
+footer section section {
   padding: 2rem 0 0;
 }
 footer ul {
@@ -186,27 +186,27 @@ footer form textarea {
 footer section input:last-child {
   width: 8rem;
   margin-top: 1.6rem;
-  background-color: var(--color-white);
-  color: var(--color-black);
-  border: 1px solid var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.025rem;
-  /*  background-color: var(--color-send);
-  font-weight: 900;
+}
+footer section input:last-child:hover {
+  background-color: var(--color-send);
   color: var(--color-black);
   border: var(--color-send) 1px solid;
-  border-radius: 4%;
   box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
     0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
- */
+  cursor: pointer;
 }
 footer p {
   text-align: center;
   padding: 0 0 3rem;
   font-size: var(--font-size-p);
 }
-footer #logo ul {
+footer #findMe ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -241,7 +241,6 @@ footer #logo ul {
   }
   header nav ul li {
     display: inline-block;
-    float: right;
     font-size: 1.2rem;
     margin: 0 auto;
     padding: 0.4rem 1.2rem;
@@ -269,17 +268,7 @@ footer #logo ul {
     font-size: 1.6rem;
     padding: 1rem 0 2rem;
   }
-  /* WELCOME */
-  #welcome {
-    height: 90vh;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-  #welcome video {
-    background: cover fixed;
-    width: 100%;
-  }
+  /* SKILLS */
   #skills ul li,
   #tools ul li {
     display: flex;
@@ -289,6 +278,7 @@ footer #logo ul {
     font-size: 1.2rem;
     margin-right: 8rem;
   }
+
   /* DIPLOME */
   #diploma dl dd {
     line-height: 2.4rem;
@@ -321,8 +311,16 @@ footer #logo ul {
     padding: 0;
     margin: 0;
   }
+  footer section {
+    padding-bottom: 0;
+  }
   footer section h2 {
     font-size: var(--font-size-h2);
+  }
+  footer > section > ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
   footer #contact {
     height: 100%;
@@ -331,16 +329,16 @@ footer #logo ul {
     width: 100%;
     line-height: 2rem;
   }
-  footer #logo ul {
+  footer #findMe ul {
     flex-direction: row;
     justify-content: flex-start;
   }
-  footer #logo ul li {
+  footer #findMe ul li {
     font-size: 1.6rem;
     padding-left: 0;
   }
-  footer #logo ul li i {
-    font-size: 2rem;
+  footer #findMe ul li i {
+    font-size: 2.8rem;
   }
   footer #plan nav ul {
     text-align: center;
@@ -350,5 +348,33 @@ footer #logo ul {
   }
   footer p {
     padding: 1rem;
+  }
+
+  /* ANNIMATION */
+  header nav {
+    height: inherit;
+    padding: 0;
+  }
+  header nav ul {
+    height: 100%;
+    padding: 0;
+  }
+  header nav ul li {
+    padding: 0;
+    justify-items: center;
+    border-bottom: 0.1rem solid var(--color-black);
+  }
+  header nav ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  header nav ul li:hover {
+    border-bottom: 0.1rem solid var(--color-white);
+  }
+  svg {
+    width: 5rem;
+    height: 5rem;
   }
 }

@@ -1,7 +1,10 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
- let headerH1 = document.querySelector("header h1")
-/* 
- headerH1.innerHTML = `Nicolas<br>Yang` */
+    let icone = document.querySelectorAll("i")
 
+    for (let i = 0; i < 15; i++) {
+        icone[i].addEventListener('mouseover', () => {
+            icone[i].classList.toggle('colored')
+        })
+    }
 })

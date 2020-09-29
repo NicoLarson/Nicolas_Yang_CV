@@ -28,7 +28,7 @@
                 <li itemprop="breadcrumb"><a href="#xp">Expériences</a></li>
                 <li itemprop="breadcrumb"><a href="#portfolio">Portfolio</a></li>
                 <li itemprop="breadcrumb"><a href="#about">A propos</a></li>
-                <li itemprop="breadcrumb"><a href="#contact">Contact</a></li>
+                <li itemprop="breadcrumb"><a href="#footer">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -52,7 +52,7 @@
             </ul>
             <h3 itemprop="about skills">BDD</h3>
             <ul>
-                <li itemprop="skills"><i class="fas fa-database"></i>SQL</li>
+                <li itemprop="skills"> <i class="devicon-mysql-plain"></i>MySQL</li>
             </ul>
             <h3 itemprop="about name">Frameworks</h3>
             <ul>
@@ -223,41 +223,50 @@
     <footer id="footer">
         <section>
             <h2>Nicolas Yang</h2>
-            <section id="contact">
-                <h3>Contact</h3>
-                <form action="mailto:contact@nicolasyang.fr" method="get" class="email-contact" enctype="text/plain">
-                    <label for="name">Nom :</label>
-                    <input type="text" name="name" id="name" required>
-                    <label for="email">Email :</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"
-                        placeholder="Bonjour Nicolas, J'aimerai qu'on travail ensemble..." required
-                        minlength="50"></textarea>
-                    <input type="submit" name="submit" value="Envoyer">
-                </form>
-            </section>
-            <section id="logo">
-                <h3>Me trouver</h3>
-                <ul itemscope itemtype="https://schema.org/WebPage">
-                    <li> <a itemprop="url" href="https://www.linkedin.com/in/nicolas-yang-dev"><i
-                                class="devicon-linkedin-plain"></i>Linkedin</a></li>
-                    <li> <a itemprop="url" href="https://github.com/NicoLarson"><i
-                                class="devicon-github-plain"></i>GitHub</a>
-                    </li>
-                </ul>
-            </section>
-            <section id="plan">
-                <h3>Plan du site</h3>
-                <ul>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#tools">Outils</a></li>
-                    <li><a href="#xp">Expériences</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="mailto:contact@nicolasyang.fr">Contact</a></li>
-                </ul>
-            </section>
+            <ul>
+                <li>
+                    <section id="contact">
+                        <h3>Contact</h3>
+                        <form action="mailto:contact@nicolasyang.fr" method="get" class="email-contact"
+                            enctype="text/plain">
+                            <label for="name">Nom :</label>
+                            <input type="text" name="name" id="name" required>
+                            <label for="email">Email :</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Bonjour Nicolas, J'aimerai qu'on travail ensemble..." required
+                                minlength="50"></textarea>
+                            <input type="submit" name="submit" value="Envoyer">
+                        </form>
+                    </section>
+                </li>
+                <li>
+                    <section id="findMe">
+                        <h3>Me trouver</h3>
+                        <ul itemscope itemtype="https://schema.org/WebPage">
+                            <li> <a itemprop="url" href="https://www.linkedin.com/in/nicolas-yang-dev"><i
+                                        class="devicon-linkedin-plain"></i>Linkedin</a></li>
+                            <li> <a itemprop="url" href="https://github.com/NicoLarson"><i
+                                        class="devicon-github-plain"></i>GitHub</a>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+                <li>
+                    <section id="plan">
+                        <h3>Plan du site</h3>
+                        <ul>
+                            <li><a href="#skills">Compétences</a></li>
+                            <li><a href="#tools">Outils</a></li>
+                            <li><a href="#xp">Expériences</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">A propos</a></li>
+                            <li><a href="mailto:contact@nicolasyang.fr">Contact</a></li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
 
         </section>
         <p>© 2020-2021
