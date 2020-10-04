@@ -146,9 +146,20 @@ section h3 {
   font-size: var(--font-size-h4);
   font-weight: 400;
 }
+#portfolio ul li figcaption p {
+  padding-bottom: 2rem;
+}
 #portfolio ul li figcaption i {
   font-size: 3.2rem;
   padding: 1rem;
+}
+#portfolio ul li figcaption h4 img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0rem;
+}#portfolio ul li figcaption h4 i {
+  font-size: 2rem;
+  padding: 0 .4rem;
 }
 #portfolio ul li img,
 #portfolio ul li {
