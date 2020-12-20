@@ -3,9 +3,12 @@
 ---
 
  &#x2328;  Etudiant en programmation 
+<br>
  &#x1F4F1;07.68.30.80.51
+ <br>
  [Mon Email](nicolas.yang.1@gmail.com)
- [Mon Site](http://nicolasyang.fr)
+<br>
+ [Mon Site](https://nicolarson.github.io/web_portfolio/)
 
 ---
 
@@ -13,7 +16,7 @@
 
 | Web                                           | BDD | Framworks                             | Outils                        |    OS                               |  Pack Office   | Langue    |
 | --------------------------------------------- | --- | ------------------------------------- | ----------------------------- | --------------------------------- | --- | --- |
-| HTML <br> CSS<br> JavaScript<br> Sass<br> PHP | BDD | Bootstrap<br>Jquery (notions)<br>GSAP | Git<br>GitHub<br>VSCode<br>Vim | Linux (Ubuntu,Debian)<br>Windows|   Excel<br>Word<br>PowerPoint<br>Publisher  | Anglais - Niveau B1    |
+| HTML <br> CSS<br> JavaScript<br> Sass<br> PHP | BDD | Jquery (notions)<br>GSAP | Git<br>GitHub<br>VSCode<br>Vim | Linux (Arch,Debian)<br>Windows|   Excel<br>Word<br>PowerPoint<br>Publisher  | Anglais - Niveau B1    |
 
 
 
