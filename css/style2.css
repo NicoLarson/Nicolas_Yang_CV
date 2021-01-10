@@ -13,6 +13,9 @@
   --font-size-h3: 2rem;
   --font-size-h4: 1.6rem;
   --font-size-p: 1.2rem;
+
+  /* Dark pallet*/
+  --color-orange: #fe8019;
 }
 
 header {
@@ -25,24 +28,77 @@ header {
   padding: 1rem 2rem 1rem 1rem;
   background-color: var(--color-white);
   z-index: 2;
+  transition: all 1s ease-in-out;
 }
 header h1 {
-  border: solid 0.4rem var(--color-black);
-  padding: 0.6rem 0.4rem 0;
   text-align: center;
   font-family: "Spartan", sans-serif;
+}
+header h1 a {
+  display: block;
+  border: solid 0.4rem var(--color-black);
+  padding: 0.8rem 0.4rem 0.3rem;
   font-size: 2rem;
 }
-header > i {
+header i, .fa-times {
   cursor: pointer;
   font-size: 2.4rem;
   transition: all 0.8s;
 }
-header > i:hover {
+header > i.fa-yin-yang:hover {
   transform: rotate(360deg);
 }
-/* Welcome */
 
+nav{
+  display: none;
+}
+nav.discover {
+  display: block;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 6rem);
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 8;
+
+}
+nav.discover ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+nav.discover ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: 4rem;
+}
+nav.discover ul li ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 8rem;
+  border-top: 0.2rem solid #222;
+  border-bottom: 0.2rem solid #222;
+  margin-top: 8rem;
+}
+nav.discover ul li ul li a {
+  font-size: 2rem;
+  padding: 0rem 3.2rem;
+}
+nav.discover > ul > li:last-child {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* Welcome */
 #welcome {
   display: flex;
   flex-direction: column;
@@ -50,6 +106,7 @@ header > i:hover {
   align-items: center;
   height: 100vh;
   background-color: var(--color-white);
+  transition: all 1s ease-in-out;
 }
 #welcome h2 {
   display: inline-block;
@@ -85,37 +142,49 @@ header > i:hover {
 }
 #welcome a {
   bottom: 2rem;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 #welcome a:hover {
   transform: translateY(-1rem);
 }
 
 #skills,
-#tools {
+#tools,
+#diploma,
+#xp,
+#about {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+  transition: all 1s ease-in-out;
 }
 #skills h2,
-#tools h2 {
+#tools h2,
+#diploma h2,
+#xp h2,
+#about h2 {
   width: 50vw;
   font-size: 4rem;
   text-align: center;
 }
 #skills section,
-#tools section {
+#tools section,
+#diploma dl,
+#xp section,
+#about p {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50vw;
   height: 100vh;
   background-color: var(--color-white);
+  transition: all 1s ease-in-out;
 }
 #skills section h3,
-#tools section h3 {
+#tools section h3,
+#xp section h3 {
   padding: 2rem 0 0 2rem;
   font-size: 2.8rem;
 }
@@ -128,7 +197,7 @@ header > i:hover {
 }
 #skills section ul li,
 #tools section ul li {
-  margin: 4rem;
+  margin: 4rem 2rem;
 }
 #skills section ul i,
 #tools section ul i {
@@ -138,12 +207,152 @@ header > i:hover {
 #skills {
   background-color: #7bed9fff;
 }
-
 #tools {
   flex-direction: row-reverse;
-  background-color: #eccc68ff;
+  background-color: #f1c40f;
 }
 
+#diploma {
+  background-color: #9b59b6;
+}
+#diploma dl dt {
+  font-size: 2.2rem;
+  padding: 0 4rem;
+}
+#diploma dl dd {
+  margin: 1rem 0 4rem 8rem;
+}
+#xp {
+  flex-direction: row-reverse;
+  background-color: #3498db;
+}
+
+#xp section dl {
+  padding: 1.2rem 2rem;
+}
+#xp section dl dd {
+  padding: 0.4rem 0 2rem 4rem;
+}
+
+#xp section dl dd ul {
+  padding: 0.4rem 0 2rem 4rem;
+}
+#xp section dl dd ul li::before {
+  content: "- ";
+}
+
+#portfolio {
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+#portfolio h2 {
+  padding: 8rem 0 0 4rem;
+  font-size: 3.2rem;
+}
+#portfolio ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: calc(100% - 12rem);
+}
+#portfolio ul li {
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
+    0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  background-color: var(--color-white);
+}
+#portfolio ul li:active {
+  transform: scale(1.04);
+  transition: 1s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#portfolio ul li figure,
+#portfolio ul li figure img {
+  width: 24rem;
+}
+#portfolio ul li figcaption h4 {
+  padding: 1rem;
+  font-size: var(--font-size-h4);
+  font-weight: 400;
+}
+#portfolio ul li figcaption p {
+  padding-bottom: 2rem;
+}
+#portfolio ul li figcaption i {
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+#portfolio ul li figcaption h4 img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0rem;
+}
+#portfolio ul li figcaption h4 i {
+  font-size: 2rem;
+  padding: 0 0.4rem;
+}
+#portfolio ul li img,
+#portfolio ul li {
+  border-radius: 1.2%;
+}
+#portfolio ul li {
+  margin: 2rem 1rem;
+  transition: all 1s;
+}
+
+#portfolio ul li:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#about {
+  background-color: #1abc9c;
+}
+#about p {
+  padding: 0 4rem;
+  line-height: 2.4rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+  background-color: #222;
+  color: #fafafa;
+}
+footer h2 {
+  padding: 12rem 0 0rem 8rem;
+  font-size: 3.2rem;
+  font-weight: 200;
+}
+footer a {
+  color: #fafafa;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer > ul li h3 {
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+}
+footer > ul #contact a {
+  display: block;
+  border: 0.4rem solid var(--color-gold);
+  padding: 1rem;
+}
+footer > ul li li {
+  padding: 1rem 0;
+}
+footer p {
+  padding: 1rem;
+  text-align: center;
+}
 #myVideo {
   position: fixed;
   right: 0;
@@ -151,7 +360,4 @@ header > i:hover {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-}
-img {
-  width: 2rem;
 }

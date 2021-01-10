@@ -1,23 +1,30 @@
 header.dark-mode,
 #welcome.dark-mode {
   background-color: var(--color-black);
+
 }
-header i.dark-mode{
-    color: var(--color-gold);
+header > i.dark-mode{
+    color: #fafafa;
 }
 
-h1.dark-mode {
+header nav ul i.dark-mode{
   color: var(--color-gold);
-  border: solid 0.3rem var(--color-gold);
-  text-align: center;
-  font-weight: 800;
+  transition: all 1s ;
+
+}
+header h1.dark-mode a{
+  color: var(--color-gold);
+  border: solid 0.4rem var(--color-gold);
+
 }
 #welcome.dark-mode{
     color: var(--color-gold);
 
+
 }
 #welcome h2.dark-mode {
   border: solid 0.8rem var(--color-gold);
+
 }
 
 #welcome ul li.dark-mode {
@@ -35,7 +42,7 @@ a.dark-mode {
 
 }
 #skills section.dark-mode{
-background-color: #282828;
+background-color: var(--color-black);
 }
 
 #tools.dark-mode{
@@ -44,5 +51,5 @@ background-color: #282828;
 
 }
 #tools section.dark-mode{
-background-color: #282828;
+background-color: var(--color-black);
 }
