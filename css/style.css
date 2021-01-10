@@ -1,464 +1,677 @@
 :root {
-  --color-black: #222;
-  --color-white: #fafafa;
-  --color-grey: grey;
-  --color-valid: #2ecc71;
-  --color-error: red;
-  --color-send: #38e555;
-  --font-size-h1: 3.2rem;
-  --font-size-h2: 2.4rem;
-  --font-size-h3: 2rem;
-  --font-size-h4: 1.6rem;
-  --font-size-p: 1.2rem;
+  --color-white0: #ffffff;
+  --color-white1: #fafafa;
+  --color-grey0: #b8b8b8;
+  --color-grey1: #333333;
+  --color-black2: #222222;
+  --color-black1: #1c1c1c;
+  --color-black0: #000000;
+  --color-send: #4cd137;
+
+  --color-bg-btn-portfolio: #222;
+  /* Dark mode*/
+  --color-dark-bg: #1d2021;
+  --color-dark-bg0: #282828;
+  --color-dark-ft: #ebdbb2;
+  --color-dark-ft0: #fbf1c7;
+  --color-dark-orange: #d65d0e;
+  --color-dark-orange-soft: #fe8019;
+  --color-dark-grey: #a89984;
+  --color-dark-aqua: #689d6a;
+  --color-dark-yellow: #d79921;
+  --color-dark-purple: #b16286;
+  --color-dark-blue: #458588;
+  --color-dark-nav-dark-transparent: #282828e3;
 }
-/* HEADER */
-header {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-header h1 {
-  padding: 2rem 2rem 1.2rem;
-  text-align: center;
-  font-size: var(--font-size-h1);
-  font-weight: 500;
-}
-header nav {
-  background-color: var(--color-black);
+
+.progress-container {
   position: fixed;
   bottom: 0;
-  max-width: 100%;
-  max-height: 100%;
-  z-index: 10;
-}
-header nav ul {
-  display: flex;
-  outline: none;
-  overflow-y: hidden;
-  padding: 0.8rem;
-}
-header nav ul li {
-  padding: 0 1rem;
-  text-align: center;
-  margin: auto;
-  font-weight: 500;
-}
-
-header a {
-  margin: auto;
-  text-align: center;
-  color: var(--color-white);
-}
-header .progress-container {
-  max-width: 100%;
+  z-index: 3;
+  max-width: 100vw;
   height: 0.4rem;
-  background-color: var(--color-grey);
+  background: var(--color-white1);
 }
-header .progress-bar {
+.progress-bar {
   height: 0.4rem;
-  background-color: var(--color-valid);
+  background: var(--color-black2);
+  width: 0%;
 }
 
-/* MAIN */
-section dd,
-section dt,
-p,
-i,
-li,
-a,
-h2,
-h3,
-h4 {
-  color: var(--color-black);
-}
-section {
-  padding: 2rem;
-  background-color: var(--color-white);
-  border-bottom: solid 0.1px var(--color-black);
-}
-section h2 {
-  font-size: var(--font-size-h2);
-  margin-bottom: 1rem;
-}
-section h3 {
-  padding: 1rem 0;
-  font-size: var(--font-size-h3);
-}
-section ul {
+header {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-bottom: 1rem;
-}
-section ul li {
-  padding: 1rem;
-}
-section ul li i {
-  font-size: 2.4rem;
-  padding: 0.4rem;
-}
-section dl {
-  padding: 0rem;
-}
-section dl dt {
-  padding: 0.8rem 0 0.2rem;
-  font-weight: 600;
-}
-section dl dd {
-  line-height: 2.4rem;
-}
-section h3 {
-  padding: 0 0 0.8rem;
-}
-/* SKILL */
-#skills ul img {
-  width: 4.4rem;
-  height: 4.4rem;
-  margin: 0.4rem;
-}
-
-/* XP */
-#xp > section {
-  padding: 0;
-  border-bottom: none;
-}
-#xp ul {
-  justify-content: right;
-}
-#xp ul li {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   width: 100%;
-  padding: 0.4rem;
+  position: fixed;
+  background-color: var(--color-white0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 3;
 }
-#xp ul li::before {
-  content: "- ";
-}
-/* PORTFOLIO */
-#portfolio ul li {
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
-    0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  margin: 1rem 0;
+header h1 {
   text-align: center;
+  font-family: "Cormorant Unicase", serif;
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-#portfolio ul li:active {
-  transform: scale(1.04);
-  transition: 1s;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-#portfolio ul li figcaption h4 {
-  padding: 1rem;
-  font-size: var(--font-size-h4);
-  font-weight: 400;
-}
-#portfolio ul li figcaption p {
-  padding-bottom: 2rem;
-}
-#portfolio ul li figcaption i {
-  font-size: 3.2rem;
-  padding: 1rem;
-}
-#portfolio ul li figcaption h4 img {
-  width: 2rem;
-  height: 2rem;
-  margin: 0rem;
-}
-#portfolio ul li figcaption h4 i {
-  font-size: 2rem;
-  padding: 0 0.4rem;
-}
-#portfolio ul li img,
-#portfolio ul li {
-  border-radius: 1.2%;
-}
-/* ABOUT */
-#about p {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  text-align: center;
-}
-img {
-  max-width: 100%;
-}
-/* FOOTER */
-footer {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  padding: 1.2rem 0;
-}
-footer section h2 {
-  font-weight: 400;
-  font-size: var(--font-size-h2);
-  letter-spacing: 0.025rem;
-}
-footer section {
-  background-color: var(--color-black);
-}
-footer section section {
-  padding: 2rem 0 0;
-}
-footer ul {
+header h1 a {
   display: block;
+  border: solid 0.2rem var(--color-black1);
+  padding: 0.4rem 0.3rem;
+  font-size: 2.2rem;
+  font-weight: bolder;
 }
-footer h2,
-footer h3,
-footer label,
-footer p,
-footer ul li a {
-  color: var(--color-white);
+header i {
+  cursor: pointer;
+  font-size: 2.4rem;
+  z-index: 3;
 }
-footer #contact {
+header i:nth-child(3) {
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+header .fa-adjust {
+  position: relative;
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  right: 0.4rem;
+  z-index: 2;
+}
+header .fa-lightbulb {
+  transform: rotate(180deg);
+  z-index: 2;
+}
+header .fa-times {
+  font-size: 3.1rem;
+}
+
+/* MENU */
+nav {
+  display: none;
+}
+nav.discover {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
 }
-footer form {
+
+nav.discover ul {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-footer form label {
-  padding: 1.2rem 0 0;
+nav.discover ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: 4rem;
+  background: none;
 }
-footer form input {
-  padding: 0.4rem;
-  color: var(--color-white);
-  background-color: var(--color-black);
-  border: none;
-  border-bottom: 1px solid var(--color-grey);
-  font-size: 1.2rem;
-}
-footer form textarea {
-  height: 40vh;
-  padding: 0.4rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: var(--color-black);
-  border-radius: 0.2rem;
-}
-footer section input:last-child {
-  width: 8rem;
-  margin-top: 1.6rem;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: 1px solid var(--color-white);
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.025rem;
-}
-footer p {
-  text-align: center;
-  padding: 0 0 3rem;
-  font-size: var(--font-size-p);
-}
-footer #findMe ul {
+nav.discover ul li ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 1.2rem 0rem;
+  height: 8rem;
+  border-top: 0.2rem solid #222;
+  border-bottom: 0.2rem solid #222;
+  margin-top: 8rem;
+  background: none;
 }
-/** PC */
-@media screen and (min-width: 700px) {
-  /* HEADER */
+nav.discover ul li ul li a {
+  font-size: 2rem;
+  padding: 0rem 3.2rem;
+}
+nav.discover > ul > li:last-child {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+}
+/* Welcome */
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: var(--color-white0);
+}
+#welcome h2 {
+  display: inline-block;
+  border: solid 0.8rem var(--color-black2);
+  padding: 2rem 2rem;
+  text-align: center;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 12rem;
+  font-weight: normal;
+}
+#welcome ul {
+  display: flex;
+  flex-direction: row;
+}
+#welcome ul li {
+  font-family: Spartan;
+  font-size: 12rem;
+  padding: 8rem 0 0;
+}
+#welcome a {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.2rem;
+  font-size: 2.8rem;
+  text-align: center;
+  background: none;
+}
+
+#skills,
+#tools,
+#diploma,
+#xp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+#skills h2,
+#tools h2,
+#diploma h2,
+#xp h2 {
+  width: 50vw;
+  font-size: 3.6rem;
+  text-align: center;
+}
+#skills section,
+#tools section,
+#diploma dl,
+#xp section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--color-white0);
+}
+
+#skills section h3,
+#tools section h3,
+#xp section h3 {
+  padding: 2rem 0 0 2rem;
+  font-size: 2rem;
+}
+#skills section ul,
+#tools section ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#skills section ul li,
+#tools section ul li {
+  margin: 4rem 2rem;
+  font-size: 1.6rem;
+}
+#skills section ul i,
+#tools section ul i,
+#skills section ul img,
+#tools section ul img {
+  padding-right: 1rem;
+  font-size: 4rem;
+  filter: grayscale(1);
+}
+/* SKILLS */
+#skills {
+  background-color: #f2f2f2;
+}
+
+/* TOOLS */
+#tools {
+  flex-direction: row-reverse;
+  background-color: #e5e6e5;
+}
+
+/* DIPLOMA */
+#diploma {
+  background-color: #d8d9d8;
+}
+#diploma dl dt {
+  font-size: 2rem;
+  padding: 0 4rem;
+}
+#diploma dl dd {
+  margin: 1rem 0 4rem 8rem;
+  font-size: 2rem;
+}
+
+/* EXPERIENCE */
+#xp {
+  flex-direction: row-reverse;
+  background-color: #e5e6e5;
+}
+#xp section dl {
+  padding: 1.2rem 2rem;
+}
+#xp section dl h4 {
+  font-size: 1.8rem;
+}
+#xp section dl dt {
+  font-size: 1.8rem;
+}
+#xp section dl dd {
+  padding: 0.4rem 0 2rem 4rem;
+  font-size: 1.6rem;
+}
+
+#xp section dl dd ul {
+  padding: 0.4rem 0 2rem 4rem;
+}
+#xp section dl dd ul li::before {
+  content: "- ";
+}
+
+/* PORTFOLIO */
+#portfolio {
+  padding: 4rem 0 8rem;
+  height: 100%;
+}
+#portfolio h2 {
+  padding: 4rem 0 8rem 8rem;
+  font-size: 3.6rem;
+}
+#portfolio > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#portfolio ul li {
+  padding: 2rem 0;
+}
+#portfolio ul li figure img {
+  margin: 0 auto;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#portfolio ul li figure figcaption {
+  position: absolute;
+  opacity: 0;
+  width: 40rem;
+}
+#portfolio ul li figure figcaption p {
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--color-white1);
+  position: relative;
+  bottom: 34rem;
+  text-align: center;
+}
+#portfolio ul li figure figcaption ul {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 28rem;
+}
+#portfolio ul li figure figcaption i {
+  font-size: 3.6rem;
+  padding: 0 1rem;
+  color: var(--color-white1);
+}
+#portfolio ul li figure figcaption a {
+  display: block;
+  position: relative;
+  bottom: 20rem;
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 4rem;
+  text-align: center;
+  border: 0.2rem solid var(--color-white1);
+  background-color: var(--color-bg-btn-portfolio);
+  margin: 0 auto;
+  font-size: 0;
+}
+#portfolio .carousel {
+  display: none;
+}
+/* ABOUT */
+#about {
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+#about h2 {
+  padding: 8rem;
+  font-size: 3.2rem;
+}
+
+#about h3,
+#about p {
+  max-width: 44%;
+  margin: 0 auto;
+}
+
+#about h3 {
+  padding: 0.8rem 0 0 1rem;
+  background-color: var(--color-grey0);
+  color: #222;
+  font-size: 1.6rem;
+}
+
+#about p {
+  padding: 1rem 2rem;
+  border: 0.44rem solid var(--color-grey0);
+  background-color: var(--color-dark-bg0);
+  color: var(--color-dark-ft0);
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 3.2rem;
+}
+#about p a {
+  color: var(--color-dark-ft0);
+  font-weight: bolder;
+}
+#about p a:focus {
+  text-decoration: underline;
+}
+#about p i {
+  margin-right: 1rem;
+  color: var(--color-dark-ft0);
+}
+#about p span {
+  color: var(--color-dark-orange-soft);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #222;
+  color: #fafafa;
+}
+
+footer i {
+  margin-right: 1rem;
+}
+
+footer h2 {
+  padding: 12rem 0 0rem 8rem;
+  font-size: 3.2rem;
+  font-weight: 200;
+}
+footer a {
+  color: var(--color-white1);
+}
+footer a:focus {
+  text-decoration: underline;
+}
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer > ul li h3 {
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+}
+footer > ul #contact a {
+  display: block;
+  max-width: 22rem;
+  color: var(--color-white0);
+  border: 0.2rem solid var(--color-white0);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+footer > ul li li {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+footer > ul li a {
+  font-size: 2rem;
+}
+footer p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 770px), (max-height: 700px) {
   header {
-    display: flex;
-    justify-content: space-between;
-  }
-  header h1 {
-    display: inline-block;
-    padding: 1.2rem 2rem;
-  }
-  header nav {
-    background-color: var(--color-black);
-    position: fixed;
-    bottom: 0;
-    max-width: 100%;
-    height: 3.8rem;
-  }
-  header nav {
-    display: inline-block;
-    position: initial;
-    padding: 1rem;
+    width: 100vw;
   }
 
-  header nav ul {
-    display: block;
-    padding: 0.8rem;
-    margin-right: 4rem;
-  }
-  header nav ul li {
-    display: inline-block;
-    font-size: 2rem;
-    margin: 0 auto;
-    padding: 0.4rem 1.2rem;
-  }
-  header .progress-container {
-   position: fixed;
-   bottom: 0; 
-   left: 0;
-   z-index: 12;
-  }
-  header .progress-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0; 
-    z-index: 12;  
-  }
-  /* MAIN */
-  section {
-    padding: 4rem;
-  }
-  section ul {
-    justify-content: flex-start;
-    padding: 1.2rem 0 4rem;
+  section a {
+    font-size: 2.2rem;
   }
 
-  section ul li i {
-    font-size: 4rem;
-    padding: 0 0.4rem 1rem;
-  }
-  section dl dt {
-    font-size: 1.6rem;
-    padding: 0.8rem 0 0.2rem;
+  #welcome h2 {
+    font-size: 8rem;
     font-weight: 600;
   }
-  section dl dd {
-    font-size: 1.6rem;
-    padding: 1rem 0 2rem;
+  #welcome ul li {
+    font-size: 4rem;
   }
-  /* SKILLS */
-  #skills ul li,
-  #tools ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-right: 8rem;
+  nav.discover ul li a {
+    font-size: 2rem;
+  }
+  nav.discover ul li ul {
+    margin-top: 3.2rem;
+  }
+  nav.discover ul li ul li a {
+    font-size: 1.6rem;
+  }
+  nav.discover ul > li:last-child {
+    display: inline-block;
+    font-size: 0.8rem;
   }
 
-  /* DIPLOME */
-  #diploma dl dd {
-    line-height: 2.4rem;
+  #skills,
+  #tools,
+  #diploma,
+  #xp {
+    flex-direction: column;
+    height: 100%;
   }
-  /* XP */
-  #xp section dl dd ul {
-    display: block;
+  #skills h2,
+  #tools h2,
+  #diploma h2,
+  #xp h2 {
+    width: 100%;
+    padding: 4rem 0;
+    font-size: 2.8rem;
   }
-  #xp section dl dd ul li {
-    text-align: left;
-    line-height: 2rem;
+  #skills section,
+  #tools section,
+  #diploma dl,
+  #xp section {
+    width: 100%;
+    height: 100%;
+  }
+  #skills section h3,
+  #tools section h3,
+  #xp section h3 {
+    padding: 4rem 0 0 2rem;
+    font-size: 2rem;
+  }
+  #skills section ul li,
+  #tools section ul li {
+    margin: 4rem 2rem;
+    font-size: 1.6rem;
+  }
+  #skills section ul i,
+  #tools section ul i {
+    padding: 0;
+    font-size: 3.2rem;
+  }
+  #diploma dl {
+    padding: 4rem 2rem;
+  }
+  #diploma dl dt {
+    font-size: 1.6rem;
+  }
+  #diploma dl dd,
+  #diploma dl dd a {
+    font-size: 1.6rem;
+  }
+  #xp h4 {
+    font-size: 2.24rem;
+  }
+  #xp dt,
+  #xp dl dd h4,
+  #xp li {
+    font-size: 1.6rem;
   }
   /* PORTFOLIO */
-  #portfolio img {
-    width: 24rem;
-    height: 24rem;
+  #portfolio {
+    padding: 0;
   }
 
-  /* ABOUT */
-  #about p {
-    width: 80%;
-    margin: auto;
-    padding-top: 2rem;
-    text-indent: 4rem;
-    text-align: justify;
-    font-size: 1.8rem;
-    line-height: 4rem;
+  #portfolio h2 {
+    padding: 8rem 0 4rem;
+    border-top: 0.1rem solid #222;
+    text-align: center;
   }
-  /* FOOTER */
-  footer {
+  #portfolio ul,
+  #portfolio ul,
+  #portfolio figcaption,
+  #portfolio figure {
+    max-width: 100vw;
+  }
+  #portfolio ul li figure img {
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+  #portfolio ul.projects > li {
+    display: none;
+    padding: 0;
+  }
+  #portfolio ul li.active,
+  #portfolio ul li figure {
+    display: block;
+    height: 100vw;
+    max-width: 100%;
+  }
+  #portfolio ul li figure figcaption {
+    display: block;
+    opacity: 1;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #portfolio ul li figure figcaption p,
+  #portfolio ul li figure figcaption ul {
+    display: none;
+  }
+  #portfolio ul li figure figcaption i {
+    font-size: 3.6rem;
+    padding: 0;
+    color: #222;
+  }
+  #portfolio ul li figure figcaption a {
+    display: block;
+    max-width: 90%;
+    background-color: #fafafa;
+    color: #222;
+    border: 0.4rem solid #222;
+  }
+
+  #portfolio ul.carousel {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 4rem;
+    position: relative;
+    z-index: 2;
+  }
+  #portfolio ul.carousel li {
     padding: 0;
     margin: 0;
   }
-  footer section {
-    padding-bottom: 0;
-  }
-  footer section h2 {
-    font-size: var(--font-size-h2);
-  }
-  footer > section > ul {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-  footer #contact {
-    height: 100%;
-  }
-  footer #contact textarea {
-    width: 100%;
-    line-height: 2rem;
-  }
-  footer section input:last-child:hover {
-    background-color: var(--color-send);
-    color: var(--color-black);
-    border: var(--color-send) 1px solid;
-    box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
-      0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
+  #portfolio ul.carousel li i {
+    font-size: 6.4rem;
     cursor: pointer;
   }
-  footer #findMe ul {
+
+  #portfolio ul.carousel ul.dots {
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
   }
-  footer #findMe ul li {
-    font-size: 1.6rem;
-    padding-left: 0;
+  #portfolio ul.carousel ul.dots li {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.4rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--color-black0);
   }
-  footer #findMe ul li i {
-    font-size: 2.8rem;
+  #portfolio ul.carousel ul.dots li.active {
+    background-color: var(--color-black0);
   }
-  footer #plan nav ul {
+  /* About */
+  #about {
+    height: 100%;
+    padding-bottom: 8rem;
+  }
+
+  #about h2 {
+    padding: 6.2rem;
+    border-top: 0.1rem solid #222;
     text-align: center;
   }
-  footer #plan nav ul li {
-    margin: 0 auto;
-  }
-  footer p:first-child {
-    padding: 1rem;
-  }
-  footer > a:last-child {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 4rem;
-    font-size: 4rem;
-  }
-  footer > a:last-child i {
-    color: var(--color-grey);
+
+  #about h3,
+  #about p {
+    max-width: 90%;
   }
 
-  /* ANNIMATION */
-  header nav {
-    height: inherit;
-    padding: 0;
+  #about p {
+    padding: 2rem;
+    text-align: left;
+    font-size: 2rem;
+    background-color: #222;
   }
-  header nav ul {
+
+  /* Footer */
+  footer {
     height: 100%;
-    padding: 0;
   }
-  header nav ul li {
-    padding: 0;
-    justify-items: center;
-    border-bottom: 0.22rem solid var(--color-black);
+  footer h2 {
+    padding: 8rem 0 4rem;
+    text-align: center;
   }
-  header nav ul li a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 2rem 1rem;
+  footer > ul {
+    flex-direction: column;
   }
-  header nav ul li:hover {
-    border-bottom: 0.22rem solid var(--color-white);
+  footer section {
+    padding-left: 2rem;
   }
-
-  #portfolio ul {
-    justify-content: space-around;
+  footer section h3 {
+    padding-top: 4rem;
   }
-  #portfolio ul li {
-    filter: grayscale(100%);
-    margin: 2rem 1rem;
-    transition: transform 1s;
+  footer section ul {
+    padding-left: 4rem;
   }
-
-  #portfolio ul li:hover {
-    transform: scale(1.04);
-    filter: none;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  footer section ul li i {
+    font-size: 2.2rem;
+  }
+  footer p {
+    padding: 4rem 2rem 2rem;
+    font-size: 1rem;
   }
 }

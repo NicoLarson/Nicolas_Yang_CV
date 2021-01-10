@@ -1,34 +1,49 @@
 # Portfolio Nicolas Yang
 
----
+## Projets BTS
+ - [Gestion ligue - Java](https://github.com/NicoLarson/PPE_BTS_SIO_SLAM2)
+ - [Gestion de commande - PHP](https://github.com/NicoLarson/PPE_commande)
+ - [Gmail - PHP](https://github.com/NicoLarson/PPE_Gmail)
+ - [Vacance à la montagne - PHP](https://github.com/NicoLarson/PPE_vacance_montagne)
+ 
 
- &#x2328;  Etudiant en programmation 
-<br>
- &#x1F4F1;07.68.30.80.51
- <br>
- [Mon Email](nicolas.yang.1@gmail.com)
-<br>
- [Mon Site](https://nicolarson.github.io/web_portfolio/)
+
+## Projet Perso
+- [Rock Paper Scissors - JS](https://github.com/NicoLarson/Rock-Paper-Scissors)
+- [Tic Tac Toe - JS](https://github.com/NicoLarson/TicTacToe_js)
+- [Utilisation API Météo - JS](https://github.com/NicoLarson/MeteoJS)
+- [Galerie - HTML CSS](https://github.com/NicoLarson/Jay_Gallery)
 
 ---
+# Développeur Front-end/Back-end
+
+
+ [📧 Mon Email](nicolas.yang.1@gmail.com)
+
+
+ [💻 Mon Site](https://nicolasyang.fr)
 
 ## Compétences &#128187;
 
-| Web                                           | BDD | Framworks                             | Outils                        |    OS                               |  Pack Office   | Langue    |
-| --------------------------------------------- | --- | ------------------------------------- | ----------------------------- | --------------------------------- | --- | --- |
-| HTML <br> CSS<br> JavaScript<br> Sass<br> PHP | BDD | Jquery (notions)<br>GSAP | Git<br>GitHub<br>VSCode<br>Vim | Linux (Arch,Debian)<br>Windows|   Excel<br>Word<br>PowerPoint<br>Publisher  | Anglais - Niveau B1    |
-
+| Languages  | Frameworks |    Library     |    BDD     | Outils  |         OS         |
+|:----------:| ---------- |:--------------:|:----------:|:-------:|:------------------:|
+|    HTML    | Symfony    | JQuery(notion) |  mariadb   | VSCode  | Linux(Arch,Debian) |
+| CSS(Sass)  |            |      GSAP      |   mySQL    |   Vim   |      Windows       |
+| JavaScript |            |                | phpMyAdmin | Eclipse |                    |
+|    PHP     |            |                |            |   git   |                    |
+|    Java    |            |                |            | GitHub  |                    |
+|    SQL     |            |                |            |   SSH   |                    |
 
 
 ## Diplômes &#127891;
-### 2019-2021:
+#### 2019-2021:
 BTS Services Informatiqes aux organistaions (option SLAM) - Ecole
 ITIC Paris
-### Février 2020:
+#### Février 2020:
 Responsive Web Design Certification -freeCodeCamp.org
-### 2018:
+#### 2018:
 CAP Cuisine (formation accélérée en un an) - Lycée Belliard – Paris;
-### 2010:
+#### 2010:
 Baccalauréat Economique et Social - Lycée Français de Bangkok –
 Thaïlande
 
@@ -48,9 +63,3 @@ Gaulle, The Hoxton, Hilton la Défense, Le Jardin du Marais...);
 - Restaurant gastronomique (La Scène Thèleme);
 - Maison de retrainte (Korian,Domytis);
 
-## Centres d'interet 
-- &#127827; RaspberryPi
-- &#127947; Musculation
-- &#128144; Jardinage
-- &#127928; Guitare
-- &#127859; Cuisine
