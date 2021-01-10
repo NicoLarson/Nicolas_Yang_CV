@@ -10,7 +10,8 @@
     <title>Portfolio Nicolas Yang</title>
     <link rel="icon" type="image/png" href="./assets/img/logo3.png" />
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/dark_mode.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -19,65 +20,79 @@
 
 <body>
     <header itemscope itemtype="https://schema.org/Person">
-        <h1 itemprop="name">Nicolas Yang</h1>
-      
+        <h1 itemprop="name">NY</h1>
+        <i class="fas fa-yin-yang"></i>
         <nav>
-            
             <ul itemscope itemtype="https://schema.org/WebPage">
+                <li><i class="fas fa-bars"></i></li>
+                <!-- 
                 <li itemprop="breadcrumb"><a href="#skills">Compétences</a></li>
                 <li itemprop="breadcrumb"><a href="#tools">Outils</a></li>
                 <li itemprop="breadcrumb"><a href="#xp">Expériences</a></li>
                 <li itemprop="breadcrumb"><a href="#portfolio">Portfolio</a></li>
                 <li itemprop="breadcrumb"><a href="#about">A propos</a></li>
-                <li itemprop="breadcrumb"><a href="#contact">Contact</a></li>
+                <li itemprop="breadcrumb"><a href="#contact">Contact</a></li> -->
             </ul>
-
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
+            <!--  <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div> -->
         </nav>
     </header>
 
     <main>
+        <section id="welcome">
+            <h2>NY</h2>
+            <ul></ul>
+            <a href="#skills">Par ici!</a>
+            <i class="fas fa-chevron-down"></i>
+
+        </section>
+       
         <section id="skills" itemscope itemtype="https://schema.org/LearningResource">
-            <h2 itemprop="keywords">Compétences</h2>
-            <h3>Languages</h3>
-            <ul>
-                <li itemprop="name"> <i class="devicon-html5-plain"></i>HTML</li>
-                <li itemprop="name"> <i class="devicon-css3-plain"></i>CSS</li>
-                <li itemprop="name"> <i class="devicon-javascript-plain"></i>JavaScript</li>
-                <li itemprop="name"> <i class="devicon-sass-original"></i>Sass</li>
-                <li itemprop="name"> <i class="devicon-php-plain"></i>PHP</li>
-                <li itemprop="name"> <i class="devicon-java-plain"></i>Java</li>
-            </ul>
-            <h3 itemprop="keywords">BDD</h3>
-            <ul>
-                <li itemprop="name"> <i class="devicon-mysql-plain"></i>MySQL</li>
-            </ul>
-            <h3 itemprop="keywords">Frameworks</h3>
-            <ul>
-                <li itemprop="name"> <i class="devicon-jquery-plain"></i>Jquery(notion)</li>
-            </ul>
+            <h2 itemprop="keywords">Mes compétences</h2>
+            <section>
+                <h3>Languages</h3>
+                <ul>
+                    <li itemprop="name"> <i class="devicon-html5-plain"></i>HTML</li>
+                    <li itemprop="name"> <i class="devicon-css3-plain"></i>CSS</li>
+                    <li itemprop="name"> <i class="devicon-javascript-plain"></i>JavaScript</li>
+                    <li itemprop="name"> <i class="devicon-sass-original"></i>Sass</li>
+                    <li itemprop="name"> <i class="devicon-php-plain"></i>PHP</li>
+                    <li itemprop="name"> <i class="devicon-java-plain"></i>Java</li>
+                </ul>
+                <h3 itemprop="keywords">BDD</h3>
+                <ul>
+                    <li itemprop="name"> <i class="devicon-mysql-plain"></i>MySQL</li>
+                    <li itemprop="name"> <i class="fas fa-database"></i>Mariadb</li>
+
+                </ul>
+                <h3 itemprop="keywords">Frameworks</h3>
+                <ul>
+                    <li itemprop="name"> <i class="devicon-jquery-plain"></i>Jquery(notion)</li>
+                </ul>
+            </section>
         </section>
         <section itemscope itemtype="https://schema.org/LearningResource" id="tools">
-            <h2 itemprop="keywords">Outils</h2>
-            <ul itemscope itemtype="https://schema.org/Property">
-                <li itemprop="name"> <i class="devicon-visualstudio-plain"></i>VSCode</li>
-                <li itemprop="name"> <i class="devicon-git-plain"></i>Git</li>
-                <li itemprop="name"> <i class="devicon-github-plain"></i>GitHub</li>
-                <li itemprop="name"> <i class="devicon-vim-plain"></i>Vim</li>
-            </ul>
-            <h3 itemprop="keywords">OS</h3>
-            <ul itemscope itemtype="https://schema.org/Property">
-                <li itemprop="name"> <i class="devicon-windows8-original"></i>Windows</li>
-                <li itemprop="name"> <i class="devicon-debian-plain"></i>Debian</li>
-                <li itemprop="name"> <i class="devicon-ubuntu-plain"></i>Ubuntu</li>
-                <li itemprop="name"> <i class="nf-linux-archlinux"></i>ArchLinux</li>
+            <h2 itemprop="keywords">Mes outils</h2>
+            <section>
+                <h3>Logiciels</h3>
+                <ul itemscope itemtype="https://schema.org/Property">
+                    <li itemprop="name"> <i class="devicon-visualstudio-plain"></i>VSCode</li>
+                    <li itemprop="name"> <i class="devicon-git-plain"></i>Git</li>
+                    <li itemprop="name"> <i class="devicon-github-plain"></i>GitHub</li>
+                    <li itemprop="name"> <i class="devicon-vim-plain"></i>Vim</li>
+                    <li itemprop="name"> <i class="devicon-gimp-plain"></i>GIMP</li>
 
-
-            </ul>
+                </ul>
+                <h3 itemprop="keywords">OS</h3>
+                <ul itemscope itemtype="https://schema.org/Property">
+                    <li itemprop="name"> <i class="devicon-windows8-original"></i>Windows</li>
+                    <li itemprop="name"> <i class="devicon-debian-plain"></i>Debian</li>
+                    <li itemprop="name"> <i class="devicon-ubuntu-plain"></i>Ubuntu</li>
+                    <li itemprop="name"> <i class="nf-linux-archlinux"></i>ArchLinux</li>
+                </ul>
+            </section>
         </section>
-
         <section id="diploma" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
             <h2 itemprop="credentialCategory">Diplômes et certifications</h2>
             <dl>
@@ -313,6 +328,10 @@
         <a href="#"><i class="fas fa-chevron-circle-up"></i></a>
     </footer>
     <script src="./src/app.js"></script>
+    <script src="./src/anim_letters.js"></script>
+    <script src="./src/dark_mode.js"></script>
+
+
 </body>
 
 </html>

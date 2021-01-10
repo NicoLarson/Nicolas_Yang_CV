@@ -1,0 +1,157 @@
+:root {
+  --color-black: #1d2021;
+  --color-white: #fafafa;
+  --color-grey: grey;
+  --color-valid: #2ecc71;
+  --color-error: red;
+  --color-send: #38e555;
+
+  --color-gold: #fbf1c7;
+
+  --font-size-h1: 3.2rem;
+  --font-size-h2: 2.4rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.6rem;
+  --font-size-p: 1.2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  padding: 1rem 2rem 1rem 1rem;
+  background-color: var(--color-white);
+  z-index: 2;
+}
+header h1 {
+  border: solid 0.4rem var(--color-black);
+  padding: 0.6rem 0.4rem 0;
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  font-size: 2rem;
+}
+header > i {
+  cursor: pointer;
+  font-size: 2.4rem;
+  transition: all 0.8s;
+}
+header > i:hover {
+  transform: rotate(360deg);
+}
+/* Welcome */
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-white);
+}
+#welcome h2 {
+  display: inline-block;
+  border: solid 0.8rem var(--color-black);
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  font-size: 12rem;
+  font-weight: 500;
+}
+#welcome ul {
+  display: flex;
+  flex-direction: row;
+}
+#welcome ul li {
+  font-size: 12rem;
+  padding: 8rem 0 0;
+  transition: all 0.4s ease-out;
+}
+#welcome ul li:hover,
+#welcome ul li:active {
+  transform: translateY(-4rem);
+}
+
+#welcome a,
+#welcome i {
+  position: absolute;
+  float: left;
+  z-index: 1;
+  bottom: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+#welcome a {
+  bottom: 2rem;
+  transition: all 0.2s;
+}
+#welcome a:hover {
+  transform: translateY(-1rem);
+}
+
+#skills,
+#tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+#skills h2,
+#tools h2 {
+  width: 50vw;
+  font-size: 4rem;
+  text-align: center;
+}
+#skills section,
+#tools section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--color-white);
+}
+#skills section h3,
+#tools section h3 {
+  padding: 2rem 0 0 2rem;
+  font-size: 2.8rem;
+}
+#skills section ul,
+#tools section ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#skills section ul li,
+#tools section ul li {
+  margin: 4rem;
+}
+#skills section ul i,
+#tools section ul i {
+  padding-right: 1rem;
+  font-size: 4.4rem;
+}
+#skills {
+  background-color: #7bed9fff;
+}
+
+#tools {
+  flex-direction: row-reverse;
+  background-color: #eccc68ff;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+img {
+  width: 2rem;
+}

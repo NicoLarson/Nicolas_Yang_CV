@@ -1,0 +1,48 @@
+header.dark-mode,
+#welcome.dark-mode {
+  background-color: var(--color-black);
+}
+header i.dark-mode{
+    color: var(--color-gold);
+}
+
+h1.dark-mode {
+  color: var(--color-gold);
+  border: solid 0.3rem var(--color-gold);
+  text-align: center;
+  font-weight: 800;
+}
+#welcome.dark-mode{
+    color: var(--color-gold);
+
+}
+#welcome h2.dark-mode {
+  border: solid 0.8rem var(--color-gold);
+}
+
+#welcome ul li.dark-mode {
+  color: var(--color-gold);
+}
+a.dark-mode {
+  color: var(--color-gold);
+}
+
+
+
+#skills.dark-mode{
+    background-color: #689d6a;
+    color: #fbf1c7;
+
+}
+#skills section.dark-mode{
+background-color: #282828;
+}
+
+#tools.dark-mode{
+    background-color: #d79921;
+    color: #fbf1c7;
+
+}
+#tools section.dark-mode{
+background-color: #282828;
+}
