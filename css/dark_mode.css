@@ -1,55 +1,47 @@
-header.dark-mode,
-#welcome.dark-mode {
+.dark-mode,
+#skills.dark-mode,
+#skills section.dark-mode,
+#tools.dark-mode,
+#tools section.dark-mode,
+#xp.dark-mode,
+#xp section.dark-mode,
+#diploma.dark-mode,
+#diploma dl.dark-mode,
+#portfolio.dark-mode,
+#portfolio ul li.dark-mode,
+#about.dark-mode,
+#about p.dark-mode,
+a.dark-mode{
+  color: var(--color-beige);
   background-color: var(--color-black);
-
-}
-header > i.dark-mode{
-    color: #fafafa;
+  transition: all 1s;
 }
 
-header nav ul i.dark-mode{
-  color: var(--color-gold);
-  transition: all 1s ;
 
+
+#skills.dark-mode {
+  color: var(--color-beige);
+  background-color: var(--color-black);
+  transition: all 1s;
 }
-header h1.dark-mode a{
-  color: var(--color-gold);
-  border: solid 0.4rem var(--color-gold);
 
-}
-#welcome.dark-mode{
-    color: var(--color-gold);
-
-
-}
+header h1 a.dark-mode,
 #welcome h2.dark-mode {
-  border: solid 0.8rem var(--color-gold);
-
+  border: solid 0.4rem var(--color-beige);
+}
+header > i.dark-mode {
+  color: #fafafa;
+}
+header nav ul li ul.dark-mode {
+  border-top: 0.2rem solid var(--color-beige);
+  border-bottom: 0.2rem solid var(--color-beige);
 }
 
-#welcome ul li.dark-mode {
-  color: var(--color-gold);
+#welcome.dark-mode {
+  color: var(--color-beige);
+  background-color: var(--color-black);
 }
-a.dark-mode {
-  color: var(--color-gold);
-}
+footer section.dark-mode{
+  background-color: #222;
 
-
-
-#skills.dark-mode{
-    background-color: #689d6a;
-    color: #fbf1c7;
-
-}
-#skills section.dark-mode{
-background-color: var(--color-black);
-}
-
-#tools.dark-mode{
-    background-color: #d79921;
-    color: #fbf1c7;
-
-}
-#tools section.dark-mode{
-background-color: var(--color-black);
 }

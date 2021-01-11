@@ -5,8 +5,7 @@
   --color-valid: #2ecc71;
   --color-error: red;
   --color-send: #38e555;
-
-  --color-gold: #fbf1c7;
+  --color-beige: #fbf1c7;
 
   --font-size-h1: 3.2rem;
   --font-size-h2: 2.4rem;
@@ -14,7 +13,7 @@
   --font-size-h4: 1.6rem;
   --font-size-p: 1.2rem;
 
-  /* Dark pallet*/
+  /* Dark mode*/
   --color-orange: #fe8019;
 }
 
@@ -40,15 +39,19 @@ header h1 a {
   padding: 0.8rem 0.4rem 0.3rem;
   font-size: 2rem;
 }
-header i, .fa-times {
+header i {
   cursor: pointer;
   font-size: 2.4rem;
   transition: all 0.8s;
+}
+header .fa-times{
+  font-size: 3.1rem;
 }
 header > i.fa-yin-yang:hover {
   transform: rotate(360deg);
 }
 
+/* MENU */
 nav{
   display: none;
 }
@@ -61,10 +64,11 @@ nav.discover {
   height: calc(100vh - 6rem);
   padding: 0;
   margin: 0;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(255, 255, 255, 0.90);
   z-index: 8;
-
+  
 }
+
 nav.discover ul {
   display: flex;
   flex-direction: column;
@@ -76,6 +80,7 @@ nav.discover ul li a {
   display: block;
   padding: 1rem;
   font-size: 4rem;
+  transition: all 0s;
 }
 nav.discover ul li ul {
   display: flex;
@@ -106,7 +111,7 @@ nav.discover > ul > li:last-child {
   align-items: center;
   height: 100vh;
   background-color: var(--color-white);
-  transition: all 1s ease-in-out;
+  transition: all 1s ;
 }
 #welcome h2 {
   display: inline-block;
@@ -204,6 +209,7 @@ nav.discover > ul > li:last-child {
   padding-right: 1rem;
   font-size: 4.4rem;
 }
+/* SKILLS */
 #skills {
   background-color: #7bed9fff;
 }
@@ -251,28 +257,46 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
+  outline: none;
+  overflow-y: hidden;
   height: calc(100% - 12rem);
+  scrollbar-width: none;          
+  scrollbar-color: #222 #fafafa;  
 }
+
 #portfolio ul li {
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
   padding: 1rem;
-  margin: 1rem 0;
   text-align: center;
   background-color: var(--color-white);
 }
 #portfolio ul li:active {
   transform: scale(1.04);
-  transition: 1s;
+  transition: all .4s;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 #portfolio ul li figure,
 #portfolio ul li figure img {
-  width: 24rem;
+  width: 40vh;
 }
+
+#portfolio ul li img,
+#portfolio ul li {
+  border-radius: 1.2%;
+}
+#portfolio ul li {
+  margin: 0 8rem;
+  transition: all .4s;
+}
+
+#portfolio ul li:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 #portfolio ul li figcaption h4 {
   padding: 1rem;
   font-size: var(--font-size-h4);
@@ -293,19 +317,6 @@ nav.discover > ul > li:last-child {
 #portfolio ul li figcaption h4 i {
   font-size: 2rem;
   padding: 0 0.4rem;
-}
-#portfolio ul li img,
-#portfolio ul li {
-  border-radius: 1.2%;
-}
-#portfolio ul li {
-  margin: 2rem 1rem;
-  transition: all 1s;
-}
-
-#portfolio ul li:hover {
-  transform: scale(1.04);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 #about {
   background-color: #1abc9c;
@@ -352,12 +363,4 @@ footer > ul li li {
 footer p {
   padding: 1rem;
   text-align: center;
-}
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
 }

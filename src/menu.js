@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.querySelector("header .fa-bars");
   const nav = document.querySelector("header nav");
   const menuList = document.querySelectorAll("header nav ul li");
-
+ 
   menuBtn.addEventListener("click", () => {
     nav.classList.toggle("discover");
     menuBtn.classList.toggle("fa-times");
@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     menuList[i].addEventListener("click", () => {
       nav.classList.toggle("discover");
       menuBtn.classList.toggle("fa-times");
-
     });
   }
+
+
+
+  
 });
