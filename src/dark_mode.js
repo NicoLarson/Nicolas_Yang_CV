@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const linksA = document.querySelectorAll("a");
 
   const aboutP =document.querySelector("#about p");
+
+const progressBarContainer = document.querySelector('.progress-container')
+const progressBar = document.querySelector('.progress-bar')
+
+
   headerIconsYingYang.addEventListener("click", () => {
     headerSection.classList.toggle("dark-mode");
     headerTitleOne.classList.toggle("dark-mode");
@@ -34,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     welcomeDownHere.classList.toggle("dark-mode");
     diplomaList.classList.toggle("dark-mode");
     aboutP.classList.toggle("dark-mode");
+    progressBarContainer.classList.toggle("dark-mode");
+    progressBar.classList.toggle("dark-mode");
 
 
     for (let i = 0; i < sections.length; i++) {

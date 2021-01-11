@@ -32,6 +32,12 @@ a.dark-mode {
   transition: all 1s;
 }
 
+.progress-container.dark-mode{
+  background-color: var(--color-ft);
+}
+.progress-bar.dark-mode{
+  background-color: var(--color-orange);
+}
 header h1 a.dark-mode,
 #welcome h2.dark-mode {
   border: solid 0.4rem var(--color-ft-0);
@@ -81,7 +87,10 @@ section.dark-mode h3{
   color: var(--color-ft-0);
   transition: all 1s;
 }
+#portfolio.dark-mode ul{
+  scrollbar-color: var(--color-orange) var(--color-ft);
 
+}
 #portfolio.dark-mode ul li{
   background-color:#3c3836;
 }
@@ -96,6 +105,9 @@ color: var(--color-ft);
   border-top: .2rem solid var(--color-orange);
   border-bottom: .2rem solid var(--color-orange);
 
+}
+#about.dark-mode {
+  background-color: var(--color-blue);
 }
 #about.dark-mode p a,footer section.dark-mode a, footer p{
 color: var(--color-ft-0);
