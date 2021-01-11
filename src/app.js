@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let icone = document.querySelectorAll("i");
+  
+  // Hover Effect
+  /* let icone = document.querySelectorAll("i");
 
   for (let i = 0; i < icone.length - 3; i++) {
     icone[i].addEventListener("mouseover", () => {
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     icone[i].addEventListener("click", () => {
       icone[i].classList.toggle("colored");
     });
-  }
+  } */
 
   // Progress bar
 

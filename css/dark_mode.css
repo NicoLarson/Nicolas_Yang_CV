@@ -1,3 +1,18 @@
+:root {
+  /* Dark mode*/
+  --color-bg: #1d2021;
+  --color-bg-0: #282828;
+  --color-ft: #ebdbb2;
+  --color-ft-0: #fbf1c7;
+  --color-orange: #d65d0e;
+  --color-orange-soft: #fe8019;
+  --color-grey: #a89984;
+  --color-aqua: #689d6a;
+  --color-yellow:#d79921;
+  --color-pulple:#b16286;
+  --color-blue:#458588;
+}
+
 .dark-mode,
 #skills.dark-mode,
 #skills section.dark-mode,
@@ -11,37 +26,87 @@
 #portfolio ul li.dark-mode,
 #about.dark-mode,
 #about p.dark-mode,
-a.dark-mode{
-  color: var(--color-beige);
-  background-color: var(--color-black);
-  transition: all 1s;
-}
-
-
-
-#skills.dark-mode {
-  color: var(--color-beige);
-  background-color: var(--color-black);
+a.dark-mode {
+  color: var(--color-ft);
+  background-color: var(--color-bg-0);
   transition: all 1s;
 }
 
 header h1 a.dark-mode,
 #welcome h2.dark-mode {
-  border: solid 0.4rem var(--color-beige);
+  border: solid 0.4rem var(--color-ft-0);
 }
-header > i.dark-mode {
+header.dark-mode > i:nth-child(2) {
   color: #fafafa;
 }
+header nav ul.dark-mode {
+  opacity: 0.9;
+  color: var(--color-orange);
+}
 header nav ul li ul.dark-mode {
-  border-top: 0.2rem solid var(--color-beige);
-  border-bottom: 0.2rem solid var(--color-beige);
+  border-top: 0.2rem solid #ebdbb2;
+  border-bottom: 0.2rem solid #fbf1c7;
+  color: var(--color-orange);
 }
-
+section.dark-mode h3{
+  color: var(--color-orange);
+}
 #welcome.dark-mode {
-  color: var(--color-beige);
-  background-color: var(--color-black);
+  background-color: var(--color-bg-0);
 }
-footer section.dark-mode{
-  background-color: #222;
 
+#skills.dark-mode {
+  background-color: var(--color-aqua);
+  color: var(--color-ft-0);
+  transition: all 1s;
+}
+
+#tools.dark-mode {
+  background-color: var(--color-yellow);
+  color: var(--color-ft-0);
+  transition: all 1s;
+}
+
+#diploma.dark-mode {
+  background-color: var(--color-pulple);
+  color: var(--color-ft-0);
+  transition: all 1s;
+}
+#diploma.dark-mode dl dd a{
+  color: var(--color-ft-0);
+}
+
+#xp.dark-mode {
+  background-color: var(--color-blue);
+  color: var(--color-ft-0);
+  transition: all 1s;
+}
+
+#portfolio.dark-mode ul li{
+  background-color:#3c3836;
+}
+#portfolio.dark-mode ul li figure img{
+  filter: grayscale(.4);
+}
+#portfolio.dark-mode ul li figure figcaption h4,
+#portfolio.dark-mode ul li figure figcaption i{
+color: var(--color-ft);
+}
+#portfolio.dark-mode{
+  border-top: .2rem solid var(--color-orange);
+  border-bottom: .2rem solid var(--color-orange);
+
+}
+#about.dark-mode p a,footer section.dark-mode a, footer p{
+color: var(--color-ft-0);
+}
+footer section.dark-mode {
+  background-color: #222;
+}
+footer > ul #contact.dark-mode a{
+  color: var(--color-ft-0);
+  border: .2rem solid var(--color-ft);
+}
+footer > ul #contact.dark-mode a:hover{
+  color:var(--color-bg)
 }
