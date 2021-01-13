@@ -29,7 +29,7 @@
 a.dark-mode {
   color: var(--color-ft);
   background-color: var(--color-bg-0);
-  transition: all 1s;
+  
 }
 
 .progress-container.dark-mode{
@@ -46,7 +46,6 @@ header.dark-mode > i:nth-child(2) {
   color: #fafafa;
 }
 header nav ul.dark-mode {
-  opacity: 0.9;
   color: var(--color-orange);
 }
 header nav ul li ul.dark-mode {
@@ -60,23 +59,19 @@ section.dark-mode h3{
 #welcome.dark-mode {
   background-color: var(--color-bg-0);
 }
-
 #skills.dark-mode {
   background-color: var(--color-aqua);
   color: var(--color-ft-0);
-  transition: all 1s;
 }
 
 #tools.dark-mode {
   background-color: var(--color-yellow);
   color: var(--color-ft-0);
-  transition: all 1s;
 }
 
 #diploma.dark-mode {
   background-color: var(--color-pulple);
   color: var(--color-ft-0);
-  transition: all 1s;
 }
 #diploma.dark-mode dl dd a{
   color: var(--color-ft-0);
@@ -85,7 +80,6 @@ section.dark-mode h3{
 #xp.dark-mode {
   background-color: var(--color-blue);
   color: var(--color-ft-0);
-  transition: all 1s;
 }
 #portfolio.dark-mode ul{
   scrollbar-color: var(--color-orange) var(--color-ft);
@@ -121,4 +115,7 @@ footer > ul #contact.dark-mode a{
 }
 footer > ul #contact.dark-mode a:hover{
   color:var(--color-bg)
+}
+footer > ul #contact.dark-mode a:hover{
+border: var(--color-send) 0.2rem solid;
 }

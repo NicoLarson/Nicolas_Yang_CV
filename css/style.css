@@ -13,19 +13,31 @@
   --font-size-h3: 2rem;
   --font-size-h4: 1.6rem;
   --font-size-p: 1.2rem;
+
+  --color-white0: #ffffff;
+  --color-white1: #fafafa;
+  --color-grey0: #b8b8b8;
+  --color-grey1: #333333;
+  --color-black2: #222222;
+  --color-black1: #1c1c1c;
+  --color-black0: #000000;
 }
 .progress-container {
   position: fixed;
-  top: 6.2rem;
+  bottom: 0rem;
   z-index: 1;
   width: 100%;
-  height: .4rem;
+  height: 0.4rem;
   background: var(--color-white);
+  transition: all 0.8s;
+
 }
 .progress-bar {
-  height: .4rem;
+  height: 0.4rem;
   background: #222;
   width: 0%;
+  transition: all 0.8s;
+
 }
 header {
   display: flex;
@@ -37,17 +49,21 @@ header {
   padding: 1rem 2rem 1rem 1rem;
   background-color: var(--color-white);
   z-index: 2;
-  transition: all 1s ease-in-out;
+  transition: all 0.8s;
 }
 header h1 {
   text-align: center;
   font-family: "Spartan", sans-serif;
+  transition: all 0.8s;
+
 }
 header h1 a {
   display: block;
   border: solid 0.4rem var(--color-black);
   padding: 0.8rem 0.4rem 0.3rem;
   font-size: 2rem;
+  transition: all 0.8s;
+
 }
 header i {
   cursor: pointer;
@@ -67,6 +83,7 @@ header > i.fa-yin-yang:active {
 /* MENU */
 nav {
   display: none;
+  transition: all 0.8s;
 }
 nav.discover {
   display: block;
@@ -87,12 +104,15 @@ nav.discover ul {
   justify-content: center;
   align-items: center;
   height: 100%;
+  transition: all 0.8s;
 }
 nav.discover ul li a {
   display: block;
   padding: 1rem;
   font-size: 4rem;
-  transition: all 0s;
+  background: none;
+  transition: all 0.8s;
+
 }
 nav.discover ul li ul {
   display: flex;
@@ -102,6 +122,8 @@ nav.discover ul li ul {
   border-top: 0.2rem solid #222;
   border-bottom: 0.2rem solid #222;
   margin-top: 8rem;
+  background: none;
+
 }
 nav.discover ul li ul li a {
   font-size: 2rem;
@@ -122,7 +144,7 @@ nav.discover > ul > li:last-child {
   align-items: center;
   height: 100vh;
   background-color: var(--color-white);
-  transition: all 1s;
+  transition: all 0.8s;
 }
 #welcome h2 {
   display: inline-block;
@@ -132,6 +154,7 @@ nav.discover > ul > li:last-child {
   font-family: "Spartan", sans-serif;
   font-size: 12rem;
   font-weight: 500;
+  transition: all 0.8s;
 }
 #welcome ul {
   display: flex;
@@ -140,7 +163,7 @@ nav.discover > ul > li:last-child {
 #welcome ul li {
   font-size: 12rem;
   padding: 8rem 0 0;
-  transition: all 0.4s ease-out;
+  transition: all 0.4s ease-in-out;
 }
 #welcome ul li:hover,
 #welcome ul li:active {
@@ -152,13 +175,14 @@ nav.discover > ul > li:last-child {
   position: absolute;
   float: left;
   z-index: 1;
-  bottom: 0;
+  bottom: 1.2rem;
   font-size: 2rem;
   text-align: center;
+  background: none;
 }
 #welcome a {
-  bottom: 2rem;
-  transition: all 0.4s;
+  bottom: 3.2rem;
+  transition: all 0.8s;
 }
 #welcome a:hover {
   transform: translateY(-1rem);
@@ -174,7 +198,7 @@ nav.discover > ul > li:last-child {
   justify-content: space-around;
   align-items: center;
   height: 100vh;
-  transition: all 1s ease-in-out;
+  transition: all 0.8s;
 }
 #skills h2,
 #tools h2,
@@ -196,13 +220,15 @@ nav.discover > ul > li:last-child {
   width: 50vw;
   height: 100vh;
   background-color: var(--color-white);
-  transition: all 1s ease-in-out;
+  transition: all 0.8s;
 }
 #skills section h3,
 #tools section h3,
 #xp section h3 {
   padding: 2rem 0 0 2rem;
   font-size: 2.8rem;
+  transition: all 0.8s;
+
 }
 #skills section ul,
 #tools section ul {
@@ -261,6 +287,8 @@ nav.discover > ul > li:last-child {
 #portfolio {
   height: 100vh;
   background-color: #ecf0f1;
+  transition: all 0.8s;
+
 }
 #portfolio h2 {
   padding: 8rem 0 0 4rem;
@@ -290,7 +318,7 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul li:active {
   transform: scale(1.04);
-  transition: all 0.4s;
+  transition: all 0.8s;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 #portfolio ul li figure,
@@ -304,7 +332,7 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul li {
   margin: 0 8rem;
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 
 #portfolio ul li:hover {
@@ -350,7 +378,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  transition: all 1s ease-in-out;
+  transition: all 0.8s;
   background-color: #222;
   color: #fafafa;
 }
@@ -371,6 +399,8 @@ footer > ul {
 footer > ul li h3 {
   padding-bottom: 2rem;
   font-size: 2.4rem;
+  transition: all 0.8s;
+
 }
 footer > ul #contact a {
   display: block;
@@ -379,7 +409,7 @@ footer > ul #contact a {
   border: 0.2rem solid var(--color-white);
   padding: 1rem;
   text-align: center;
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 
 footer > ul #contact a:hover,
@@ -439,7 +469,7 @@ footer p {
   #xp h2,
   #about h2 {
     width: 100%;
-    padding: 8rem 0 4rem;
+    padding: 4rem 0;
     font-size: 3.2rem;
   }
   #skills section,
