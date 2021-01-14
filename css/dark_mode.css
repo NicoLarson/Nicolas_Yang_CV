@@ -91,9 +91,11 @@ section.dark-mode h3{
 #portfolio.dark-mode ul li figure img{
   filter: grayscale(.4);
 }
-#portfolio.dark-mode ul li figure figcaption h4,
+#portfolio.dark-mode ul li figure figcaption h4{
+color: var(--color-orange-soft);
+}
 #portfolio.dark-mode ul li figure figcaption i{
-color: var(--color-ft);
+  color: var(--color-ft-0);
 }
 #portfolio.dark-mode{
   border-top: .2rem solid var(--color-orange);

@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  scrollbar-width: auto;
+  scrollbar-color: var(--color-white0) var(--color-grey0);
+
 }
 body {
 font-family: monospace; 

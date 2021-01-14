@@ -1,18 +1,15 @@
 :root {
-  /* Light Mode*/
-  --color-black: #1d2021;
-  --color-white: #fafafa;
-  --color-grey: grey;
-  --color-valid: #2ecc71;
-  --color-error: red;
-  --color-send: #38e555;
-  --color-beige: #fbf1c7;
-
   --font-size-h1: 3.2rem;
   --font-size-h2: 2.4rem;
   --font-size-h3: 2rem;
   --font-size-h4: 1.6rem;
   --font-size-p: 1.2rem;
+
+  --mobile-font-size-h1: 3.2rem;
+  --mobile-font-size-h2: 2.4rem;
+  --mobile-font-size-h3: 2rem;
+  --mobile-font-size-h4: 1.6rem;
+  --mobile-font-size-p: 1.2rem;
 
   --color-white0: #ffffff;
   --color-white1: #fafafa;
@@ -22,22 +19,19 @@
   --color-black1: #1c1c1c;
   --color-black0: #000000;
 }
+
 .progress-container {
   position: fixed;
   bottom: 0rem;
   z-index: 1;
   width: 100%;
   height: 0.4rem;
-  background: var(--color-white);
-  transition: all 0.8s;
-
+  background: var(--color-white1);
 }
 .progress-bar {
   height: 0.4rem;
-  background: #222;
+  background: var(--color-black2);
   width: 0%;
-  transition: all 0.8s;
-
 }
 header {
   display: flex;
@@ -47,43 +41,32 @@ header {
   width: 100%;
   position: fixed;
   padding: 1rem 2rem 1rem 1rem;
-  background-color: var(--color-white);
+  background-color: var(--color-white0);
   z-index: 2;
-  transition: all 0.8s;
 }
 header h1 {
   text-align: center;
   font-family: "Spartan", sans-serif;
-  transition: all 0.8s;
 
 }
 header h1 a {
   display: block;
-  border: solid 0.4rem var(--color-black);
+  border: solid 0.4rem var(--color-black1);
   padding: 0.8rem 0.4rem 0.3rem;
   font-size: 2rem;
-  transition: all 0.8s;
 
 }
 header i {
   cursor: pointer;
   font-size: 2.4rem;
-  transition: all 0.8s;
 }
 header .fa-times {
   font-size: 3.1rem;
-}
-header > i.fa-yin-yang:hover {
-  transform: rotate(360deg);
-}
-header > i.fa-yin-yang:active {
-  transform: scale(1.2);
 }
 
 /* MENU */
 nav {
   display: none;
-  transition: all 0.8s;
 }
 nav.discover {
   display: block;
@@ -104,14 +87,12 @@ nav.discover ul {
   justify-content: center;
   align-items: center;
   height: 100%;
-  transition: all 0.8s;
 }
 nav.discover ul li a {
   display: block;
   padding: 1rem;
   font-size: 4rem;
   background: none;
-  transition: all 0.8s;
 
 }
 nav.discover ul li ul {
@@ -143,18 +124,16 @@ nav.discover > ul > li:last-child {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--color-white);
-  transition: all 0.8s;
+  background-color: var(--color-white0);
 }
 #welcome h2 {
   display: inline-block;
-  border: solid 0.8rem var(--color-black);
+  border: solid 0.8rem var(--color-black2);
   padding: 4rem 2rem 2rem;
   text-align: center;
   font-family: "Spartan", sans-serif;
   font-size: 12rem;
   font-weight: 500;
-  transition: all 0.8s;
 }
 #welcome ul {
   display: flex;
@@ -163,13 +142,7 @@ nav.discover > ul > li:last-child {
 #welcome ul li {
   font-size: 12rem;
   padding: 8rem 0 0;
-  transition: all 0.4s ease-in-out;
 }
-#welcome ul li:hover,
-#welcome ul li:active {
-  transform: translateY(-4rem);
-}
-
 #welcome a,
 #welcome i {
   position: absolute;
@@ -179,13 +152,6 @@ nav.discover > ul > li:last-child {
   font-size: 2rem;
   text-align: center;
   background: none;
-}
-#welcome a {
-  bottom: 3.2rem;
-  transition: all 0.8s;
-}
-#welcome a:hover {
-  transform: translateY(-1rem);
 }
 
 #skills,
@@ -198,7 +164,6 @@ nav.discover > ul > li:last-child {
   justify-content: space-around;
   align-items: center;
   height: 100vh;
-  transition: all 0.8s;
 }
 #skills h2,
 #tools h2,
@@ -219,15 +184,15 @@ nav.discover > ul > li:last-child {
   justify-content: center;
   width: 50vw;
   height: 100vh;
-  background-color: var(--color-white);
-  transition: all 0.8s;
+  background-color: var(--color-white0);
 }
+
 #skills section h3,
 #tools section h3,
 #xp section h3 {
   padding: 2rem 0 0 2rem;
   font-size: 2.8rem;
-  transition: all 0.8s;
+   
 
 }
 #skills section ul,
@@ -250,11 +215,14 @@ nav.discover > ul > li:last-child {
 #skills {
   background-color: #7bed9fff;
 }
+
+/* TOOLS */
 #tools {
   flex-direction: row-reverse;
   background-color: #f1c40f;
 }
 
+/* DIPLOMA */
 #diploma {
   background-color: #9b59b6;
 }
@@ -265,11 +233,12 @@ nav.discover > ul > li:last-child {
 #diploma dl dd {
   margin: 1rem 0 4rem 8rem;
 }
+
+/* EXPERIENCE */
 #xp {
   flex-direction: row-reverse;
   background-color: #3498db;
 }
-
 #xp section dl {
   padding: 1.2rem 2rem;
 }
@@ -284,11 +253,13 @@ nav.discover > ul > li:last-child {
   content: "- ";
 }
 
+
+/* PORTFOLIO */
 #portfolio {
   height: 100vh;
   background-color: #ecf0f1;
-  transition: all 0.8s;
-
+  border-top: 0.2rem solid var(--color-black2);
+  border-bottom: 0.2rem solid var(--color-black2);
 }
 #portfolio h2 {
   padding: 8rem 0 0 4rem;
@@ -305,10 +276,6 @@ nav.discover > ul > li:last-child {
   scrollbar-color: #222 #fafafa;
 }
 
-#portfolio {
-  border-top: 0.2rem solid var(--color-black);
-  border-bottom: 0.2rem solid var(--color-black);
-}
 #portfolio ul li {
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
@@ -318,7 +285,7 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul li:active {
   transform: scale(1.04);
-  transition: all 0.8s;
+   
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 #portfolio ul li figure,
@@ -332,14 +299,8 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul li {
   margin: 0 8rem;
-  transition: all 0.8s;
+   
 }
-
-#portfolio ul li:hover {
-  transform: scale(1.04);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 #portfolio ul li figcaption h4 {
   padding: 1rem;
   font-size: var(--font-size-h4);
@@ -361,7 +322,7 @@ nav.discover > ul > li:last-child {
   font-size: 2rem;
   padding: 0 0.4rem;
 }
-
+/* ABOUT */
 #about {
   background-color: #1abc9c;
 }
@@ -373,12 +334,13 @@ nav.discover > ul > li:last-child {
 #about > p > a {
   max-width: 100%;
 }
+/* FOOTER */
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  transition: all 0.8s;
+   
   background-color: #222;
   color: #fafafa;
 }
@@ -399,7 +361,7 @@ footer > ul {
 footer > ul li h3 {
   padding-bottom: 2rem;
   font-size: 2.4rem;
-  transition: all 0.8s;
+   
 
 }
 footer > ul #contact a {
@@ -409,17 +371,7 @@ footer > ul #contact a {
   border: 0.2rem solid var(--color-white);
   padding: 1rem;
   text-align: center;
-  transition: all 0.8s;
-}
-
-footer > ul #contact a:hover,
-footer > ul #contact a:active {
-  background-color: var(--color-send);
-  color: var(--color-black);
-  border: var(--color-send) 0.2rem solid;
-  box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
-    0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
-  cursor: pointer;
+   
 }
 
 footer > ul li li {
