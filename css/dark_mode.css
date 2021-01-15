@@ -1,18 +1,3 @@
-:root {
-  /* Dark mode*/
-  --color-bg: #1d2021;
-  --color-bg-0: #282828;
-  --color-ft: #ebdbb2;
-  --color-ft-0: #fbf1c7;
-  --color-orange: #d65d0e;
-  --color-orange-soft: #fe8019;
-  --color-grey: #a89984;
-  --color-aqua: #689d6a;
-  --color-yellow:#d79921;
-  --color-pulple:#b16286;
-  --color-blue:#458588;
-}
-
 .dark-mode,
 #skills.dark-mode,
 #skills section.dark-mode,
@@ -29,31 +14,38 @@
 a.dark-mode {
   color: var(--color-ft);
   background-color: var(--color-bg-0);
-  
+}
+html.dark-mode {
+  scrollbar-color: var(--color-orange) var(--color-ft);
 }
 
-.progress-container.dark-mode{
+.progress-container.dark-mode {
   background-color: var(--color-ft);
 }
-.progress-bar.dark-mode{
+.progress-bar.dark-mode {
   background-color: var(--color-orange);
 }
 header h1 a.dark-mode,
 #welcome h2.dark-mode {
   border: solid 0.4rem var(--color-ft-0);
 }
+header.dark-mode,
+header.dark-mode h1 a {
+  background: none;
+}
 header.dark-mode > i:nth-child(2) {
-  color: #fafafa;
+  color: var(--color-white0);
 }
 header nav ul.dark-mode {
   color: var(--color-orange);
+  background-color: var(--color-nav-dark-transparent);
 }
 header nav ul li ul.dark-mode {
   border-top: 0.2rem solid #ebdbb2;
   border-bottom: 0.2rem solid #fbf1c7;
   color: var(--color-orange);
 }
-section.dark-mode h3{
+section.dark-mode h3 {
   color: var(--color-orange);
 }
 #welcome.dark-mode {
@@ -73,7 +65,7 @@ section.dark-mode h3{
   background-color: var(--color-pulple);
   color: var(--color-ft-0);
 }
-#diploma.dark-mode dl dd a{
+#diploma.dark-mode dl dd a {
   color: var(--color-ft-0);
 }
 
@@ -81,43 +73,43 @@ section.dark-mode h3{
   background-color: var(--color-blue);
   color: var(--color-ft-0);
 }
-#portfolio.dark-mode ul{
+#portfolio.dark-mode ul {
   scrollbar-color: var(--color-orange) var(--color-ft);
-
 }
-#portfolio.dark-mode ul li{
-  background-color:#3c3836;
+#portfolio.dark-mode ul li {
+  background-color: #3c3836;
 }
-#portfolio.dark-mode ul li figure img{
-  filter: grayscale(.4);
+#portfolio.dark-mode ul li figure img {
+  filter: grayscale(0.8);
 }
-#portfolio.dark-mode ul li figure figcaption h4{
-color: var(--color-orange-soft);
+#portfolio.dark-mode ul li figure figcaption h4 {
+  color: var(--color-orange-soft);
 }
-#portfolio.dark-mode ul li figure figcaption i{
+#portfolio.dark-mode ul li figure figcaption i {
   color: var(--color-ft-0);
 }
-#portfolio.dark-mode{
-  border-top: .2rem solid var(--color-orange);
-  border-bottom: .2rem solid var(--color-orange);
-
+#portfolio.dark-mode {
+  border-top: 0.2rem solid var(--color-orange);
+  border-bottom: 0.2rem solid var(--color-orange);
 }
 #about.dark-mode {
   background-color: var(--color-blue);
 }
-#about.dark-mode p a,footer section.dark-mode a, footer p{
-color: var(--color-ft-0);
+#about.dark-mode p a,
+footer section.dark-mode a,
+footer p {
+  color: var(--color-ft-0);
 }
 footer section.dark-mode {
   background-color: #222;
 }
-footer > ul #contact.dark-mode a{
+footer > ul #contact.dark-mode a {
   color: var(--color-ft-0);
-  border: .2rem solid var(--color-ft);
+  border: 0.2rem solid var(--color-ft);
 }
-footer > ul #contact.dark-mode a:hover{
-  color:var(--color-bg)
+footer > ul #contact.dark-mode a:hover {
+  color: var(--color-bg);
 }
-footer > ul #contact.dark-mode a:hover{
-border: var(--color-send) 0.2rem solid;
+footer > ul #contact.dark-mode a:hover {
+  border: var(--color-send) 0.2rem solid;
 }

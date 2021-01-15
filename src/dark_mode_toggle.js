@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  
+  const html = document.querySelector("html");
+  
   const headerSection = document.querySelector("header");
   const headerTitleOne = document.querySelector("header h1 a");
   const headerIconsYingYang = document.querySelector("header i");
@@ -24,6 +27,7 @@ const progressBar = document.querySelector('.progress-bar')
 
 
   headerIconsYingYang.addEventListener("click", () => {
+    html.classList.toggle("dark-mode");
     headerSection.classList.toggle("dark-mode");
     headerTitleOne.classList.toggle("dark-mode");
     menu.classList.toggle("dark-mode");

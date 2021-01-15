@@ -1,16 +1,4 @@
 :root {
-  --font-size-h1: 3.2rem;
-  --font-size-h2: 2.4rem;
-  --font-size-h3: 2rem;
-  --font-size-h4: 1.6rem;
-  --font-size-p: 1.2rem;
-
-  --mobile-font-size-h1: 3.2rem;
-  --mobile-font-size-h2: 2.4rem;
-  --mobile-font-size-h3: 2rem;
-  --mobile-font-size-h4: 1.6rem;
-  --mobile-font-size-p: 1.2rem;
-
   --color-white0: #ffffff;
   --color-white1: #fafafa;
   --color-grey0: #b8b8b8;
@@ -18,6 +6,22 @@
   --color-black2: #222222;
   --color-black1: #1c1c1c;
   --color-black0: #000000;
+  --color-send: #4cd137;
+
+    /* Dark mode*/
+    --color-bg: #1d2021;
+    --color-bg-0: #282828;
+    --color-ft: #ebdbb2;
+    --color-ft-0: #fbf1c7;
+    --color-orange: #d65d0e;
+    --color-orange-soft: #fe8019;
+    --color-grey: #a89984;
+    --color-aqua: #689d6a;
+    --color-yellow:#d79921;
+    --color-pulple:#b16286;
+    --color-blue:#458588;
+    --color-nav-dark-transparent: #282828e3;
+
 }
 
 .progress-container {
@@ -41,12 +45,12 @@ header {
   width: 100%;
   position: fixed;
   padding: 1rem 2rem 1rem 1rem;
-  background-color: var(--color-white0);
-  z-index: 2;
+  z-index: 3;
 }
 header h1 {
   text-align: center;
   font-family: "Spartan", sans-serif;
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 
 }
 header h1 a {
@@ -54,11 +58,21 @@ header h1 a {
   border: solid 0.4rem var(--color-black1);
   padding: 0.8rem 0.4rem 0.3rem;
   font-size: 2rem;
-
 }
 header i {
   cursor: pointer;
   font-size: 2.4rem;
+  z-index: 3;
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+}
+header i:nth-child(3) {
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+header .fa-yin-yang {
+  position: relative;
+  right: 0.8rem;
+  z-index: 2;
 }
 header .fa-times {
   font-size: 3.1rem;
@@ -70,15 +84,15 @@ nav {
 }
 nav.discover {
   display: block;
-  position: absolute;
-  top: 6rem;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100vw;
-  height: calc(100vh - 6rem);
+  height: 100vh;
   padding: 0;
   margin: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 8;
+  z-index: 2;
 }
 
 nav.discover ul {
@@ -93,7 +107,6 @@ nav.discover ul li a {
   padding: 1rem;
   font-size: 4rem;
   background: none;
-
 }
 nav.discover ul li ul {
   display: flex;
@@ -104,7 +117,6 @@ nav.discover ul li ul {
   border-bottom: 0.2rem solid #222;
   margin-top: 8rem;
   background: none;
-
 }
 nav.discover ul li ul li a {
   font-size: 2rem;
@@ -149,7 +161,7 @@ nav.discover > ul > li:last-child {
   float: left;
   z-index: 1;
   bottom: 1.2rem;
-  font-size: 2rem;
+  font-size: 2.8rem;
   text-align: center;
   background: none;
 }
@@ -192,8 +204,6 @@ nav.discover > ul > li:last-child {
 #xp section h3 {
   padding: 2rem 0 0 2rem;
   font-size: 2.8rem;
-   
-
 }
 #skills section ul,
 #tools section ul {
@@ -253,7 +263,6 @@ nav.discover > ul > li:last-child {
   content: "- ";
 }
 
-
 /* PORTFOLIO */
 #portfolio {
   height: 100vh;
@@ -285,7 +294,7 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul li:active {
   transform: scale(1.04);
-   
+
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 #portfolio ul li figure,
@@ -299,7 +308,6 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul li {
   margin: 0 8rem;
-   
 }
 #portfolio ul li figcaption h4 {
   padding: 1rem;
@@ -340,7 +348,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-   
+
   background-color: #222;
   color: #fafafa;
 }
@@ -350,7 +358,7 @@ footer h2 {
   font-weight: 200;
 }
 footer a {
-  color: #fafafa;
+  color: var(--color-white1);
 }
 
 footer > ul {
@@ -361,17 +369,14 @@ footer > ul {
 footer > ul li h3 {
   padding-bottom: 2rem;
   font-size: 2.4rem;
-   
-
 }
 footer > ul #contact a {
   display: block;
   max-width: 22rem;
-  color: var(--color-white);
-  border: 0.2rem solid var(--color-white);
+  color: var(--color-white0);
+  border: 0.2rem solid var(--color-white0);
   padding: 1rem;
   text-align: center;
-   
 }
 
 footer > ul li li {
