@@ -33,9 +33,15 @@ header.dark-mode,
 header.dark-mode h1 a {
   background: none;
 }
-header.dark-mode > i:nth-child(2) {
-  color: var(--color-white0);
+header.dark-mode .fa-lightbulb{
+  color: var(--color-black2);
+  background-color: var(--color-yellow);
+  border-radius: 10rem;
+  padding: .1rem .1rem 0rem;
+  box-shadow: 0 0 12rem var(--color-yellow), 0 0 0.25rem var(--color-yellow),
+  0 0 8rem var(--color-yellow), 0 0 8rem var(--color-yellow);
 }
+
 header nav ul.dark-mode {
   color: var(--color-orange);
   background-color: var(--color-nav-dark-transparent);

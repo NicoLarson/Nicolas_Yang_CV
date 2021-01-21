@@ -69,9 +69,13 @@ header i {
 header i:nth-child(3) {
   text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-header .fa-yin-yang {
+header .fa-adjust{
   position: relative;
   right: 0.8rem;
+  z-index: 2;
+}
+header .fa-lightbulb {
+  transform: rotate(180deg);
   z-index: 2;
 }
 header .fa-times {
@@ -155,10 +159,8 @@ nav.discover > ul > li:last-child {
   font-size: 12rem;
   padding: 8rem 0 0;
 }
-#welcome a,
-#welcome i {
+#welcome a{
   position: absolute;
-  float: left;
   z-index: 1;
   bottom: 1.2rem;
   font-size: 2.8rem;
