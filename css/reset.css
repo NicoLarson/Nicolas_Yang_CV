@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  scrollbar-width: auto;
+  scrollbar-width: thin;
   scrollbar-color: var(--color-black2) var(--color-white0);
 
 }
@@ -37,9 +37,11 @@ input {
   font-weight: 100%;
   list-style: none;
 }
+
 abbr {
   text-decoration: none;
 }
+
 a {
   color: #222;
   text-decoration: none;

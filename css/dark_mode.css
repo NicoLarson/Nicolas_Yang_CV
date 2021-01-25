@@ -106,6 +106,12 @@ footer section.dark-mode a,
 footer p {
   color: var(--color-ft-0);
 }
+
+footer.dark-mode{
+  background-color: #222;
+
+}
+
 footer section.dark-mode {
   background-color: #222;
 }

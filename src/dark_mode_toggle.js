@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const progressBarContainer = document.querySelector('.progress-container')
 const progressBar = document.querySelector('.progress-bar')
 
+const footer = document.querySelector('footer')
 
   headerIconsYingYang.addEventListener("click", () => {
     html.classList.toggle("dark-mode");
@@ -55,4 +56,6 @@ const progressBar = document.querySelector('.progress-bar')
     }
     headerIconsYingYang.classList.toggle("dark-mode");
   });
+  footer.classList.toggle("dark-mode");
+
 });
