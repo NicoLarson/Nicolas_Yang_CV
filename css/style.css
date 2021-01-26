@@ -8,25 +8,24 @@
   --color-black0: #000000;
   --color-send: #4cd137;
 
-    /* Dark mode*/
-    --color-bg: #1d2021;
-    --color-bg-0: #282828;
-    --color-ft: #ebdbb2;
-    --color-ft-0: #fbf1c7;
-    --color-orange: #d65d0e;
-    --color-orange-soft: #fe8019;
-    --color-grey: #a89984;
-    --color-aqua: #689d6a;
-    --color-yellow:#d79921;
-    --color-pulple:#b16286;
-    --color-blue:#458588;
-    --color-nav-dark-transparent: #282828e3;
-
+  /* Dark mode*/
+  --color-dark-bg: #1d2021;
+  --color-dark-bg0: #282828;
+  --color-dark-ft: #ebdbb2;
+  --color-dark-ft0: #fbf1c7;
+  --color-dark-orange: #d65d0e;
+  --color-dark-orange-soft: #fe8019;
+  --color-dark-grey: #a89984;
+  --color-dark-aqua: #689d6a;
+  --color-dark-yellow: #d79921;
+  --color-dark-pulple: #b16286;
+  --color-dark-blue: #458588;
+  --color-dark-nav-dark-transparent: #282828e3;
 }
 
 .progress-container {
   position: fixed;
-  bottom: 0rem;
+  bottom: 0;
   z-index: 1;
   width: 100%;
   height: 0.4rem;
@@ -42,21 +41,23 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem 1rem 1rem;
   width: 100%;
   position: fixed;
-  padding: 1rem 2rem 1rem 1rem;
+  background-color: var(--color-white0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   z-index: 3;
 }
 header h1 {
   text-align: center;
-  font-family: "Spartan", sans-serif;
+  font-family: "Cormorant Unicase", serif;
+  font-weight: bolder;
   text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-
 }
 header h1 a {
   display: block;
-  border: solid 0.4rem var(--color-black1);
-  padding: 0.8rem 0.4rem 0.3rem;
+  border: solid 0.2rem var(--color-black1);
+  padding: 0.4rem 0.3rem;
   font-size: 2rem;
 }
 header i {
@@ -64,14 +65,13 @@ header i {
   font-size: 2.4rem;
   z-index: 3;
   text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-
 }
 header i:nth-child(3) {
   text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-header .fa-adjust{
+header .fa-adjust {
   position: relative;
-  right: 0.8rem;
+  right: 0.4rem;
   z-index: 2;
 }
 header .fa-lightbulb {
@@ -132,6 +132,7 @@ nav.discover > ul > li:last-child {
   width: 100%;
   text-align: center;
   padding-bottom: 1rem;
+  font-size: 1.4rem;
 }
 /* Welcome */
 #welcome {
@@ -145,21 +146,22 @@ nav.discover > ul > li:last-child {
 #welcome h2 {
   display: inline-block;
   border: solid 0.8rem var(--color-black2);
-  padding: 4rem 2rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
-  font-family: "Spartan", sans-serif;
+  font-family: "Cormorant Unicase", serif;
   font-size: 12rem;
-  font-weight: 500;
+  font-weight: normal;
 }
 #welcome ul {
   display: flex;
   flex-direction: row;
 }
 #welcome ul li {
+  font-family: Spartan;
   font-size: 12rem;
   padding: 8rem 0 0;
 }
-#welcome a{
+#welcome a {
   position: absolute;
   z-index: 1;
   bottom: 1.2rem;
@@ -256,10 +258,10 @@ nav.discover > ul > li:last-child {
 #xp section dl {
   padding: 1.2rem 2rem;
 }
-#xp section dl h4{
+#xp section dl h4 {
   font-size: 2.2rem;
 }
-#xp section dl dt{
+#xp section dl dt {
   font-size: 2rem;
 }
 #xp section dl dd {
@@ -306,7 +308,6 @@ nav.discover > ul > li:last-child {
 }
 #portfolio ul li:active {
   transform: scale(1.04);
-
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 #portfolio ul li figure,
@@ -395,9 +396,8 @@ footer > ul #contact a {
 footer > ul li li {
   padding: 1rem 0;
   font-size: 2rem;
-
 }
-footer > ul li a{
+footer > ul li a {
   font-size: 2rem;
 }
 footer p {

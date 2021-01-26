@@ -1,127 +1,95 @@
-.dark-mode,
-#skills.dark-mode,
-#skills section.dark-mode,
-#tools.dark-mode,
-#tools section.dark-mode,
-#xp.dark-mode,
-#xp section.dark-mode,
-#diploma.dark-mode,
-#diploma dl.dark-mode,
-#portfolio.dark-mode,
-#portfolio ul li.dark-mode,
-#about.dark-mode,
-#about p.dark-mode,
-a.dark-mode {
-  color: var(--color-ft);
-  background-color: var(--color-bg-0);
-}
 html.dark-mode {
-  scrollbar-color: var(--color-orange) var(--color-ft);
-}
-
-.progress-container.dark-mode {
-  background-color: var(--color-ft);
-}
-.progress-bar.dark-mode {
-  background-color: var(--color-orange);
-}
-header h1 a.dark-mode,
-#welcome h2.dark-mode {
-  border: solid 0.4rem var(--color-ft-0);
+  scrollbar-color: var(--color-dark-orange) var(--color-dark-ft0);
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-ft0);
 }
 header.dark-mode,
+header.dark-mode h1,
+header.dark-mode a,
+header.dark-mode nav,
+main.dark-mode,
+main.dark-mode section#welcome,
+main.dark-mode section#skills section,
+main.dark-mode section#tools section,
+main.dark-mode section#diploma dl,
+main.dark-mode section#diploma dl a,
+main.dark-mode section#xp section,
+main.dark-mode section#about p {
+  background-color: var(--color-dark-bg0);
+  color: var(--color-dark-ft0);
+}
+
 header.dark-mode h1 a {
-  background: none;
-}
-header.dark-mode .fa-lightbulb{
-  color: var(--color-black2);
-  background-color: var(--color-yellow);
-  border-radius: 10rem;
-  padding: .1rem .1rem 0rem;
-  box-shadow: 0 0 12rem var(--color-yellow), 0 0 0.25rem var(--color-yellow),
-  0 0 8rem var(--color-yellow), 0 0 8rem var(--color-yellow);
+  border: solid 0.2rem var(--color-dark-ft0);
 }
 
-header nav ul.dark-mode {
-  color: var(--color-orange);
-  background-color: var(--color-nav-dark-transparent);
-}
-header nav ul li ul.dark-mode {
-  border-top: 0.2rem solid #ebdbb2;
-  border-bottom: 0.2rem solid #fbf1c7;
-  color: var(--color-orange);
-}
-section.dark-mode h3 {
-  color: var(--color-orange);
-}
-#welcome.dark-mode {
-  background-color: var(--color-bg-0);
-}
-#skills.dark-mode {
-  background-color: var(--color-aqua);
-  color: var(--color-ft-0);
+header.dark-mode nav ul li ul {
+  border-top: 0.2rem solid var(--color-dark-ft0);
+  border-bottom: 0.2rem solid var(--color-dark-ft0);
 }
 
-#tools.dark-mode {
-  background-color: var(--color-yellow);
-  color: var(--color-ft-0);
+main.dark-mode .progress-container {
+  background-color: var(--color-dark-ft);
+}
+main.dark-mode .progress-bar {
+  background-color: var(--color-dark-orange);
 }
 
-#diploma.dark-mode {
-  background-color: var(--color-pulple);
-  color: var(--color-ft-0);
+main.dark-mode #welcome h2 {
+  border: solid 0.8rem var(--color-dark-ft0);
 }
-#diploma.dark-mode dl dd a {
-  color: var(--color-ft-0);
+main.dark-mode .fa-chevron-down {
+  color: var(--color-dark-ft0);
 }
 
-#xp.dark-mode {
-  background-color: var(--color-blue);
-  color: var(--color-ft-0);
+main.dark-mode section h3 {
+  color: var(--color-dark-orange);
 }
-#portfolio.dark-mode ul {
-  scrollbar-color: var(--color-orange) var(--color-ft);
+
+main.dark-mode #skills {
+  background-color: var(--color-dark-aqua);
 }
-#portfolio.dark-mode ul li {
-  background-color: #3c3836;
+
+main.dark-mode #tools {
+  background-color: var(--color-dark-yellow);
 }
-#portfolio.dark-mode ul li figure img {
+
+main.dark-mode #xp {
+  background-color: var(--color-dark-blue);
+}
+main.dark-mode #portfolio  {
+  background-color: var(--color-dark-bg);
+}
+
+main.dark-mode #portfolio ul {
+  scrollbar-color: var(--color-dark-orange) var(--color-dark-ft);
+}
+
+
+main.dark-mode #portfolio ul li {
+  background-color: var(--color-dark-bg0);
+}
+
+main.dark-mode #portfolio ul li figure img {
   filter: grayscale(0.8);
 }
-#portfolio.dark-mode ul li figure figcaption h4 {
-  color: var(--color-orange-soft);
+main.dark-mode #portfolio ul li figure figcaption h4 {
+  color: var(--color-dark-orange-soft);
 }
-#portfolio.dark-mode ul li figure figcaption i {
-  color: var(--color-ft-0);
+main.dark-mode #portfolio ul li figure figcaption i {
+  color: var(--color-dark-ft0);
 }
-#portfolio.dark-mode {
-  border-top: 0.2rem solid var(--color-orange);
-  border-bottom: 0.2rem solid var(--color-orange);
-}
-#about.dark-mode {
-  background-color: var(--color-blue);
-}
-#about.dark-mode p a,
-footer section.dark-mode a,
-footer p {
-  color: var(--color-ft-0);
+main.dark-mode #portfolio {
+  border-top: 0.2rem solid var(--color-dark-orange);
+  border-bottom: 0.2rem solid var(--color-dark-orange);
 }
 
-footer.dark-mode{
-  background-color: #222;
-
+main.dark-mode section#about {
+  background-color: var(--color-dark-blue);
 }
 
-footer section.dark-mode {
-  background-color: #222;
-}
-footer > ul #contact.dark-mode a {
-  color: var(--color-ft-0);
-  border: 0.2rem solid var(--color-ft);
-}
-footer > ul #contact.dark-mode a:hover {
-  color: var(--color-bg);
-}
-footer > ul #contact.dark-mode a:hover {
-  border: var(--color-send) 0.2rem solid;
+footer.dark-mode h2,
+footer.dark-mode h3{
+color:var(--color-dark-orange-soft);
+
 }
