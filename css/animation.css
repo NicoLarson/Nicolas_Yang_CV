@@ -1,42 +1,34 @@
 * {
-  transition: all 0.8s;
+  transition: all 0.6s;
 }
 
 header.dark-mode > i.fa-times:hover,
 header.dark-mode > i.fa-bars:hover {
-  color: var(--color-orange);
+  color: var(--color-dark-orange);
+  transition: all 0.8s;
 }
 
 header nav ul li a:hover {
   transform: scale(1.12);
 }
 
-header nav ul.dark-mode li a:hover {
-  color: var(--color-orange-soft);
+header.dark-mode nav ul li a:hover {
+  color: var(--color-dark-orange-soft);
   text-decoration: none;
 }
-header nav ul.dark-mode li a::before,
-header nav ul.dark-mode li a::after {
+header.dark-mode nav ul li a::before,
+header.dark-mode nav ul li a::after {
   content: " - ";
   opacity: 0;
   transition: all 1s;
 }
-header nav ul.dark-mode li a:hover::before,
-header nav ul.dark-mode li a:hover::after {
+header.dark-mode nav ul li a:hover::before,
+header.dark-mode nav ul li a:hover::after {
   opacity: 1;
 }
 
 nav.discover {
-  animation: discoverNav 0.6s linear;
-}
-
-@keyframes discoverNav {
-  0% {
-    transform: translateX(200rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  animation: discoverNav 0.4s linear;
 }
 
 #welcome ul li:hover,
@@ -51,7 +43,25 @@ nav.discover {
   transform: scale(1.04);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-#portfolio.dark-mode ul li:hover figure img {
+
+#portfolio ul li.active {
+  animation: fade 0.8s;
+}
+
+#portfolio > i.fa-chevron-right:hover,
+#portfolio > i.fa-chevron-left:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+#portfolio > i.fa-chevron-right:active,
+#portfolio > i.fa-chevron-left:active {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+main.dark-mode #portfolio ul li,
+main.dark-mode #portfolio ul li figure img {
+  transition: all 0.6s;
+}
+main.dark-mode #portfolio ul li:hover figure img {
   filter: grayscale(0);
 }
 
@@ -78,5 +88,23 @@ footer > ul #contact a:active {
   }
   60% {
     transform: translateY(-1.2rem);
+  }
+}
+
+@keyframes discoverNav {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

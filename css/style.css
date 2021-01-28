@@ -18,7 +18,7 @@
   --color-dark-grey: #a89984;
   --color-dark-aqua: #689d6a;
   --color-dark-yellow: #d79921;
-  --color-dark-pulple: #b16286;
+  --color-dark-purple: #b16286;
   --color-dark-blue: #458588;
   --color-dark-nav-dark-transparent: #282828e3;
 }
@@ -42,7 +42,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem 1rem 1rem;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   background-color: var(--color-white0);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -51,14 +51,14 @@ header {
 header h1 {
   text-align: center;
   font-family: "Cormorant Unicase", serif;
-  font-weight: bolder;
   text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 header h1 a {
   display: block;
   border: solid 0.2rem var(--color-black1);
   padding: 0.4rem 0.3rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: bolder;
 }
 header i {
   cursor: pointer;
@@ -141,6 +141,7 @@ nav.discover > ul > li:last-child {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   background-color: var(--color-white0);
 }
 #welcome h2 {
@@ -198,6 +199,7 @@ nav.discover > ul > li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 4rem;
   width: 50vw;
   height: 100vh;
   background-color: var(--color-white0);
@@ -228,18 +230,18 @@ nav.discover > ul > li:last-child {
 }
 /* SKILLS */
 #skills {
-  background-color: #7bed9fff;
+  background-color: #f2f2f2;
 }
 
 /* TOOLS */
 #tools {
   flex-direction: row-reverse;
-  background-color: #f1c40f;
+  background-color: #e5e6e5;
 }
 
 /* DIPLOMA */
 #diploma {
-  background-color: #9b59b6;
+  background-color: #d8d9d8;
 }
 #diploma dl dt {
   font-size: 2.2rem;
@@ -253,7 +255,7 @@ nav.discover > ul > li:last-child {
 /* EXPERIENCE */
 #xp {
   flex-direction: row-reverse;
-  background-color: #3498db;
+  background-color: #cbcdcb;
 }
 #xp section dl {
   padding: 1.2rem 2rem;
@@ -284,21 +286,18 @@ nav.discover > ul > li:last-child {
   border-bottom: 0.2rem solid var(--color-black2);
 }
 #portfolio h2 {
-  padding: 8rem 0 0 4rem;
+  padding: 8rem 0 0 8rem;
   font-size: 4rem;
 }
 #portfolio ul {
   display: flex;
   align-items: center;
-  flex-wrap: no-wrap;
-  outline: none;
-  overflow-y: hidden;
+  flex-wrap: wrap;
   height: calc(100% - 12rem);
-  scrollbar-width: auto;
-  scrollbar-color: #222 #fafafa;
 }
 
 #portfolio ul li {
+  display: none;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
   padding: 1rem;
@@ -306,13 +305,20 @@ nav.discover > ul > li:last-child {
   font-size: 1.6rem;
   background-color: #f6f6f6;
 }
+
+#portfolio ul li.active {
+  display: block;
+  margin: 0 auto;
+}
+
 #portfolio ul li:active {
   transform: scale(1.04);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 #portfolio ul li figure,
 #portfolio ul li figure img {
-  width: 40vh;
+  width: 30vw;
 }
 
 #portfolio ul li img,
@@ -343,15 +349,37 @@ nav.discover > ul > li:last-child {
   font-size: 2rem;
   padding: 0 0.4rem;
 }
+
+#portfolio > i.fa-chevron-right,
+#portfolio > i.fa-chevron-left {
+  position: relative;
+  bottom: 55vh;
+  font-size: 8rem;
+  padding: 2rem;
+  border-radius: 10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgba(255, 255, 255, 0.384);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#portfolio > i.fa-chevron-right {
+  float: right;
+  right: 4rem;
+}
+#portfolio > i.fa-chevron-left {
+  left: 4rem;
+}
+
 /* ABOUT */
 #about {
-  background-color: #1abc9c;
+  background-color: #abadab;
 }
 #about p {
-  padding: 4rem;
+  padding: 4rem 0 0 8rem;
   font-size: 2rem;
   text-align: justify;
-  line-height: 2.4rem;
+  line-height: 3.2rem;
 }
 #about > p > a {
   max-width: 100%;
@@ -406,7 +434,7 @@ footer p {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 700px), (max-height: 700px) {
+@media screen and (max-width: 770px), (max-height: 700px) {
   section a {
     font-size: 2.2rem;
   }
@@ -485,14 +513,57 @@ footer p {
   #xp li {
     font-size: 2rem;
   }
-  #portfolio ul li {
-    margin: 0 2rem;
+  /* PORTFOLIO */
+  #portfolio {
+    height: 100vh;
+    background-color: #ecf0f1;
+    border-top: 0.2rem solid var(--color-black2);
+    border-bottom: 0.2rem solid var(--color-black2);
   }
+  #portfolio h2 {
+    padding: 8rem 0;
+    text-align: center;
+  }
+  #portfolio ul {
+    display: block;
+    height: 50vh;
+  }
+  #portfolio ul li {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #portfolio ul li figure,
+  #portfolio ul li figure img {
+    width: 100%;
+  }
+
+  #portfolio ul li img,
+  #portfolio ul li {
+    border-radius: 1.2%;
+  }
+  #portfolio > i.fa-chevron-right,
+  #portfolio > i.fa-chevron-left {
+    position: relative;
+    bottom: 32vh;
+    font-size: 4rem;
+    padding: 1.2rem;
+    border-radius: 8rem;
+  }
+
+  #portfolio > i.fa-chevron-right {
+    float: right;
+    right: 2rem;
+  }
+  #portfolio > i.fa-chevron-left {
+    left: 2rem;
+  }
+
   #about p {
     padding: 4rem 2rem;
     text-align: left;
     font-size: 2rem;
   }
+
   footer {
     height: 100%;
   }

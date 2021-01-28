@@ -21,11 +21,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Spartan:wght@400;500&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Spartan:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/dark_mode.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -92,7 +95,7 @@
 
             </section>
         </section>
-        <section itemscope itemtype="https://schema.org/LearningResource" id="tools">
+        <section id="tools" itemscope itemtype="https://schema.org/LearningResource">
             <h2 itemprop="keywords">Mes outils</h2>
             <section>
                 <h3 itemprop="keywords">BDD</h3>
@@ -145,7 +148,7 @@
                         Thaïlande</em></dd>
             </dl>
         </section>
-        <section itemscope itemtype="https://schema.org/EducationalOccupationalCredential" id="xp">
+        <section id="xp" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
             <h2>Expériences professionnelles</h2>
             <section>
                 <h3 itemprop="name">Stage</h3>
@@ -190,7 +193,7 @@
         <section id="portfolio" itemscope itemtype="https://schema.org/CreativeWork">
             <h2 itemprop="about">Portfolio</h2>
             <ul>
-                <li>
+                <li class="active">
                     <a itemprop="url" href="https://github.com/NicoLarson/PPE_vacance_montagne/" target="_blank">
                         <figure id="weatherJS" itemscope>
                             <img itemprop="image" src="./assets/img/portfolio/vacance_a_la_montagne.png"
@@ -307,12 +310,15 @@
                     </a>
                 </li>
             </ul>
+
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
         </section>
-        <section itemscope itemtype="https://schema.org/WebPage" id="about">
+        <section id="about" itemscope itemtype="https://schema.org/WebPage">
             <h2 itemprop="about">A propos</h2>
             <p itemprop="text">
 
-                Je m'appelle Nicolas YANG, cuisinier de formation car passionné de cuisine. J'ai
+                Je m'appelle Nicolas YANG, passionné d'informatique depuis que j'ai eu mon premier pc. <!-- cuisinier de formation car passionné de cuisine. J'ai
                 travaillé pendant 5 ans dans les
                 hôtels à
                 Paris. Ces années d'expériences dans une brigade de cuisine ont été enrichissantes aussi bien du
@@ -325,25 +331,28 @@
                 pression
                 et à gérer le stress.<br /><br />
                 Cependant, l'informatique qui est ma deuxième passion a pris le dessus.
-                <br />
-                Actuellement
-                en BTS
+                <br /> -->
+                Je suis actuellement en BTS Services Informatiques aux Organisations,
                 <!-- 
                 <abbr title="Brevet de Technicien Supérieur Services Informatiques aux Organisations">BTS SIO</abbr>
- --> pour
-                j'apprend les principes de l'ingénierie informatique: la programmation, les bases de données, le
+ pour -->
+                où j'apprend les principes de l'ingénierie informatique: la programmation, les bases de données, le
                 réseaux, l'architecture matérielle et logicielle, etc. Vous l'avez sans doute compris, je souhaite
                 acquérir
                 toutes les
                 bases pour devenir un bon développeur web.
-                <br />
+                <br />                <br />
+
                 Je suis des modules de formation sur les sites openclassroom et freecodecamp.
                 <!-- <a itemprop="url" href="https://openclassrooms.com/"
                     target="_blank">openclassroom</a>, <a itemprop="url" href="https://www.freecodecamp.org/"
                     target="_blank">freecodecamp</a>
-                et <a itemprop="url" href="https://www.theodinproject.com/">theodinproject</a> --><br />
+                et <a itemprop="url" href="https://www.theodinproject.com/">theodinproject</a> -->
+                <br />
+                <br>
                 Au plaisir d'échanger avec vous.
-                <br /> À bientôt!<br />
+                <br />                <br>
+                À bientôt!
             </p>
         </section>
     </main>
@@ -384,15 +393,16 @@
                     </ul>
             </li>
         </ul>
-
         </section>
         <p> Codé et conçu avec 🤍 par Nicolas Yang </p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="./js/dark_mode_toggle.js"></script>
     <script src="./js/menu_toogle.js"></script>
     <script src="./js/scroll_effect.js"></script>
     <script src="./js/welcome_animation_letters.js"></script>
-
+    <script src="./js/carousel.js"></script>
 
 </body>
 
