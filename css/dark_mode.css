@@ -3,6 +3,7 @@ html.dark-mode {
   background-color: var(--color-dark-bg);
   color: var(--color-dark-ft0);
 }
+
 header.dark-mode,
 header.dark-mode h1,
 header.dark-mode a,
@@ -18,7 +19,11 @@ main.dark-mode section#about p {
   background-color: var(--color-dark-bg0);
   color: var(--color-dark-ft0);
 }
+main.dark-mode section h3 {
+  color: var(--color-dark-orange);
+}
 
+/* HEADER */
 header.dark-mode h1 a {
   border: solid 0.2rem var(--color-dark-ft0);
 }
@@ -30,6 +35,7 @@ header.dark-mode nav ul li ul {
   border-bottom: 0.2rem solid var(--color-dark-ft0);
 }
 
+/* Progress Bar */
 main.dark-mode .progress-container {
   background-color: var(--color-dark-ft);
 }
@@ -37,35 +43,37 @@ main.dark-mode .progress-bar {
   background-color: var(--color-dark-orange);
 }
 
+/* WELCOME */
 main.dark-mode #welcome h2 {
   border: solid 0.8rem var(--color-dark-ft0);
 }
 main.dark-mode .fa-chevron-down {
   color: var(--color-dark-ft0);
 }
-
-main.dark-mode section h3 {
-  color: var(--color-dark-orange);
-}
-
+/* SKILLS */
 main.dark-mode #skills {
   background-color: var(--color-dark-aqua);
 }
-
+/* DIPLOME */
 main.dark-mode #diploma {
   background-color: var(--color-dark-purple);
 }
-
+/* OUTILS */
 main.dark-mode #tools {
   background-color: var(--color-dark-yellow);
 }
-
+/* XP */
 main.dark-mode #xp {
   background-color: var(--color-dark-blue);
 }
+
+/* PORTFOLIO */
 main.dark-mode #portfolio {
   background-color: var(--color-dark-bg);
+  border-top: 0.2rem solid var(--color-dark-orange);
+  border-bottom: 0.2rem solid var(--color-dark-orange);
 }
+
 main.dark-mode #portfolio h2 {
   color: var(--color-dark-orange-soft);
 }
@@ -87,15 +95,33 @@ main.dark-mode #portfolio ul li figure figcaption h4 {
 main.dark-mode #portfolio ul li figure figcaption i {
   color: var(--color-dark-ft0);
 }
-main.dark-mode #portfolio {
-  border-top: 0.2rem solid var(--color-dark-orange);
-  border-bottom: 0.2rem solid var(--color-dark-orange);
+
+main.dark-mode #portfolio > i.fa-chevron-right,
+main.dark-mode #portfolio > i.fa-chevron-left {
+  transition: all 0.2s;
+  background: linear-gradient(145deg, #1f2223, #1a1d1e);
+  box-shadow:  5px 5px 0px #1d2021,
+               -5px -5px 0px #1d2021;
 }
 
+main.dark-mode #portfolio > i.fa-chevron-right:hover,
+main.dark-mode #portfolio > i.fa-chevron-left:hover {
+  background: #1D2021;
+  box-shadow:  5px 5px 0px #1d2021,
+               -5px -5px 0px #1d2021;
+}
+main.dark-mode #portfolio > i.fa-chevron-right:active,
+main.dark-mode #portfolio > i.fa-chevron-left:active {
+  background: linear-gradient(145deg, #1a1d1e, #1f2223);
+box-shadow:  5px 5px 0px #1d2021,
+             -5px -5px 0px #1d2021;
+}
+
+/* ABOUT */
 main.dark-mode section#about {
   background-color: var(--color-dark-blue);
 }
-
+/* FOOTER */
 footer.dark-mode h2,
 footer.dark-mode h3 {
   color: var(--color-dark-orange-soft);

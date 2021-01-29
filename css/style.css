@@ -74,10 +74,6 @@ header .fa-adjust {
   right: 0.4rem;
   z-index: 2;
 }
-header .fa-lightbulb {
-  transform: rotate(180deg);
-  z-index: 2;
-}
 header .fa-times {
   font-size: 3.1rem;
 }
@@ -188,7 +184,7 @@ nav.discover > ul > li:last-child {
 #xp h2,
 #about h2 {
   width: 50vw;
-  font-size: 4rem;
+  font-size: 3.2rem;
   text-align: center;
 }
 #skills section,
@@ -209,7 +205,7 @@ nav.discover > ul > li:last-child {
 #tools section h3,
 #xp section h3 {
   padding: 2rem 0 0 2rem;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 #skills section ul,
 #tools section ul {
@@ -221,12 +217,12 @@ nav.discover > ul > li:last-child {
 #skills section ul li,
 #tools section ul li {
   margin: 4rem 2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 #skills section ul i,
 #tools section ul i {
   padding-right: 1rem;
-  font-size: 4.4rem;
+  font-size: 4rem;
 }
 /* SKILLS */
 #skills {
@@ -244,12 +240,12 @@ nav.discover > ul > li:last-child {
   background-color: #d8d9d8;
 }
 #diploma dl dt {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   padding: 0 4rem;
 }
 #diploma dl dd {
   margin: 1rem 0 4rem 8rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 /* EXPERIENCE */
@@ -261,14 +257,15 @@ nav.discover > ul > li:last-child {
   padding: 1.2rem 2rem;
 }
 #xp section dl h4 {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
 }
 #xp section dl dt {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 #xp section dl dd {
   padding: 0.4rem 0 2rem 4rem;
   font-size: 1.6rem;
+  line-height: 2.2rem;
 }
 
 #xp section dl dd ul {
@@ -303,17 +300,12 @@ nav.discover > ul > li:last-child {
   padding: 1rem;
   text-align: center;
   font-size: 1.6rem;
-  background-color: #f6f6f6;
+  background-color: #fff;
 }
 
 #portfolio ul li.active {
   display: block;
   margin: 0 auto;
-}
-
-#portfolio ul li:active {
-  transform: scale(1.04);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #portfolio ul li figure,
@@ -354,13 +346,12 @@ nav.discover > ul > li:last-child {
 #portfolio > i.fa-chevron-left {
   position: relative;
   bottom: 55vh;
-  font-size: 8rem;
+  font-size: 4rem;
   padding: 2rem;
-  border-radius: 10rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background-color: rgba(255, 255, 255, 0.384);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffffff, #d4d8d9);
+  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
   cursor: pointer;
-  transition: all 0.2s;
 }
 
 #portfolio > i.fa-chevron-right {
@@ -376,10 +367,10 @@ nav.discover > ul > li:last-child {
   background-color: #abadab;
 }
 #about p {
-  padding: 4rem 0 0 8rem;
-  font-size: 2rem;
+  padding: 4rem 0rem 4rem 10rem;
+  font-size: 1.6rem;
   text-align: justify;
-  line-height: 3.2rem;
+  line-height: 2.4rem;
 }
 #about > p > a {
   max-width: 100%;
@@ -397,7 +388,7 @@ footer {
 footer h2 {
   padding: 12rem 0 0rem 8rem;
   font-size: 3.2rem;
-  font-weight: 200;
+  font-weight: bolder;
 }
 footer a {
   color: var(--color-white1);
@@ -423,10 +414,10 @@ footer > ul #contact a {
 
 footer > ul li li {
   padding: 1rem 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 footer > ul li a {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 footer p {
   padding: 1rem;
@@ -547,7 +538,9 @@ footer p {
     bottom: 32vh;
     font-size: 4rem;
     padding: 1.2rem;
-    border-radius: 8rem;
+    border-radius: 50%;
+    background: #fafafa63;
+    box-shadow: none;
   }
 
   #portfolio > i.fa-chevron-right {

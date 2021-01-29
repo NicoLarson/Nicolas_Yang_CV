@@ -1,15 +1,95 @@
-* {
-  transition: all 0.6s;
+/* HEAD */
+header > i.fa-times:hover,
+header > i.fa-bars:hover {
+  transition: all 0.4s;
 }
 
+header nav > ul > li a:hover::before,
+header nav > ul > li a:hover::after {
+  content: " - ";
+}
+header nav > ul > li ul li a:hover::before,
+header nav > ul > li ul li a:hover::after {
+  content: "";
+}
+header nav > ul > li ul li a {
+  transition: all 0.4s;
+  text-decoration: underline rgba(255, 255, 255, 0);
+}
+header nav > ul > li ul li a:hover,
+header nav > ul > li ul li a:hover {
+  text-decoration: underline #222;
+}
+
+nav.discover {
+  animation: discoverNav 0.4s linear;
+}
+
+/* WELCOME */
+#welcome ul li {
+  transition: all 0.8s;
+}
+#welcome ul li:hover,
+#welcome ul li:active {
+  transform: translateY(-4.4rem);
+}
+#welcome i {
+  animation: upAndDown 2s linear infinite alternate;
+}
+
+/* PORTFOLIO */
+#portfolio ul li.active {
+  animation: fade 0.8s;
+  transition: .4s;
+}
+
+#portfolio ul li.active:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+#portfolio ul li:active {
+  transform: scale(1.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#portfolio > i.fa-chevron-right,
+#portfolio > i.fa-chevron-left {
+  transition: all 0.2s;
+}
+
+#portfolio > i.fa-chevron-right:hover,
+#portfolio > i.fa-chevron-left:hover {
+  border-radius: 50%;
+  background: #ecf0f1;
+  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
+}
+#portfolio > i.fa-chevron-right:active,
+#portfolio > i.fa-chevron-left:active {
+  border-radius: 50%;
+  background: linear-gradient(145deg, #d4d8d9, #fdffff);
+  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
+}
+
+/* FOOTER*/
+footer > ul #contact a{
+  transition: 0.4s;
+}
+footer > ul #contact a:hover,
+footer > ul #contact a:active {
+  background-color: var(--color-send);
+  color: var(--color-black0);
+  border: var(--color-send) 0.2rem solid;
+  box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
+    0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
+  cursor: pointer;
+}
+
+/* DARK THEME */
 header.dark-mode > i.fa-times:hover,
 header.dark-mode > i.fa-bars:hover {
   color: var(--color-dark-orange);
-  transition: all 0.8s;
-}
-
-header nav ul li a:hover {
-  transform: scale(1.12);
 }
 
 header.dark-mode nav ul li a:hover {
@@ -20,41 +100,10 @@ header.dark-mode nav ul li a::before,
 header.dark-mode nav ul li a::after {
   content: " - ";
   opacity: 0;
-  transition: all 1s;
 }
 header.dark-mode nav ul li a:hover::before,
 header.dark-mode nav ul li a:hover::after {
   opacity: 1;
-}
-
-nav.discover {
-  animation: discoverNav 0.4s linear;
-}
-
-#welcome ul li:hover,
-#welcome ul li:active {
-  transform: translateY(-4.4rem);
-}
-
-#welcome i {
-  animation: upAndDown 2s linear infinite alternate;
-}
-#portfolio ul li:hover {
-  transform: scale(1.04);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-#portfolio ul li.active {
-  animation: fade 0.8s;
-}
-
-#portfolio > i.fa-chevron-right:hover,
-#portfolio > i.fa-chevron-left:hover {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-#portfolio > i.fa-chevron-right:active,
-#portfolio > i.fa-chevron-left:active {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 main.dark-mode #portfolio ul li,
@@ -65,15 +114,22 @@ main.dark-mode #portfolio ul li:hover figure img {
   filter: grayscale(0);
 }
 
-footer > ul #contact a:hover,
-footer > ul #contact a:active {
-  background-color: var(--color-send);
-  color: var(--color-black0);
-  border: var(--color-send) 0.2rem solid;
-  box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
-    0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
-  cursor: pointer;
+/* MOBILE */
+
+@media screen and (max-width: 770px), (max-height: 700px) {
+  #portfolio > i.fa-chevron-right:hover,
+  #portfolio > i.fa-chevron-left:hover {
+    border-radius: 50%;
+    background: #fafafaa9;
+  }
+  #portfolio > i.fa-chevron-right:active,
+  #portfolio > i.fa-chevron-left:active {
+    border-radius: 50%;
+    background: #fafafaa9;
+  }
 }
+
+/* KEYFRAMES */
 
 @keyframes upAndDown {
   0%,
