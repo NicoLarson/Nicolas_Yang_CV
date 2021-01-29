@@ -1,586 +1,298 @@
 :root {
-  --color-white0: #ffffff;
-  --color-white1: #fafafa;
-  --color-grey0: #b8b8b8;
-  --color-grey1: #333333;
-  --color-black2: #222222;
-  --color-black1: #1c1c1c;
-  --color-black0: #000000;
-  --color-send: #4cd137;
-
-  /* Dark mode*/
-  --color-dark-bg: #1d2021;
-  --color-dark-bg0: #282828;
-  --color-dark-ft: #ebdbb2;
-  --color-dark-ft0: #fbf1c7;
-  --color-dark-orange: #d65d0e;
-  --color-dark-orange-soft: #fe8019;
-  --color-dark-grey: #a89984;
-  --color-dark-aqua: #689d6a;
-  --color-dark-yellow: #d79921;
-  --color-dark-purple: #b16286;
-  --color-dark-blue: #458588;
-  --color-dark-nav-dark-transparent: #282828e3;
+  /* Ft */
+  --color-h1: #9cdcfe;
+  --color-h2: #9cdcfe;
+  --color-h3: #eb2a88;
+  --color-h4: #fafafa;
+  --color-p: #1ad69c;
+  --color-nav-li: #fafafa;
+  --color-header-p: #9cdcfe;
+  --color-welcome-i: #1ad69c;
+  --color-dt: #eb2a88;
+  --color-polaroid-i: #222;
+  --color-dots: #975eab;
+  --color-footer-p: #eb2a88;
+  /* Background */
+  --color-background-header: #1a1a1a;
+  --color-background: #1f1f1f;
+  --color-background-welcome: #1f1f1f;
+  --color-background-xp: #1f1f1f;
+  --color-background-tools: #1f1f1f;
+  --color-background-diploma: #1f1f1f;
+  --color-background-portfolio: #1f1f1f;
+  --color-background-about: #1f1f1f;
+  --color-background-footer: #1f1f1f;
+  --color-polaroid: #fafafa;
+  /* Ligne */
+  --color-line: #9cdcfe;
 }
 
-.progress-container {
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-  width: 100%;
-  height: 0.4rem;
-  background: var(--color-white1);
-}
-.progress-bar {
-  height: 0.4rem;
-  background: var(--color-black2);
-  width: 0%;
-}
+/* HEADER */
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem 1rem 1rem;
-  width: 100vw;
-  position: fixed;
-  background-color: var(--color-white0);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  z-index: 3;
-}
-header h1 {
-  text-align: center;
-  font-family: "Cormorant Unicase", serif;
-  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  width: 100%;
+  height: 4.8rem;
+  padding: 0 1rem 0 2rem;
+  background-color: var(--color-background-header);
 }
 header h1 a {
-  display: block;
-  border: solid 0.2rem var(--color-black1);
-  padding: 0.4rem 0.3rem;
-  font-size: 2.2rem;
-  font-weight: bolder;
+  color: var(--color-h1);
 }
-header i {
-  cursor: pointer;
-  font-size: 2.4rem;
-  z-index: 3;
-  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+header p {
+  font-size: 1.6rem;
+  color: var(--color-header-p);
 }
-header i:nth-child(3) {
-  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+header p:nth-child(2):after {
+  content: "_";
+  animation: prompt 0.8s infinite;
 }
-header .fa-adjust {
-  position: relative;
-  right: 0.4rem;
-  z-index: 2;
-}
-header .fa-times {
-  font-size: 3.1rem;
-}
-
-/* MENU */
-nav {
+header nav {
   display: none;
 }
-nav.discover {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  padding: 0 1rem;
+  color: var(--color-nav-li);
+}
+/* SECTIONS */
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 2;
+  background-color: var(--color-background);
+  border-bottom: 0.2rem solid var(--color-line);
 }
-
-nav.discover ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-nav.discover ul li a {
-  display: block;
-  padding: 1rem;
-  font-size: 4rem;
-  background: none;
-}
-nav.discover ul li ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 8rem;
-  border-top: 0.2rem solid #222;
-  border-bottom: 0.2rem solid #222;
-  margin-top: 8rem;
-  background: none;
-}
-nav.discover ul li ul li a {
-  font-size: 2rem;
-  padding: 0rem 3.2rem;
-}
-nav.discover > ul > li:last-child {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 1rem;
-  font-size: 1.4rem;
-}
-/* Welcome */
-#welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-width: 100vw;
-  background-color: var(--color-white0);
-}
-#welcome h2 {
-  display: inline-block;
-  border: solid 0.8rem var(--color-black2);
-  padding: 2rem 2rem;
-  text-align: center;
-  font-family: "Cormorant Unicase", serif;
-  font-size: 12rem;
-  font-weight: normal;
-}
-#welcome ul {
-  display: flex;
-  flex-direction: row;
-}
-#welcome ul li {
-  font-family: Spartan;
-  font-size: 12rem;
-  padding: 8rem 0 0;
-}
-#welcome a {
-  position: absolute;
-  z-index: 1;
-  bottom: 1.2rem;
-  font-size: 2.8rem;
-  text-align: center;
-  background: none;
-}
-
-#skills,
-#tools,
-#diploma,
-#xp,
-#about {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-}
-#skills h2,
-#tools h2,
-#diploma h2,
-#xp h2,
-#about h2 {
-  width: 50vw;
-  font-size: 3.2rem;
-  text-align: center;
-}
-#skills section,
-#tools section,
-#diploma dl,
-#xp section,
-#about p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4rem;
-  width: 50vw;
-  height: 100vh;
-  background-color: var(--color-white0);
-}
-
-#skills section h3,
-#tools section h3,
-#xp section h3 {
-  padding: 2rem 0 0 2rem;
+main > section h2,
+footer h2 {
+  padding: 4rem 0;
   font-size: 2.4rem;
+  color: var(--color-h2);
 }
-#skills section ul,
-#tools section ul {
+main > section h3::before {
+  content: "/";
+}
+
+main > section p {
+  padding: 0.4rem;
+  font-size: 2rem;
+  color: var(--color-p);
+}
+section dt {
+  padding: 1rem 0 0;
+  font-size: 1.6rem;
+  color: var(--color-dt);
+}
+main > section > ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
 }
-#skills section ul li,
-#tools section ul li {
-  margin: 4rem 2rem;
+main > section > ul > li {
+  padding: 2rem 2rem 0;
+}
+main > section > ul > li:first-child {
+  padding: 2rem 0 2rem 2rem;
+}
+main section h3,
+footer h3 {
+  padding: 2rem 0 0.4rem 0;
+  font-size: 1.8rem;
+  color: var(--color-h3);
+}
+main > section > ul > li ul > li,
+main > section dl dd {
   font-size: 1.6rem;
+  padding: 0.4rem 0 0;
+  color: var(--color-p);
 }
-#skills section ul i,
-#tools section ul i {
-  padding-right: 1rem;
-  font-size: 4rem;
+/* WELCOME */
+#welcome h2 {
+  font-size: 3.2rem;
+  color: var(--color-h2);
 }
-/* SKILLS */
-#skills {
-  background-color: #f2f2f2;
+#welcome h2::before {
+  content: "";
+}
+#welcome > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 10rem;
+}
+#welcome > ul > li {
+  padding: 2rem;
+}
+#welcome ul li a {
+  font-size: 2.4rem;
+  color: var(--color-welcome-i);
 }
 
-/* TOOLS */
-#tools {
-  flex-direction: row-reverse;
-  background-color: #e5e6e5;
-}
-
-/* DIPLOMA */
+/* DIPLOME */
 #diploma {
-  background-color: #d8d9d8;
+  display: block;
+  height: 100%;
+  padding: 0 2rem 4rem;
 }
-#diploma dl dt {
-  font-size: 1.6rem;
-  padding: 0 4rem;
+#diploma h2 {
+  padding: 4rem 2rem 2rem;
+  text-align: center;
 }
-#diploma dl dd {
-  margin: 1rem 0 4rem 8rem;
-  font-size: 1.4rem;
+#diploma dl dd a {
+  color: var(--color-p);
 }
-
-/* EXPERIENCE */
+/* XP */
 #xp {
-  flex-direction: row-reverse;
-  background-color: #cbcdcb;
+  display: block;
+  height: 100%;
+  padding: 0 2rem;
 }
-#xp section dl {
-  padding: 1.2rem 2rem;
+#xp h2 {
+  padding: 4rem 2rem 1rem;
+  text-align: center;
 }
-#xp section dl h4 {
-  font-size: 1.6rem;
-}
-#xp section dl dt {
-  font-size: 1.6rem;
-}
-#xp section dl dd {
-  padding: 0.4rem 0 2rem 4rem;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+#xp dl {
+  padding: 0 0 2rem;
 }
 
-#xp section dl dd ul {
-  padding: 0.4rem 0 2rem 4rem;
-}
-#xp section dl dd ul li::before {
+#xp dl ul li::before {
   content: "- ";
 }
-
 /* PORTFOLIO */
 #portfolio {
-  height: 100vh;
-  background-color: #ecf0f1;
-  border-top: 0.2rem solid var(--color-black2);
-  border-bottom: 0.2rem solid var(--color-black2);
+  justify-content: space-between;
 }
 #portfolio h2 {
-  padding: 8rem 0 0 8rem;
-  font-size: 4rem;
+  padding: 4rem 0;
 }
-#portfolio ul {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  height: calc(100% - 12rem);
-}
-
-#portfolio ul li {
+#portfolio > ul > li {
   display: none;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
-    0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.6rem;
-  background-color: #fff;
 }
-
-#portfolio ul li.active {
+#portfolio > ul > li.active {
   display: block;
   margin: 0 auto;
+  padding: 0.8rem;
+  background-color: var(--color-polaroid);
 }
 
-#portfolio ul li figure,
-#portfolio ul li figure img {
-  width: 30vw;
+#portfolio ul li i {
+  font-size: 2.4rem;
+}
+#portfolio ul li figure figcaption h4 {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#portfolio ul li figure figcaption ul {
+  display: flex;
+  justify-content: space-around;
 }
 
-#portfolio ul li img,
-#portfolio ul li {
-  border-radius: 1.2%;
-}
-#portfolio ul li {
-  margin: 0 8rem;
-}
-#portfolio ul li figcaption h4 {
-  padding: 1rem;
-  font-size: var(--font-size-h4);
-  font-weight: 400;
-}
-#portfolio ul li figcaption p {
-  padding-bottom: 2rem;
-}
-#portfolio ul li figcaption i {
-  font-size: 3.2rem;
-  padding: 1rem;
-}
-#portfolio ul li figcaption h4 img {
-  width: 2rem;
-  height: 2rem;
-  margin: 0rem;
-}
-#portfolio ul li figcaption h4 i {
+#portfolio ul li figure figcaption ul li i {
   font-size: 2rem;
-  padding: 0 0.4rem;
+  color: var(--color-polaroid-i);
 }
-
-#portfolio > i.fa-chevron-right,
-#portfolio > i.fa-chevron-left {
-  position: relative;
-  bottom: 55vh;
+#portfolio ul.icons-portfolio {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#portfolio ul.icons-portfolio li {
+  display: block;
+  padding: 0;
+}
+#portfolio ul.icons-portfolio li {
   font-size: 4rem;
+  color: red;
+}
+#portfolio ul.icons-portfolio i.fa-chevron-left,
+#portfolio ul.icons-portfolio i.fa-chevron-right {
+  position: relative;
+  bottom: 40vh;
   padding: 2rem;
-  border-radius: 50%;
-  background: linear-gradient(145deg, #ffffff, #d4d8d9);
-  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
-  cursor: pointer;
 }
-
-#portfolio > i.fa-chevron-right {
-  float: right;
-  right: 4rem;
+#portfolio ul.dots {
+  position: relative;
+  bottom: 2rem;
 }
-#portfolio > i.fa-chevron-left {
-  left: 4rem;
+#portfolio ul.dots li {
+  display: inline-block;
+  padding: 0.4rem;
+  font-size: 2rem;
+  color: var(--color-dots);
 }
-
-/* ABOUT */
+/* A propos */
 #about {
-  background-color: #abadab;
+  padding-bottom: 4rem;
+  height: 100%;
 }
+#about h2::before {
+  content: "$ ";
+}
+
 #about p {
-  padding: 4rem 0rem 4rem 10rem;
-  font-size: 1.6rem;
-  text-align: justify;
-  line-height: 2.4rem;
+  padding: 2rem 2rem 4rem;
+  background-color: #000;
 }
-#about > p > a {
-  max-width: 100%;
+#about p::after {
+  content: "_";
+  animation: prompt 0.6s infinite;
 }
 /* FOOTER */
+
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-
-  background-color: #222;
-  color: #fafafa;
+  height: 100%;
+  padding: 0 2rem ;
+  background-color: var(--color-background);
 }
-footer h2 {
-  padding: 12rem 0 0rem 8rem;
-  font-size: 3.2rem;
-  font-weight: bolder;
-}
-footer a {
-  color: var(--color-white1);
-}
-
-footer > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-footer > ul li h3 {
+footer ul{
   padding-bottom: 2rem;
-  font-size: 2.4rem;
 }
-footer > ul #contact a {
-  display: block;
-  max-width: 22rem;
-  color: var(--color-white0);
-  border: 0.2rem solid var(--color-white0);
-  padding: 1rem;
+footer #contact a{
+  display: inline-block;
+  max-width: 100%;
+  font-size: 2rem;
+  padding: .8rem ;
+  margin: 1rem 0;
+  color: var(--color-p);
+  border: .4rem solid var(--color-footer-p);
+}
+footer section ul li {
+  padding:  0.8rem 0;
+}
+footer section ul li a {
+  font-size: 1.8rem;
+  color: var(--color-p);
+}
+footer > p {
+  padding: 1.2rem;
   text-align: center;
+  color: var(--color-footer-p);
+}
+/* ANIMATIONS */
+@keyframes prompt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-footer > ul li li {
-  padding: 1rem 0;
-  font-size: 1.6rem;
-}
-footer > ul li a {
-  font-size: 1.6rem;
-}
-footer p {
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.2rem;
-}
+/* ____________ */
 
-@media screen and (max-width: 770px), (max-height: 700px) {
-  section a {
-    font-size: 2.2rem;
-  }
-
-  #welcome h2 {
-    font-size: 8rem;
-  }
-  #welcome ul li {
-    font-size: 4rem;
-  }
-  nav.discover ul li a {
-    font-size: 2rem;
-  }
-  nav.discover ul li ul {
-    margin-top: 3.2rem;
-  }
-  nav.discover ul li ul li a {
-    font-size: 1.6rem;
-  }
-  nav.discover ul > li:last-child {
-    display: inline-block;
-    font-size: 0.8rem;
-  }
-
-  #skills,
-  #tools,
-  #diploma,
-  #xp,
-  #about {
-    flex-direction: column;
-    height: 100%;
-  }
-  #skills h2,
-  #tools h2,
-  #diploma h2,
-  #xp h2,
-  #about h2 {
-    width: 100%;
-    padding: 4rem 0;
-    font-size: 3.2rem;
-  }
-  #skills section,
-  #tools section,
-  #diploma dl,
-  #xp section,
-  #about p {
-    width: 100%;
-    height: 100%;
-  }
-  #skills section h3,
-  #tools section h3,
-  #xp section h3 {
-    padding: 4rem 0 0 2rem;
-    font-size: 2.4rem;
-  }
-  #skills section ul li,
-  #tools section ul li {
-    margin: 4rem 2rem;
-    font-size: 2rem;
-  }
-  #skills section ul i,
-  #tools section ul i {
-    padding: 0;
-    font-size: 4.4rem;
-  }
-  #diploma dl {
-    padding: 4rem 0;
-  }
-  #diploma dd {
-    font-size: 2rem;
-  }
-  #xp h4 {
-    font-size: 2.24rem;
-  }
-  #xp dt,
-  #xp li {
-    font-size: 2rem;
-  }
-  /* PORTFOLIO */
-  #portfolio {
-    height: 100vh;
-    background-color: #ecf0f1;
-    border-top: 0.2rem solid var(--color-black2);
-    border-bottom: 0.2rem solid var(--color-black2);
-  }
-  #portfolio h2 {
-    padding: 8rem 0;
-    text-align: center;
-  }
-  #portfolio ul {
-    display: block;
-    height: 50vh;
-  }
-  #portfolio ul li {
-    width: 80%;
-    margin: 0 auto;
-  }
-  #portfolio ul li figure,
-  #portfolio ul li figure img {
-    width: 100%;
-  }
-
-  #portfolio ul li img,
-  #portfolio ul li {
-    border-radius: 1.2%;
-  }
-  #portfolio > i.fa-chevron-right,
-  #portfolio > i.fa-chevron-left {
-    position: relative;
-    bottom: 32vh;
-    font-size: 4rem;
-    padding: 1.2rem;
-    border-radius: 50%;
-    background: #fafafa63;
-    box-shadow: none;
-  }
-
-  #portfolio > i.fa-chevron-right {
-    float: right;
-    right: 2rem;
-  }
-  #portfolio > i.fa-chevron-left {
-    left: 2rem;
-  }
-
-  #about p {
-    padding: 4rem 2rem;
-    text-align: left;
-    font-size: 2rem;
-  }
-
-  footer {
-    height: 100%;
-  }
-  footer h2 {
-    padding: 8rem 0 4rem;
-    text-align: center;
-  }
-  footer > ul {
-    flex-direction: column;
-  }
-  footer section {
-    padding-left: 2rem;
-  }
-  footer section h3 {
-    padding-top: 4rem;
-  }
-  footer section ul {
-    padding-left: 4rem;
-  }
-  footer section ul li i {
-    font-size: 2.2rem;
-  }
-  footer p {
-    padding: 4rem 2rem 2rem;
-    font-size: 1rem;
-  }
+img {
+  width: 20rem;
+  height: 20rem;
 }
