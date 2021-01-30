@@ -1,37 +1,49 @@
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 620px) {
+  /* HEADER */
   header {
     position: fixed;
+    z-index: 1;
   }
 
   header p:nth-child(3) {
     display: block;
+    text-align: center;
+    font-weight: bolder;
     cursor: pointer;
+    z-index: 2;
+  }
+  header p:nth-child(3):before {
+    content: "|";
   }
 
+  header p:nth-child(3):after {
+    content: "|";
+  }
+  .fa-chevron-down.discover,
+  .fa-chevron-left.discover,
+  .fa-chevron-right.discover {
+    display: none;
+  }
+
+  /* NAV */
   header nav.discover {
     display: block;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
   }
   header nav {
     display: none;
-    position: fixed;
-    top: 4.4rem;
-    height: calc(100vh - 4.4rem);
-    overflow-x: hidden;
-    z-index: 2;
-    transition: all 0.4s;
   }
-
   header nav ul {
-    display: flex;
     justify-content: center;
     height: 100%;
     flex-direction: column;
-    background-color: #000000d0;
+    background-color: #000000e0;
   }
-
   header nav ul li {
     flex-basis: 0;
-    flex-shrink: 0;
     flex-grow: 0;
     border: none;
     padding: 2rem;
@@ -43,47 +55,120 @@
     font-size: 3.2rem;
     font-weight: lighter;
   }
-  header nav ul li a:hover {
-    text-decoration: underline;
-  }
   header nav ul li:nth-child(1) a::after {
-    content: " Mes compétences";
+    content: " /Compétences";
   }
 
   header nav ul li:nth-child(2) a::after {
-    content: " Mes outils";
+    content: " /Outils";
   }
 
   header nav ul li:nth-child(3) a::after {
-    content: " Diplômes et certificats";
+    content: " /Diplômes_et_certificats";
   }
 
   header nav ul li:nth-child(4) a::after {
-    content: " Mes expériences";
+    content: " /Expériences";
   }
 
   header nav ul li:nth-child(5) a::after {
-    content: " Mon portfolio";
+    content: " /Portfolio";
   }
 
   header nav ul li:nth-child(6) a::after {
-    content: " A propos";
+    content: " /À_propos";
   }
   header nav ul li:nth-child(7) a::after {
-    content: " Contact";
+    content: " /Contact";
   }
   header nav ul li a {
-    display: block;
-    width: 100%;
     padding: 0;
     font-size: 2.4rem;
-    font-weight: bolder;
-    color: var(--color-nav-li);
+  }
+  /* MAIN */
+  main section h2,
+  footer h2 {
+    font-size: 2.8rem;
   }
 
+  main section h3,
+  main section dl dt {
+    font-size: 2.4rem;
+  }
+  main section ul li ul li,
+  main section dl dd {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  #diploma,
   #xp,
+  #about {
+    padding: 8rem 28%;
+  }
+
+  #diploma,
   #about,
   footer {
     height: 100vh;
+  }
+  #diploma h2,
+  #xp h2,
+  #portfolio h2 {
+    padding: 8rem 0;
+  }
+  /* TOOLS */
+  /* XP */
+  #xp {
+    height: 100%;
+  }
+  /* PORTFOLIO */
+  #portfolio {
+    padding: 8rem 4rem;
+  }
+  #portfolio h2 {
+    font-size: 4rem;
+  }
+  #portfolio ul li figure figcaption h4 {
+    padding: 2rem 0;
+    font-size: 2.4rem;
+  }
+  #portfolio ul li figure img {
+    width: 44rem;
+    height: 44rem;
+  }
+  #portfolio ul li figure figcaption ul li i {
+    font-size: 4rem;
+    color: var(--color-polaroid-i);
+  }
+  #portfolio ul.icons-portfolio i.fa-chevron-left,
+  #portfolio ul.icons-portfolio i.fa-chevron-right {
+    font-size: 7.6rem;
+  }
+  #portfolio ul.dots {
+    top: 2rem;
+  }
+  #portfolio ul.dots li {
+    padding: 0.4rem;
+    font-size: 2.8rem;
+  }
+
+  /* A PROPOS */
+  /* FOOTER */
+  footer {
+    padding: 0;
+  }
+  footer h2 {
+    padding: 20rem 4rem 0;
+    text-align: left;
+  }
+  footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer > p {
+    padding: 2rem;
+    font-size: 1.4rem;
   }
 }

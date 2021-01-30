@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  window.onscroll = function () {
-    progressScroll();
-    if (window.width < 700) {
-      hideOnScroll();
-    } else {
-      return false;
-    }
-  };
-
   let barProgress = document.querySelector("#myBar");
 
   let progressScroll = () => {
@@ -31,5 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
       barHide.style.bottom = "-12rem";
     }
     prevScrollpos = currentScrollPos;
+  };
+  window.onscroll = function () {
+    progressScroll();
+    window.innerWidth < 620 ? hideOnScroll() : false;
   };
 });

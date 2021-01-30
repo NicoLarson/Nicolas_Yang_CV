@@ -1,0 +1,63 @@
+main div.progress-bar,
+main div#myBar {
+  box-shadow: 0 4rem 4rem 2.2rem var(--color-brightBlue);
+}
+header h1,
+header p,
+header nav,
+section h2,
+.dots,
+footer h2,
+footer > p:after {
+  text-shadow: 0 0 0.24rem var(--color-brightBlue);
+}
+
+main > section h3,
+main > section dt,
+footer h3,
+footer > p {
+  text-shadow: 0 0 0.8rem var(--color-brightRed);
+}
+main > section > ul > li section ul li,
+main > section dd,
+footer ul li {
+  text-shadow: 0 0 0.24rem var(--color-brightGreen);
+}
+
+header nav,
+header nav ul li {
+  box-shadow: 0rem 0rem 0.8rem var(--color-brightBlue);
+}
+header nav.discover ul li {
+  box-shadow: none;
+}
+
+main > section,
+#skills {
+  box-shadow: inset 0 2rem 3.2rem -3.2rem var(--color-brightRed),
+    inset 0 -2rem 3.2rem -3.2rem var(--color-brightRed);
+}
+#welcome p {
+  text-shadow: 0 0 0.12rem var(--color-red);
+}
+#welcome i {
+  text-shadow: 0 0 0.12rem var(--color-brightCyan);
+}
+
+#skills {
+  box-shadow: 0 1rem 0 var(--color-brightRed);
+}
+
+#welcome a .fa-chevron-down,
+#portfolio .fa-chevron-right,
+#portfolio .fa-chevron-left {
+  text-shadow: 0 0 1rem var(--color-brightRed);
+}
+
+#about > p {
+  text-shadow: 0 0 0.8rem var(--color-brightGreen);
+}
+
+footer {
+  box-shadow: inset 0 2rem 3.2rem -3.2rem var(--color-brightRed);
+}

@@ -1,8 +1,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  scrollbar-color: var(--color-brightRed) var(--color-background);
   scrollbar-width: thin;
-  scrollbar-color: var(--color-black2) var(--color-white0);
 }
 
 body {

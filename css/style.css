@@ -1,5 +1,4 @@
 :root {
-  --color-background: #1a1a1a;
   --color-black: #000000;
   --color-blue: #579bd5;
   --color-brightBlack: #797979;
@@ -11,12 +10,12 @@
   --color-brightWhite: #eaeaea;
   --color-brightYellow: #e9ad95;
   --color-cyan: #00b6d6;
-  --color-foreground: #ea549f;
   --color-green: #4ec9b0;
   --color-purple: #714896;
   --color-red: #e92888;
   --color-white: #eaeaea;
   --color-yellow: #ce9178;
+
   /* Ft */
   --color-h1: #1ad69c;
   --color-h2: #9cdcfe;
@@ -30,8 +29,9 @@
   --color-polaroid-i: #222;
   --color-dots: #1ad69c;
   --color-footer-p: #eb2a88;
+
   /* Background */
-  --color-background-header: #1a1a1a;
+  --color-background-header: #121212;
   --color-background: #1f1f1f;
   --color-background-nav: #000;
   --color-background-welcome: #1f1f1f;
@@ -40,15 +40,43 @@
   --color-background-diploma: #1f1f1f;
   --color-background-portfolio: #1f1f1f;
   --color-background-about-p: #000;
-  --color-background-footer: #1f1f1f;
+  --color-background-footer: #111;
+  --color-terminal-background: #111;
+
+  --color-terminal-window: #eaeaea;
   --color-polaroid: #fafafa;
+  --color-polaroid-hover: #fafafa;
   /* Ligne */
   --color-line: #eb2a88;
+
   /* Icons */
   --color-chevron: #e9ad95;
   --color-dots: #1ad69c;
 }
 
+.progress-container {
+  height: 0.4rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+#myBar {
+  height: 0.4rem;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--color-brightGreen);
+}
+
+header,
+nav,
+#welcome,
+main > section,
+footer {
+  max-width: 100%;
+}
 /* HEADER */
 header {
   display: flex;
@@ -56,7 +84,7 @@ header {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 4.8rem;
+  height: 6rem;
   padding: 0 1rem 0 2rem;
   background-color: var(--color-background-header);
 }
@@ -64,36 +92,32 @@ header h1 a {
   color: var(--color-h1);
 }
 header h1 a::before {
-  content: "<";
+  content: "< ";
 }
+
 header h1 a::after {
-  content: ">";
+  content: " >";
 }
 header p {
   font-size: 1.6rem;
   padding-right: 1.2rem;
   color: var(--color-header-p);
 }
-header p:nth-child(2):after {
-  content: "_";
-  animation: prompt 0.8s infinite;
-}
 header p:nth-child(3) {
   display: none;
 }
 header nav {
   position: fixed;
-  bottom: 0;
   left: 0;
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   z-index: 2;
-  transition: all 0.4s;
 }
 
 header nav ul {
   display: flex;
+  bottom: 0;
   min-width: 60rem;
   background-color: var(--color-background-nav);
 }
@@ -114,8 +138,12 @@ header nav ul li a {
   text-align: center;
   color: var(--color-nav-li);
 }
-header nav ul li:nth-child(4) a::after{
+header nav ul li:nth-child(4) a::after {
   content: "xp";
+}
+/* MAIN */
+main {
+  background-color: var(--color-background);
 }
 /* SECTIONS */
 main > section {
@@ -182,6 +210,9 @@ main > section dl dd {
 #welcome h2::before {
   content: "";
 }
+#welcome p {
+  color: var(--color-red);
+}
 #welcome > ul {
   display: flex;
   flex-direction: row;
@@ -196,10 +227,18 @@ main > section dl dd {
   font-size: 2.4rem;
   color: var(--color-welcome-i);
 }
+#welcome .fa-chevron-down {
+  position: absolute;
+  bottom: 8rem;
+  left: calc(50vw - 1.5rem);
+  font-size: 4rem;
+  color: var(--color-brightRed);
+}
 
 /* DIPLOME */
 #diploma {
   display: block;
+  height: 100%;
   padding: 0 2rem 4rem;
 }
 #diploma h2 {
@@ -239,9 +278,10 @@ main > section dl dd {
 #portfolio > ul > li.active {
   display: block;
   margin: 0 auto;
-  padding: 0.8rem;
+  padding: 0.8rem 0.8rem 2rem;
+  border-radius: 0.4rem;
   background-color: var(--color-polaroid);
-  animation: slidePortfolio 2s;
+  box-shadow: 0 2rem 4rem #000, 0 1.2rem 1.2rem #000;
 }
 
 #portfolio ul li i {
@@ -256,6 +296,7 @@ main > section dl dd {
 #portfolio ul li figure img {
   width: 20rem;
   height: 20rem;
+  border-radius: 0.4rem;
 }
 
 #portfolio ul li figure figcaption ul {
@@ -304,16 +345,27 @@ main > section dl dd {
   height: 100%;
 }
 #about h2::before {
-  content: "$ ";
+  content: "> ";
+}
+#about div.top-bar {
+  height: 2rem;
+  width: 100%;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: var(--color-terminal-window);
 }
 
 #about p {
   padding: 2rem 2rem 4rem;
-  background-color: var(--color-background-about-p);
+  background-color: var(--color-terminal-background);
+  border: 0.2rem solid var(--color-terminal-window);
+  box-shadow: 0 2rem 4rem #000, 0 1.2rem 1.2rem #000;
 }
-#about p::after {
-  content: "_";
-  animation: prompt 0.6s infinite;
+#about p::before {
+  color: var(--color-brightRed);
+  font-weight: bolder;
+  content: ">";
 }
 /* FOOTER */
 
@@ -323,7 +375,13 @@ footer {
   justify-content: space-between;
   height: 100%;
   padding: 0 2rem;
-  background-color: var(--color-background);
+  background-color: var(--color-background-footer);
+}
+footer h2 {
+  font-size: 2.8rem;
+}
+footer h3 {
+  font-size: 2.2rem;
 }
 footer ul {
   padding-bottom: 2rem;
@@ -331,9 +389,10 @@ footer ul {
 footer #contact a {
   display: inline-block;
   max-width: 100%;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 0.8rem;
   margin: 1rem 0;
+  border-radius: 0.4rem;
   color: var(--color-p);
   border: 0.4rem solid var(--color-footer-p);
 }
@@ -345,25 +404,9 @@ footer section ul li a {
   color: var(--color-p);
 }
 footer > p {
-  padding: 1.2rem;
+  padding: 2rem;
+  font-size: 1.2rem;
   text-align: center;
+  font-weight: bolder;
   color: var(--color-footer-p);
-}
-/* ANIMATIONS */
-@keyframes prompt {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slidePortfolio {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
