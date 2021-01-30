@@ -1,0 +1,89 @@
+@media screen and (min-width: 770px) {
+  header {
+    position: fixed;
+  }
+
+  header p:nth-child(3) {
+    display: block;
+    cursor: pointer;
+  }
+
+  header nav.discover {
+    display: block;
+  }
+  header nav {
+    display: none;
+    position: fixed;
+    top: 4.4rem;
+    height: calc(100vh - 4.4rem);
+    overflow-x: hidden;
+    z-index: 2;
+    transition: all 0.4s;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    background-color: #000000d0;
+  }
+
+  header nav ul li {
+    flex-basis: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: none;
+    padding: 2rem;
+  }
+  header nav ul li a .fas {
+    display: none;
+  }
+  header nav ul li a::after {
+    font-size: 3.2rem;
+    font-weight: lighter;
+  }
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  header nav ul li:nth-child(1) a::after {
+    content: " Mes compétences";
+  }
+
+  header nav ul li:nth-child(2) a::after {
+    content: " Mes outils";
+  }
+
+  header nav ul li:nth-child(3) a::after {
+    content: " Diplômes et certificats";
+  }
+
+  header nav ul li:nth-child(4) a::after {
+    content: " Mes expériences";
+  }
+
+  header nav ul li:nth-child(5) a::after {
+    content: " Mon portfolio";
+  }
+
+  header nav ul li:nth-child(6) a::after {
+    content: " A propos";
+  }
+  header nav ul li:nth-child(7) a::after {
+    content: " Contact";
+  }
+  header nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: var(--color-nav-li);
+  }
+
+  #xp,
+  #about,
+  footer {
+    height: 100vh;
+  }
+}
