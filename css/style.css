@@ -160,8 +160,8 @@ main > section > h2,
 footer h2 {
   padding: 4rem 0;
   text-align: center;
-  font-size: 2.4rem;
-  line-height: 3.2rem;
+  font-size: .8rem;
+  line-height: 1rem;
   color: var(--color-h2);
 }
 main > section h3::before {
@@ -267,7 +267,7 @@ main > section dl dd {
 }
 /* PORTFOLIO */
 #portfolio {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #portfolio h2 {
   padding: 4rem 0;
@@ -331,7 +331,7 @@ main > section dl dd {
 }
 #portfolio ul.dots {
   position: relative;
-  bottom: 2rem;
+  top: 2rem;
 }
 #portfolio ul.dots li {
   display: inline-block;
@@ -345,7 +345,7 @@ main > section dl dd {
   height: 100%;
 }
 #about h2::before {
-  content: "> ";
+  content: "";
 }
 #about div.top-bar {
   height: 2rem;
