@@ -16,7 +16,7 @@ header p:nth-child(3) {
 }
 header p:nth-child(3):hover {
   text-shadow: 0 0 1rem var(--color-brightBlue),
-    0 0 4rem var(--color-brightBlue), 0 0 8rem var(--color-brightBlue);
+    0 0 4rem var(--color-brightBlue), 0 0 8rem var(--color-brightBlue), 0 0 12rem var(--color-brightBlue);
 }
 
 header p:nth-child(3):active {
@@ -35,7 +35,8 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: var(--color-red);
-  text-shadow: 0 0 0.24rem var(--color-brightRed);
+  text-shadow: 0 0 1rem var(--color-brightRed), 0 0 2rem var(--color-brightRed), 0 0 4rem var(--color-brightRed);
+
 }
 #welcome i{
   transition: .2s;
@@ -53,6 +54,12 @@ header nav ul li a:hover {
   animation: slidePortfolio 2s;
   transition: 0.4s;
 }
+
+#portfolio > ul > li.active:hover {
+  transform: scale(1.04);
+  z-index: 4; 
+}
+
 
 #portfolio .fa-chevron-left,
 #portfolio .fa-chevron-right {

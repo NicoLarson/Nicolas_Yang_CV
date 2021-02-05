@@ -56,30 +56,30 @@
     font-weight: lighter;
   }
   header nav ul li:nth-child(1) a::after {
-    content: " /Compétences";
+    content: "Compétences";
   }
 
   header nav ul li:nth-child(2) a::after {
-    content: " /Outils";
+    content: "Outils";
   }
 
   header nav ul li:nth-child(3) a::after {
-    content: " /Diplômes_et_certificats";
+    content: "Diplômes_et_certificats";
   }
 
   header nav ul li:nth-child(4) a::after {
-    content: " /Expériences";
+    content: "Expériences";
   }
 
   header nav ul li:nth-child(5) a::after {
-    content: " /Portfolio";
+    content: "Portfolio";
   }
 
   header nav ul li:nth-child(6) a::after {
-    content: " /À_propos";
+    content: "À_propos";
   }
   header nav ul li:nth-child(7) a::after {
-    content: " /Contact";
+    content: "Contact";
   }
   header nav ul li a {
     padding: 0;
@@ -102,13 +102,12 @@
     line-height: 2.4rem;
   }
 
-  #diploma,
-  #xp,
+  #diploma > dl,
+  #xp > section,
   #about {
-    padding: 8rem 28%;
+    padding: 0 28% 8rem;
   }
 
-  #diploma,
   #about,
   footer {
     height: 100vh;
@@ -126,6 +125,7 @@
   /* PORTFOLIO */
   #portfolio {
     padding: 8rem 4rem;
+    height: 100%;
   }
   #portfolio ul li figure figcaption h4 {
     padding: 2rem 0;
