@@ -188,7 +188,7 @@ nav.discover > ul > li:last-child {
 #xp h2,
 #about h2 {
   width: 50vw;
-  font-size: 4rem;
+  font-size: 3.2rem;
   text-align: center;
 }
 #skills section,
@@ -286,14 +286,14 @@ nav.discover > ul > li:last-child {
   border-bottom: 0.2rem solid var(--color-black2);
 }
 #portfolio h2 {
-  padding: 8rem 0 0 8rem;
+  padding: 8rem 0 8rem 8rem;
   font-size: 4rem;
 }
 #portfolio ul {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  height: calc(100% - 12rem);
+  justify-content: space-around;
 }
 
 #portfolio ul li {
@@ -316,14 +316,19 @@ nav.discover > ul > li:last-child {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-#portfolio ul li figure,
+#portfolio ul li figure {
+  width: 48rem;
+  height: 57rem;
+}
+
 #portfolio ul li figure img {
-  width: 30vw;
+  width: 48rem;
+  height: 48rem;
 }
 
 #portfolio ul li img,
 #portfolio ul li {
-  border-radius: 1.2%;
+  border-radius: 0.8%;
 }
 #portfolio ul li {
   margin: 0 8rem;
@@ -349,18 +354,16 @@ nav.discover > ul > li:last-child {
   font-size: 2rem;
   padding: 0 0.4rem;
 }
-
 #portfolio > i.fa-chevron-right,
 #portfolio > i.fa-chevron-left {
   position: relative;
-  bottom: 55vh;
-  font-size: 8rem;
+  bottom: 45vh;
+  font-size: 4rem;
   padding: 2rem;
-  border-radius: 10rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background-color: rgba(255, 255, 255, 0.384);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffffff, #d4d8d9);
+  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
   cursor: pointer;
-  transition: all 0.2s;
 }
 
 #portfolio > i.fa-chevron-right {
@@ -370,7 +373,23 @@ nav.discover > ul > li:last-child {
 #portfolio > i.fa-chevron-left {
   left: 4rem;
 }
-
+#portfolio #dots {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+#portfolio #dots div {
+  bottom: 2rem;
+  margin: 1rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 0.01rem solid var(--color-black0);
+  border-radius: 50%;
+  background-color: var(--color-white1);
+}
+#portfolio #dots div.active {
+  background-color: var(--color-dark-bg);
+}
 /* ABOUT */
 #about {
   background-color: #abadab;

@@ -1,4 +1,7 @@
-* {
+header nav ul li a,
+#welcome ul li,
+#portfolio ul li.active,
+footer > ul #contact a {
   transition: all 0.6s;
 }
 
@@ -7,7 +10,6 @@ header.dark-mode > i.fa-bars:hover {
   color: var(--color-dark-orange);
   transition: all 0.8s;
 }
-
 header nav ul li a:hover {
   transform: scale(1.12);
 }
@@ -43,18 +45,26 @@ nav.discover {
   transform: scale(1.04);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
 #portfolio ul li.active {
   animation: fade 0.8s;
 }
 
+#portfolio > i.fa-chevron-right,
+#portfolio > i.fa-chevron-left {
+  transition: all 0.2s;
+}
+
 #portfolio > i.fa-chevron-right:hover,
 #portfolio > i.fa-chevron-left:hover {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 50%;
+  background: #ecf0f1;
+  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
 }
 #portfolio > i.fa-chevron-right:active,
 #portfolio > i.fa-chevron-left:active {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #d4d8d9, #fdffff);
+  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
 }
 
 main.dark-mode #portfolio ul li,
