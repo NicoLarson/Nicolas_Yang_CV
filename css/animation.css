@@ -1,3 +1,6 @@
+#barHide {
+  transition: all 1s;
+}
 header nav ul li a,
 #welcome ul li,
 #portfolio ul li.active,

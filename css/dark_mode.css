@@ -91,6 +91,17 @@ main.dark-mode #portfolio {
   border-top: 0.2rem solid var(--color-dark-orange);
   border-bottom: 0.2rem solid var(--color-dark-orange);
 }
+main.dark-mode #portfolio > i.fa-chevron-right,
+main.dark-mode #portfolio > i.fa-chevron-left {
+  box-shadow: none;
+  background: var(--color-dark-bg0);
+}
+main.dark-mode #portfolio #dots div {
+  background-color: var(--color-dark-ft0);
+}
+main.dark-mode #portfolio #dots div.active {
+  background-color: var(--color-dark-orange);
+}
 
 main.dark-mode section#about {
   background-color: var(--color-dark-blue);
