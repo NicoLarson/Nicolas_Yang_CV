@@ -93,8 +93,23 @@ main.dark-mode #portfolio {
 }
 main.dark-mode #portfolio > i.fa-chevron-right,
 main.dark-mode #portfolio > i.fa-chevron-left {
-  box-shadow: none;
-  background: var(--color-dark-bg0);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1f2223, #1a1d1e);
+  box-shadow: 5px 5px 9px #151718, -5px -5px 9px #25292a;
+}
+main.dark-mode #portfolio > i.fa-chevron-right:hover,
+main.dark-mode #portfolio > i.fa-chevron-left:hover {
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1a1d1e, #1f2223);
+  box-shadow:  5px 5px 9px #151718,
+               -5px -5px 9px #25292a;
+}
+main.dark-mode #portfolio > i.fa-chevron-right:active,
+main.dark-mode #portfolio > i.fa-chevron-left:active {
+  border-radius: 50%;
+  background: #1d2021;
+  box-shadow: inset 5px 5px 9px #151718, inset -5px -5px 9px #25292a;
+  font-size: 3.9rem;
 }
 main.dark-mode #portfolio #dots div {
   background-color: var(--color-dark-ft0);

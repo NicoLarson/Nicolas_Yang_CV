@@ -188,7 +188,7 @@ nav.discover > ul > li:last-child {
 #xp h2,
 #about h2 {
   width: 50vw;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   text-align: center;
 }
 #skills section,
@@ -209,7 +209,7 @@ nav.discover > ul > li:last-child {
 #tools section h3,
 #xp section h3 {
   padding: 2rem 0 0 2rem;
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 #skills section ul,
 #tools section ul {
@@ -221,12 +221,12 @@ nav.discover > ul > li:last-child {
 #skills section ul li,
 #tools section ul li {
   margin: 4rem 2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 #skills section ul i,
 #tools section ul i {
   padding-right: 1rem;
-  font-size: 4.4rem;
+  font-size: 4rem;
 }
 /* SKILLS */
 #skills {
@@ -244,7 +244,7 @@ nav.discover > ul > li:last-child {
   background-color: #d8d9d8;
 }
 #diploma dl dt {
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 0 4rem;
 }
 #diploma dl dd {
@@ -261,7 +261,7 @@ nav.discover > ul > li:last-child {
   padding: 1.2rem 2rem;
 }
 #xp section dl h4 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 #xp section dl dt {
   font-size: 2rem;
@@ -281,13 +281,13 @@ nav.discover > ul > li:last-child {
 /* PORTFOLIO */
 #portfolio {
   height: 100vh;
-  background-color: #728388;
+  background-color: var(--color-white1);
   border-top: 0.2rem solid var(--color-black2);
   border-bottom: 0.2rem solid var(--color-black2);
 }
 #portfolio h2 {
   padding: 8rem 0 8rem 8rem;
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 #portfolio ul {
   display: flex;
@@ -395,7 +395,6 @@ nav.discover > ul > li:last-child {
   background-color: #abadab;
 }
 #about p {
-  padding: 4rem 0 0 8rem;
   font-size: 2rem;
   text-align: justify;
   line-height: 3.2rem;
@@ -450,7 +449,7 @@ footer > ul li a {
 footer p {
   padding: 1rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 770px), (max-height: 700px) {
