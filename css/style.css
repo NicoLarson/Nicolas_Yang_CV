@@ -41,8 +41,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem 1rem 2rem;
-  width: 100vw;
+  padding: 1rem 2rem;
+  width: 100%;
   position: fixed;
   background-color: var(--color-white0);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -404,6 +404,11 @@ footer p {
 }
 
 @media screen and (max-width: 770px), (max-height: 700px) {
+
+header {
+  width: 100vw;
+}
+
   section a {
     font-size: 2.2rem;
   }
@@ -485,6 +490,20 @@ footer p {
   }
   /* PORTFOLIO */
 
+#portfolio ul li figure img{
+  width: 100vw;
+  height: 100%;
+}
+#portfolio ul,
+#portfolio ul,
+#portfolio figcaption,
+#portfolio figure {
+  max-width: 100vw;
+}
+
+
+
+  /* ABOUT */
   #about p {
     padding: 4rem 2rem;
     text-align: left;

@@ -26,14 +26,14 @@ header.dark-mode nav ul li a:hover {
   color: var(--color-dark-orange-soft);
   text-decoration: none;
 }
-header.dark-mode nav ul li a::before,
-header.dark-mode nav ul li a::after {
+nav ul li a::before,
+nav ul li a::after {
   content: " - ";
   opacity: 0;
   transition: all 1s;
 }
-header.dark-mode nav ul li a:hover::before,
-header.dark-mode nav ul li a:hover::after {
+nav ul li a:hover::before,
+nav ul li a:hover::after {
   opacity: 1;
 }
 
