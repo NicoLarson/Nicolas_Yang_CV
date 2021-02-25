@@ -1,6 +1,14 @@
 #barHide {
   transition: all 1s;
 }
+.fa-adjust {
+  transition: all 0.6s;
+}
+
+.fa-adjust:hover {
+  transform: rotateY(180deg);
+}
+
 header nav ul li a,
 #welcome ul li,
 #portfolio ul li.active,
@@ -12,9 +20,6 @@ header.dark-mode > i.fa-times:hover,
 header.dark-mode > i.fa-bars:hover {
   color: var(--color-dark-orange);
   transition: all 0.8s;
-}
-header nav ul li a:hover {
-  transform: scale(1.12);
 }
 
 header.dark-mode nav ul li a:hover {
@@ -45,30 +50,28 @@ nav.discover {
   animation: upAndDown 2s linear infinite alternate;
 }
 
-#portfolio > i.fa-chevron-right,
-#portfolio > i.fa-chevron-left {
-  transition: all 0.2s;
-}
-
-#portfolio > i.fa-chevron-right:hover,
-#portfolio > i.fa-chevron-left:hover {
-  border-radius: 50%;
-  background: #ecf0f1;
-  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
-}
-#portfolio > i.fa-chevron-right:active,
-#portfolio > i.fa-chevron-left:active {
-  border-radius: 50%;
-  background: linear-gradient(145deg, #d4d8d9, #fdffff);
-  box-shadow: 20px 20px 60px #c9cccd, -20px -20px 60px #ffffff;
-}
-
-main.dark-mode #portfolio ul li,
-main.dark-mode #portfolio ul li figure img {
+#portfolio ul li figure img,
+#portfolio ul li figure figcaption,
+#portfolio ul li figure figcaption a {
   transition: all 0.6s;
 }
-main.dark-mode #portfolio ul li:hover figure img {
-  filter: grayscale(0);
+
+#portfolio ul li figure:hover img,
+main.dark-mode #portfolio ul li figure:hover img {
+  filter: brightness(0.2);
+}
+
+#portfolio ul li figure:hover figcaption {
+  opacity: 1;
+}
+
+#portfolio ul li figure:hover figcaption a:hover {
+  background-color: var(--color-dark-orange);
+  border: 2px solid var(--color-black0);
+}
+
+#portfolio ul li figure:hover figcaption a:hover i {
+  color: var(--color-black0);
 }
 
 footer > ul #contact a:hover,
