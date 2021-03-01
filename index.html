@@ -33,14 +33,14 @@
 
 <body>
     <header id="barHide" itemscope itemtype="https://schema.org/Person">
-        <i class="fas fa-adjust"></i>
+        <i class="fas fa-adjust" aria-hidden="true"></i>
         <h1 itemprop="name"> <a href="#">NY</a> </h1>
         <i class="fas fa-bars"></i>
         <nav>
             <ul itemscope itemtype="https://schema.org/WebPage">
                 <li itemprop="breadcrumb"><a href="#skills">Compétences</a></li>
                 <li itemprop="breadcrumb"><a href="#tools">Outils</a></li>
-                <li itemprop="breadcrumb"><a href="#diploma">Diplômes et cértifications</a></li>
+                <li itemprop="breadcrumb"><a href="#diploma">Diplômes et certifications</a></li>
                 <li itemprop="breadcrumb"><a href="#xp">Expériences</a></li>
                 <li itemprop="breadcrumb"><a href="#portfolio">Portfolio</a></li>
                 <li itemprop="breadcrumb"><a href="#about">A propos</a></li>
@@ -66,7 +66,7 @@
         <section id="welcome">
             <h2>NY</h2>
             <ul></ul>
-            <a href="#skills"><i class="fas fa-chevron-down"></i>
+            <a href="#skills" aria-hidden="true" tabindex='-1'><i class="fas fa-chevron-down"></i>
             </a>
         </section>
 
@@ -123,7 +123,7 @@
             </section>
         </section>
         <section id="diploma" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-            <h2 itemprop="credentialCategory">Diplômes et cértifications</h2>
+            <h2 itemprop="credentialCategory">Diplômes et certifications</h2>
             <dl>
                 <dt><time datetime="2021">2020 - 2021</time></dt>
                 <dd itemprop="educationalLevel name">Développeur d'applications - PHP <br><em>
@@ -199,8 +199,7 @@
                         <img itemprop="image" src="./assets/img/portfolio/vacance_a_la_montagne.png"
                             alt="Vacance à la montagne">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name">Vacance à la montagne
-                            </h4>
+                            <p itemprop="name">Vacance à la montagne</p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
@@ -213,8 +212,8 @@
                                 <li> <i itemprop="instrument" class="fas fa-database"></i>
                                 </li>
                             </ul>
-                            <a itemprop="url" href="https://github.com/NicoLarson/PPE_vacance_montagne/"
-                                target="_blank"><i class="far fa-eye"></i></a>
+                            <a itemprop="url" href="https://github.com/NicoLarson/PPE_vacance_montagne/" target="_blank"
+                                rel="noopener"><i class="far fa-eye"></i>Lien vers vacance à la montagne</a>
                         </figcaption>
                     </figure>
 
@@ -224,7 +223,7 @@
                         itemref="rockPaperScissors portfolioAymeline etchASketch">
                         <img itemprop="image" src="./assets/img/portfolio/jay_galery.jpg" alt="Jay galery">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name">Jay Galery</h4>
+                            <p itemprop="name">Jay Galery</p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
@@ -232,8 +231,8 @@
                                 </li>
 
                             </ul>
-                            <a itemprop="url" href="https://nicolarson.github.io/Jay_Gallery/" target="_blank"><i
-                                    class="far fa-eye"></i>
+                            <a itemprop="url" href="https://nicolarson.github.io/Jay_Gallery/" target="_blank"
+                                rel="noopener"><i class="far fa-eye"></i>Lien vers Jay Galery
                             </a>
                         </figcaption>
                     </figure>
@@ -244,15 +243,16 @@
                         <img itemprop="image" src="./assets/img/portfolio/festival_de_film_screenshot.png"
                             alt="Festival de films de plein air">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name">Féstival de films de plein air</h4>
+                            <p itemprop="name">Féstival de films de plein air</p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
                                 <li> <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
                                 </li>
                             </ul>
-                            <a itemprop="url" href="https://github.com/NicoLarson/FestivalDeFilm_OCR/" target="_blank">
-                                <i class="far fa-eye"></i></a>
+                            <a itemprop="url" href="https://github.com/NicoLarson/FestivalDeFilm_OCR/" target="_blank"
+                                rel="noopener">
+                                <i class="far fa-eye"></i>Lien vers festival de films</a>
 
                         </figcaption>
                     </figure>
@@ -262,7 +262,7 @@
                         <img itemprop="image" src="./assets/img/portfolio/rockPaperScissors.png"
                             alt="Rock paper scissor">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name">Pierre Feuille Ciseaux <i class="fas fa-user-ninja"></i></h4>
+                            <p itemprop="name">Pierre Feuille Ciseaux <i class="fas fa-user-ninja"></i></p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
@@ -271,8 +271,9 @@
                                 <li> <i itemprop="instrument" class="devicon-javascript-plain"></i>
                                 </li>
                             </ul>
-                            <a itemprop="url" href="https://nicolarson.github.io/Rock-Paper-Scissors/" target="_blank">
-                                <i class="far fa-eye"></i></a>
+                            <a itemprop="url" href="https://nicolarson.github.io/Rock-Paper-Scissors/" target="_blank"
+                                rel="noopener">
+                                <i class="far fa-eye"></i>Lien vers Chifoumi</a>
 
                         </figcaption>
                     </figure>
@@ -281,15 +282,15 @@
                     <figure id="portfolioAymeline" itemscope>
                         <img itemprop="image" src="./assets/img/portfolio/aymelineYang.png" alt="Site AymelineYang">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name">CV Aymeline Yang</h4>
+                            <p itemprop="name">Aymeline Yang</p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
                                 <li> <i itemprop="instrument" class="devicon-css3-plain-wordmark"></i>
                                 </li>
                             </ul>
-                            <a itemprop="url" href="https://aymelineyang.fr/" target="_blank">
-                                <i class="far fa-eye"></i></a>
+                            <a itemprop="url" href="https://aymelineyang.fr/" target="_blank" rel="noopener">
+                                <i class="far fa-eye"></i>Lien vers aymelineyang.fr</a>
 
                         </figcaption>
                     </figure>
@@ -298,8 +299,8 @@
                     <figure id="etchASketch" itemscope>
                         <img itemprop="image" src="./assets/img/portfolio/etchASketch.png" alt="Etch a sketch">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name">Etch a sketch <i class="fas fa-phone-slash"></i>
-                            </h4>
+                            <p itemprop="name">Etch a sketch <i class="fas fa-phone-slash"></i>
+                            </p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
@@ -308,8 +309,9 @@
                                 <li> <i itemprop="instrument" class="devicon-javascript-plain"></i>
                                 </li>
                             </ul>
-                            <a itemprop="url" href="https://nicolarson.github.io/ETCH-A-SKETCH/" target="_blank">
-                                <i class="far fa-eye"></i></a>
+                            <a itemprop="url" href="https://nicolarson.github.io/ETCH-A-SKETCH/" target="_blank"
+                                rel="noopener">
+                                <i class="far fa-eye"></i>Lien vers Etch a sketch</a>
 
                         </figcaption>
                     </figure>
@@ -318,9 +320,9 @@
                     <figure id="ticTacToe" itemscope>
                         <img itemprop="image" src="./assets/img/portfolio/tictactoe.png" alt="Tic Tac Toe">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name">Tic Tac Toe <i class="fas fa-user-ninja"></i><i
+                            <p itemprop="name">Tic Tac Toe <i class="fas fa-user-ninja"></i><i
                                     class="fas fa-user-ninja"></i>
-                            </h4>
+                            </p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
@@ -329,8 +331,9 @@
                                 <li> <i itemprop="instrument" class="devicon-javascript-plain"></i>
                                 </li>
                             </ul>
-                            <a itemprop="url" href="https://nicolarson.github.io/TicTacToe_js/" target="_blank">
-                                <i class="far fa-eye"></i></a>
+                            <a itemprop="url" href="https://nicolarson.github.io/TicTacToe_js/" target="_blank"
+                                rel="noopener">
+                                <i class="far fa-eye"></i>Lien vers Tictactoe</a>
 
                         </figcaption>
                     </figure>
@@ -339,8 +342,8 @@
                     <figure id="weatherJS" itemscope>
                         <img itemprop="image" src="./assets/img/portfolio/weatherJS.png" alt="Météo">
                         <figcaption itemprop="description">
-                            <h4 itemprop="name"><i class="fas fa-cloud-sun"></i>Météo
-                            </h4>
+                            <p itemprop="name"><i class="fas fa-cloud-sun"></i>Météo
+                            </p>
                             <ul>
                                 <li> <i itemprop="instrument" class="devicon-html5-plain-wordmark"></i>
                                 </li>
@@ -349,8 +352,9 @@
                                 <li> <i itemprop="instrument" class="devicon-javascript-plain"></i>
                                 </li>
                             </ul>
-                            <a itemprop="url" href="https://nicolarson.github.io/MeteoJS/" target="_blank">
-                                <i class="far fa-eye"></i></a>
+                            <a itemprop="url" href="https://nicolarson.github.io/MeteoJS/" target="_blank"
+                                rel="noopener">
+                                <i class="far fa-eye"></i>Lien vers Météo</a>
 
                         </figcaption>
                     </figure>
@@ -395,9 +399,9 @@
                 <section id="findMe">
                     <h3>Me trouver</h3>
                     <ul itemscope itemtype="https://schema.org/WebPage">
-                        <li> <a itemprop="url" href="https://www.linkedin.com/in/nicolas-yang-dev" target="_blank"><i
-                                    class="devicon-linkedin-plain"></i> Linkedin</a></li>
-                        <li> <a itemprop="url" href="https://github.com/NicoLarson" target="_blank"><i
+                        <li> <a itemprop="url" href="https://www.linkedin.com/in/nicolas-yang-dev" target="_blank"
+                                rel="noopener"><i class="devicon-linkedin-plain"></i> Linkedin</a></li>
+                        <li> <a itemprop="url" href="https://github.com/NicoLarson" target="_blank" rel="noopener"><i
                                     class="devicon-github-plain"></i> GitHub</a>
                         </li>
                     </ul>
@@ -409,7 +413,7 @@
                     <ul>
                         <li><a href="#skills"><i class="fas fa-brain"></i> Compétences</a></li>
                         <li> <a href="#tools"><i class="fas fa-tools"></i> Outils</a></li>
-                        <li> <a href="#diploma"><i class="fas fa-graduation-cap"></i> Diplômes et cértifications</a>
+                        <li> <a href="#diploma"><i class="fas fa-graduation-cap"></i> Diplômes et certifications</a>
                         </li>
                         <li> <a href="#xp"><i class="fas fa-briefcase"></i> Expériences</a></li>
                         <li> <a href="#portfolio"><i class="fas fa-book-open"></i> Portfolio</a></li>

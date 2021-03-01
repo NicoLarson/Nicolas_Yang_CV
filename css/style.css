@@ -255,16 +255,16 @@ nav.discover > ul > li:last-child {
 /* EXPERIENCE */
 #xp {
   flex-direction: row-reverse;
-  background-color: #cbcdcb;
+  background-color: #e5e6e5;
 }
 #xp section dl {
   padding: 1.2rem 2rem;
 }
 #xp section dl h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 #xp section dl dt {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 #xp section dl dd {
   padding: 0.4rem 0 2rem 4rem;
@@ -310,7 +310,7 @@ nav.discover > ul > li:last-child {
   opacity: 0;
   width: 40rem;
 }
-#portfolio ul li figure figcaption h4 {
+#portfolio ul li figure figcaption p {
   font-size: 2.4rem;
   text-align: center;
   color: var(--color-white1);
@@ -340,6 +340,7 @@ nav.discover > ul > li:last-child {
   border: 0.2rem solid var(--color-white1);
   background-color: var(--color-dark-blue);
   margin: 0 auto;
+  font-size: 0;
 }
 /* ABOUT */
 #about {
