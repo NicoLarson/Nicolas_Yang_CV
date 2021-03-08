@@ -405,10 +405,9 @@ footer p {
 }
 
 @media screen and (max-width: 770px), (max-height: 700px) {
-
-header {
-  width: 100vw;
-}
+  header {
+    width: 100vw;
+  }
 
   section a {
     font-size: 2.2rem;
@@ -477,10 +476,21 @@ header {
     font-size: 4.4rem;
   }
   #diploma dl {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
-  #diploma dd {
+  #diploma dl dd {
+    margin: 1rem 2rem 4rem;
     font-size: 2rem;
+  }
+  /* XP */
+  #xp section {
+    padding: 4rem 2rem 0;
+  }
+  #xp section h3 {
+    padding: 0;
+  }
+  #xp section dl {
+    padding: 0;
   }
   #xp h4 {
     font-size: 2.24rem;
@@ -491,18 +501,16 @@ header {
   }
   /* PORTFOLIO */
 
-#portfolio ul li figure img{
-  width: 100vw;
-  height: 100%;
-}
-#portfolio ul,
-#portfolio ul,
-#portfolio figcaption,
-#portfolio figure {
-  max-width: 100vw;
-}
-
-
+  #portfolio ul li figure img {
+    width: 100vw;
+    height: 100%;
+  }
+  #portfolio ul,
+  #portfolio ul,
+  #portfolio figcaption,
+  #portfolio figure {
+    max-width: 100vw;
+  }
 
   /* ABOUT */
   #about p {
