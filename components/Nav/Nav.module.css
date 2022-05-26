@@ -1,12 +1,17 @@
 .nav {
-    background-color: red;
+    border: .2rem solid #000;
 }
 
 .nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     padding: 0;
 }
 
 .nav ul li {
     list-style: none;
     cursor: pointer;
+    padding: 1rem;
 }
