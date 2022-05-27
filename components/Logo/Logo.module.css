@@ -1,4 +1,12 @@
-.LogoPic{
-    height: 2rem;
-    width: 2rem;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem .2rem;
+    width: 18rem;
+    margin: 0 1rem 1rem 0;
+}
+.logo p{
+    font-size: 1.4rem;
+    text-align: center;
 }

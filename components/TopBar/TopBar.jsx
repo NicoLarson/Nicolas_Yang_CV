@@ -1,8 +1,8 @@
 import style from './TopBar.module.css';
-export default function TopBar() {
+export default function TopBar({text}) {
     return (
-        <div className={style.TopBar}>
-        <p>TopBar</p>
+        <div className={style.topBar}>
+        <p>{text}</p>
         </div>
     )
 }

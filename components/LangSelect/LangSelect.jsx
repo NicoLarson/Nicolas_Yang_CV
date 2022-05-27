@@ -1,7 +1,8 @@
-
+import styles from './LangSelect.module.css'
 export default function LangSelect() {
     return (
-        <>
-        <p>FRA / ENG</p></>
+        <div className={styles.langSelect}>
+            <p>FRA / ENG</p>
+        </div>
     )
 }

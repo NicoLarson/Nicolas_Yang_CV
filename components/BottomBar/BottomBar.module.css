@@ -1,4 +1,12 @@
-.BottomBar {
-    background-color: green;
+.bottomBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    border-radius: 1rem;
+}
+
+.bottomBar p {
+    padding: 1rem;
+    font-size: 1.4rem;
 }

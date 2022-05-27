@@ -7,27 +7,32 @@ export default function Nav() {
             <ul>
                 <li>
                     <Link href="/">
-                        <a>Home</a>
+                        <a><span>1.</span> Accueil</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/hero">
-                        <a>Hero</a>
+                    <Link href="/skills">
+                        <a><span>2.</span> Compétences</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/tools">
+                        <a><span>3.</span> Outils</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/portfolio">
-                        <a>Portfolio</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/about">
-                        <a>About</a>
+                        <a><span>4.</span> Portfolio</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/contact">
-                        <a>Contact</a>
+                        <a><span>5.</span> Contact</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/about">
+                        <a><span>6.</span> A propos</a>
                     </Link>
                 </li>
             </ul>

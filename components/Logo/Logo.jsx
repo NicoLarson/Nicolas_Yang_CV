@@ -4,12 +4,13 @@ import styles from './Logo.module.css'
 
 export default function Logo() {
     return (
-        <>
-            <Image src={LogoPic} alt="logo"
-                width={60 + 'rem'}
-                height={50 + 'rem'}
-            />
-        </>
+        <div className={styles.logo}>
+        <p>Nicolas YANG</p>
+            {/* <Image src={LogoPic} alt="logo"
+                width={70 + 'rem'}
+                height={60 + 'rem'}
+            /> */}
+        </div>
     )
 
 }

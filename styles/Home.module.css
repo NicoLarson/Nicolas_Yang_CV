@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    border: .8rem solid var(--color-dark0);
+    padding: 1rem;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container main {
+    display: flex;
+    height: 100%;
+}
+
+.container footer {
+    display: flex;
+}

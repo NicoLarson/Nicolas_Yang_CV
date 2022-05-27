@@ -1,8 +1,17 @@
-.MainInfo{
-    background-color: pink;
+.mainInfo {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&display=swap');
+
+.mainInfo h1 {
+  font-size: 14rem;
+  font-family: 'Mrrobot', monospace;
+  font-weight: 100;
 }
