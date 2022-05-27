@@ -3,10 +3,13 @@
     justify-content: center;
     align-items: center;
     padding: .4rem .2rem;
-    width: 18rem;
+    width: 24rem;
     margin: 0 1rem 1rem 0;
+    cursor: pointer;
 }
-.logo p{
+
+.logo a {
     font-size: 1.4rem;
     text-align: center;
+    font-weight: 100;
 }

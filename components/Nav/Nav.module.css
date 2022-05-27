@@ -4,7 +4,7 @@
     align-items: center;
     margin: 0 1rem 1rem 0;
     padding: 1rem;
-    width: 25rem;
+    width: 30rem;
 }
 
 .nav ul {
@@ -21,10 +21,13 @@
     cursor: pointer;
     padding: 1rem;
 }
-
 .nav a {
     display: inline-block;
 }
+
+.nav ul li a:hover{
+    text-decoration: underline;
+} 
 
 .nav a span {
     color: var(--color-bright_red);

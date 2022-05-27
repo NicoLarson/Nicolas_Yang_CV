@@ -39,6 +39,7 @@
 
   /* ======================================================== */
   /* LIGHT MODE */
+  --color-l-bg-body: var(--color-dark0_soft);
   --color-l-bg: var(--color-light0);
   --color-l-border: var(--color-dark0_soft);
   --color-l-border-hover: var(--color-bright_orange);
@@ -49,6 +50,7 @@
 
   /* ======================================================== */
   /* DARK MODE */
+  --color-d-bg-body: var(--color-light4);
   --color-d-bg: var(--color-dark0_soft);
   --color-d-border: var(--color-neutral_orange);
   --color-d-border-hover: var(--color-neutral_orange);
@@ -62,13 +64,13 @@
 /* LIGHT MODE */
 /* ======================================================== */
 body {
-  background-color: var(--color-l-bg);
+  background-color: var(--color-l-bg-body);
   transition: all 0.5s ease;
 }
 
 body>div>div div,
 body nav {
-  border: .2rem solid var(--color-l-border);
+  border: .1rem solid var(--color-l-border);
   border-radius: 1rem;
   transition: all 0.2s ease;
 }
@@ -98,9 +100,12 @@ body h1 {
 /* DARK MODE */
 /* ======================================================== */
 body.dark-mode {
-  background-color: var(--color-d-bg);
+  background-color: var(--color-d-bg-body);
 }
 
+body.dark-mode>div>div {
+  background-color: var(--color-d-bg);
+}
 
 body.dark-mode>div>div div,
 body.dark-mode nav {
@@ -182,7 +187,6 @@ h1 {
 p {
   font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 500
 }
 
 abbr {
@@ -193,7 +197,6 @@ a {
   text-decoration: none;
   font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 600
 }
 
 a:focus {
