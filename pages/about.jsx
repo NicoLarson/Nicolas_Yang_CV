@@ -5,7 +5,7 @@ import TopBar from '../components/TopBar/TopBar'
 import BottomBar from '../components/BottomBar/BottomBar'
 import LangSelect from '../components/LangSelect/LangSelect'
 import SwitchMode from '../components/SwitchMode/SwitchMode'
-import MainInfo from '../components/MainInfo/MainInfo'
+import AboutSection from '../components/AboutSection/AboutSection'
 import Logo from '../components/Logo/Logo'
 
 export default function About() {
@@ -23,7 +23,7 @@ export default function About() {
             </header>
             <main className={styles.main}>
                 <Nav />
-                <MainInfo />
+                <AboutSection />
             </main>
             <footer>
                 <LangSelect />

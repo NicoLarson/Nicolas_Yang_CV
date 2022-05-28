@@ -3,8 +3,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 1rem 1rem 0;
-    padding: 1rem;
-    width: 30rem;
+    width: 32rem;
 }
 
 .nav ul {
@@ -13,23 +12,23 @@
     justify-content: center;
     flex-wrap: nowrap;
     height: 100%;
-    padding: 0;
+    width: 100%;
 }
 
 .nav ul li {
     list-style: none;
     cursor: pointer;
-    padding: 1rem;
-}
-.nav a {
-    display: inline-block;
+    width: 100%;
 }
 
-.nav ul li a:hover{
-    text-decoration: underline;
-} 
+.nav a {
+    display: block;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+}
 
 .nav a span {
     color: var(--color-bright_red);
-
 }

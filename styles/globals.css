@@ -40,13 +40,19 @@
   /* ======================================================== */
   /* LIGHT MODE */
   --color-l-bg-body: var(--color-dark0_soft);
+  --color-l-h1: var(--color-dark0_soft);
   --color-l-bg: var(--color-light0);
   --color-l-border: var(--color-dark0_soft);
   --color-l-border-hover: var(--color-bright_orange);
   --color-l-p: var(--color-dark1);
   --color-l-a: var(--color-dark1);
   --color-l-a-hover: var(--color-bright_orange);
-  --color-l-h1: var(--color-dark0_soft);
+  --color-l-bg-table-title: #fafafa00;
+  --color-l-ft-table-title: var(--color-dark0_hard);
+  --color-l-bg-table-tr: var(--color-dark0_hard);
+  --color-l-ft-table-tr: var(--color-light0);
+  --color-l-bg-nav-a-hover: var(--color-dark0_hard);
+  --color-l-ft-nav-a-hover: var(--color-light0);
 
   /* ======================================================== */
   /* DARK MODE */
@@ -68,18 +74,6 @@ body {
   transition: all 0.5s ease;
 }
 
-body>div>div div,
-body nav {
-  border: .1rem solid var(--color-l-border);
-  border-radius: 1rem;
-  transition: all 0.2s ease;
-}
-
-body>div>div div:hover,
-body nav:hover {
-  border-color: var(--color-l-border-hover);
-}
-
 body p {
   color: var(--color-l-p);
 }
@@ -94,6 +88,56 @@ body a:hover {
 
 body h1 {
   color: var(--color-l-h1);
+  padding: 4rem;
+}
+
+body>div>div div,
+body nav {
+  border: .1rem solid var(--color-l-border);
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+
+body>div>div div:hover {
+  border-color: var(--color-l-border-hover);
+}
+
+/* NAV */
+body nav ul li a {
+  transition: all .4s ease;
+}
+
+body nav ul li a:hover {
+  background-color: var(--color-l-bg-nav-a-hover);
+  color: var(--color-l-ft-nav-a-hover);
+}
+
+/* TABLE */
+body table tr,
+body table tr a,
+body table tr p {
+  transition: all .2s ease-in-out;
+}
+
+body table thead,
+body table tfoot {
+  background-color: var(--color-l-bg-table-title);
+  color: var(--color-l-ft-table-title);
+}
+
+body table tbody tr {
+  border-bottom: .1rem solid var(--color-l-border);
+
+}
+
+body table tbody tr:hover,
+body table tbody tr:hover a,
+body table tbody tr:hover p {
+  color: var(--color-l-ft-table-tr);
+}
+
+body table tbody tr:hover {
+  background-color: var(--color-l-bg-table-tr);
 }
 
 /* ======================================================== */
@@ -112,6 +156,16 @@ body.dark-mode nav {
   border: .2rem solid var(--color-d-border);
 }
 
+body.dark-mode>div>div table tr:hover,
+body.dark-mode>div>div table tr:hover a,
+body.dark-mode>div>div table tr:hover p {
+  background-color: var(--color-neutral_orange);
+}
+
+body.dark-mode>div>div table tr:hover {
+  background-color: var(--color-neutral_orange);
+}
+
 body.dark-mode p {
   color: var(--color-d-p);
 }
@@ -123,10 +177,6 @@ body.dark-mode a {
 body.dark-mode h1 {
   color: var(--color-d-h1);
 }
-
-
-
-
 
 /* ======================================================== */
 /* RESET */
@@ -181,7 +231,7 @@ input {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 
 p {
@@ -195,8 +245,6 @@ abbr {
 
 a {
   text-decoration: none;
-  font-size: 2rem;
-  text-transform: uppercase;
 }
 
 a:focus {

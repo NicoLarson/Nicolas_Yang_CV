@@ -2,6 +2,7 @@ import styles from './Nav.module.css'
 import Link from 'next/link'
 
 export default function Nav() {
+
     return (
         <nav className={styles.nav}>
             <ul>
@@ -11,28 +12,18 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/skills">
-                        <a><span>2.</span> Compétences</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/tools">
-                        <a><span>3.</span> Outils</a>
-                    </Link>
-                </li>
-                <li>
                     <Link href="/portfolio">
-                        <a><span>4.</span> Portfolio</a>
+                        <a><span>2.</span> Portfolio</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/infos">
-                        <a><span>5.</span> Infos</a>
+                        <a><span>3.</span> Infos</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/about">
-                        <a><span>6.</span> A propos</a>
+                        <a><span>4.</span> A propos</a>
                     </Link>
                 </li>
             </ul>

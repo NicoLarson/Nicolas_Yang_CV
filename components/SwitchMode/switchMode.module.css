@@ -4,6 +4,7 @@
     align-items: center;
     margin: 0 0 1rem 0;
     cursor: pointer;
+    width: 20rem;
 }
 
 .switchMode p {
