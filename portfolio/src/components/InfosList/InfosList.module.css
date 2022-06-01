@@ -1,0 +1,38 @@
+.infosList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+.infosList h1 {
+    font-family: monospace
+}
+
+.infosList h2 {
+    padding: 2rem;
+}
+
+.infosList>ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infosList>ul>li {
+    padding: 1rem;
+    border: 1px solid #222;
+}
+
+.infosList>ul>li li {
+    padding: 1rem;
+}
+
+.infosList>ul li:first-child section ul {
+    display: flex;
+}
+
+.infosList ul svg {
+    width: 4rem;
+}

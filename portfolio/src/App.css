@@ -1,0 +1,24 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 2rem);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--color-l-bg);
+  border-radius: 1rem;
+}
+
+.App header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App main {
+  display: flex;
+  height: 100%;
+}
+
+.App footer {
+  display: flex;
+}

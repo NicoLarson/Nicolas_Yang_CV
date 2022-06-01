@@ -1,0 +1,54 @@
+.portfolioList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    max-height: calc(100vh - 14rem);
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.portfolioList h1 {
+    font-family: monospace
+}
+
+.portfolioList ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.portfolioList ul li {
+    font-size: 1.6rem;
+    padding: .8rem;
+}
+
+.portfolioList table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.portfolioList table th {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.portfolioList table td {
+    padding: 1rem;
+}
+
+.portfolioList table thead th,
+.portfolioList table tfoot th {
+    text-transform: uppercase;
+}
+
+.portfolioList table tbody th {
+    text-align: left;
+    padding: 1rem 4rem;
+    max-width: 100%;
+}
