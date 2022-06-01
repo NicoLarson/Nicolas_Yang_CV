@@ -1,23 +1,32 @@
-import styles from './NavBar.module.css'
+import React from 'react';
 
-export default function Nav() {
+import styles from './NavBar.module.scss'
+
+import Home from '../MainPart/Home/Home'
+import Portfolio from '../MainPart/Portfolio/Portfolio'
+import About from '../MainPart/About/About'
+import Infos from '../MainPart/Infos/Infos'
+
+const NavBar = ({ setTopText, setMainPart }) => {
 
     return (
-        <nav className={styles.nav}>
+        <nav className={styles.navBar}>
             <ul>
                 <li>
-                    <button>Link</button>
+                    <button onClick={() => setMainPart(<Home />)}>Accueil</button>
                 </li>
                 <li>
-                    <button>Link</button>
+                    <button onClick={() => setMainPart(<Portfolio />)}>Portfolio</button>
                 </li>
                 <li>
-                    <button>Link</button>
+                    <button onClick={() => setMainPart(<About />)}>About</button>
                 </li>
                 <li>
-                    <button>Link</button>
+                    <button onClick={() => setMainPart(<Infos />)}>Infos</button>
                 </li>
             </ul>
-        </nav>
+        </nav >
     )
 }
+
+export default NavBar

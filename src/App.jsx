@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar'
 import TopBar from './components/TopBar/TopBar'
 import BottomBar from './components/BottomBar/BottomBar'
 import LangSelect from './components/LangSelect/LangSelect'
 import SwitchMode from './components/SwitchMode/SwitchMode'
-import MainInfo from './components/MainInfo/MainInfo'
+import Home from './components/MainPart/Home/Home'
 import Logo from './components/Logo/Logo'
 
 const App = () => {
+  const [mainPart, setMainPart] = useState(<Home />)
+  const [topText, setTopText] = useState("Bienvenue")
+
   return (
     <div className="App">
       <header>
         <Logo />
-        <TopBar text='Acceuil' />
+        <TopBar text={topText} />
         <SwitchMode />
       </header>
       <main>
-        <NavBar />
-        <MainInfo />
+        <NavBar setTopText={setTopText} setMainPart={setMainPart} />
+        {mainPart}
       </main>
       <footer>
         <LangSelect />
