@@ -10,7 +10,7 @@ import Logo from './components/Logo/Logo'
 
 const App = () => {
   const [mainPart, setMainPart] = useState(<Home />)
-  const [topText, setTopText] = useState("Bienvenue")
+  const [topText, setTopText] = useState("Nicolas Yang | Portfolio")
 
   return (
     <div className="App">

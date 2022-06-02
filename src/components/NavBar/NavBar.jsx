@@ -1,6 +1,6 @@
 import Home from '../MainPart/Home/Home'
 import Portfolio from '../MainPart/Portfolio/Portfolio'
-import About from '../MainPart/About/About'
+// import About from '../MainPart/About/About'
 import Infos from '../MainPart/Infos/Infos'
 
 const NavBar = ({ setTopText, setMainPart }) => {
@@ -13,9 +13,6 @@ const NavBar = ({ setTopText, setMainPart }) => {
                 </li>
                 <li>
                     <button onClick={() => setMainPart(<Portfolio />)}>Portfolio</button>
-                </li>
-                <li>
-                    <button onClick={() => setMainPart(<About />)}>About</button>
                 </li>
                 <li>
                     <button onClick={() => setMainPart(<Infos />)}>Infos</button>

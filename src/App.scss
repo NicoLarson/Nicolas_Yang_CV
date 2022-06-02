@@ -5,7 +5,6 @@
 /* ======================================================== */
 body {
   background-color: base.$gb-bg-1;
-  transition: all 0.5s ease;
   border: base.$gb-border solid 1px;
 
   h1,
@@ -15,12 +14,13 @@ body {
   li,
   button {
     color: base.$gb-ft-0;
+    font-family: 'JetBrains Mono', monospace;
+
   }
 
   nav,
   div.container {
     border: base.$gb-border solid 1px;
-
   }
 
   main,
@@ -72,3 +72,4 @@ body {
 @import "./components/TopBar/TopBar.module.scss";
 @import "./components/MainPart/Home/Home.module.scss";
 @import "./components/MainPart/Portfolio/Portfolio.module.scss";
+@import "./components/MainPart/Infos/Infos.module.scss";

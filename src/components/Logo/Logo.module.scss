@@ -2,10 +2,12 @@ div.Logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32rem;
+    width: 8rem;
     a{
         text-transform: uppercase;
         font-size: 1.6rem;
-        padding: 1rem;
+        font-weight: bolder;
+        font-family: 'Press Start 2P', cursive;
+        
     }
 }
