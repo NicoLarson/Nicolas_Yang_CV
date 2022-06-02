@@ -1,0 +1,47 @@
+@use '../../../assets/sass/base';
+
+.Portfolio {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 4rem;
+
+    h2 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
+    ul.portfolio-container {
+        li.portfolio-item {
+            border-top: 1px solid base.$gb-bg-0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 1.2rem;
+
+            img {
+                height: 12rem;
+                width: 12rem;
+            }
+
+            h3 {
+                font-size: 2rem
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    font-size: 1.6rem;
+                    text-align: center;
+                    height: 100%;
+                    padding: .8rem;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}

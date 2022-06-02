@@ -1,8 +1,6 @@
-import './LangSelect.module.scss'
-
-const  LangSelect = () => {
+const LangSelect = () => {
     return (
-        <div className="langSelect container">
+        <div className="LangSelect container">
             <p>FRA / ENG</p>
         </div>
     )

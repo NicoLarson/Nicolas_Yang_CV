@@ -1,7 +1,7 @@
 export default function Logo() {
     return (
-        <div className="logo container">
-                <a>Nicolas Yang Dev</a>
+        <div className="Logo container">
+                <a href="#">Nicolas Yang Dev</a>
         </div>
     )
 }

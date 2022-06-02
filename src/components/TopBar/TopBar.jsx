@@ -2,7 +2,7 @@
 const TopBar = ({ text }) => {
     return (
         <div className="TopBar container">
-            <p>{text}</p>
+            <h1>{text}</h1>
         </div>
     )
 }

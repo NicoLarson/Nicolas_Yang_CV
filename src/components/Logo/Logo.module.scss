@@ -1,2 +1,11 @@
-div.logo {
+div.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32rem;
+    a{
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
 }

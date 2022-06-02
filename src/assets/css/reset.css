@@ -41,14 +41,6 @@ input {
   list-style: none;
 }
 
-h1 {
-  font-size: 3.2rem;
-}
-
-p {
-  font-size: 2rem;
-  text-transform: uppercase;
-}
 
 abbr {
   text-decoration: none;

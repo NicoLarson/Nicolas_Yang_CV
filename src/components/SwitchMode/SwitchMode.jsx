@@ -2,6 +2,7 @@ import React from 'react';
 import './SwitchMode.module.scss'
 
 export default function SwitchMode() {
+    const modes = ['GameBoy', 'GruvBox']
     return (
         <div className="SwitchMode container">
             <p onClick={
@@ -12,7 +13,7 @@ export default function SwitchMode() {
                         document.body.classList.add('dark-mode')
                     }
                 }
-            }>Dark / Light</p>
+            }>Switch Mode</p>
         </div>
     )
 }
