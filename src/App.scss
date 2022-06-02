@@ -1,0 +1,73 @@
+@use './assets/sass/base';
+
+/* ======================================================== */
+/* LIGHT MODE */
+/* ======================================================== */
+body {
+  background-color: base.$gb-bg-1;
+  transition: all 0.5s ease;
+  border: base.$gb-border solid 1px;
+
+  h1,
+  h2,
+  p,
+  a,
+  li,
+  button {
+    color: base.$gb-ft-0;
+  }
+
+  nav,
+  div.container {
+    border: base.$gb-border solid 1px;
+
+  }
+
+  main,
+  nav,
+  button {
+    background-color: base.$gb-bg-1;
+  }
+}
+
+// LAYOUT
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+
+  div#root {
+    width: 100%;
+    height: 100%;
+
+    div.App {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      header {
+        display: flex;
+        width: 100%
+      }
+
+      main {
+        display: flex;
+        height: 100%;
+      }
+
+      footer {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+@import "./components/BottomBar/BottomBar.module.scss";
+@import "./components/LangSelect/LangSelect.module.scss";
+@import "./components/Logo/Logo.module.scss";
+@import "./components/MainPart/Home/Home.module.scss";
+@import "./components/NavBar/NavBar.module.scss";
+@import "./components/SwitchMode/SwitchMode.module.scss";
+@import "./components/TopBar/TopBar.module.scss";

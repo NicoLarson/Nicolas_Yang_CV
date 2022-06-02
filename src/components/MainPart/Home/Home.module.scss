@@ -1,12 +1,11 @@
-.skillsList {
-    width: 100%;
+.Home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 1rem 0;
-}
+    width: 100%;
 
-.skillsList h1{
-    font-family: monospace
+    h1 {
+        font-family: 'MrRobot', monospace;
+    }
 }

@@ -1,37 +1,28 @@
-.navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem 1rem 0;
-    width: 32rem;
-    height: 100%;
+@use '../../assets/sass/base';
+
+.NavBar {
+    margin: 1rem 1rem 1rem 0;
 
     ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-wrap: nowrap;
+        align-items: center;
         height: 100%;
-        width: 100%;
 
         li {
-            list-style: none;
-            cursor: pointer;
             width: 100%;
 
-            button {
-                font-size: 2rem;
-                padding: 1rem 2rem;
-                width: 100%;
-                color: var(--color-ft-nav-items);
-                background-color: #fafafa00;
-                border-radius: none;
-                border: none;
-                transition: all .4s;
+            :hover {
+                background-color: base.$gb-bg-0;
             }
-            button:hover{
-                background-color: #222;
-                color: #fff;
+
+            button {
+                width: 100%;
+                border: 0;
+                padding: 2rem 4rem;
+                font-size: 2rem;
+
             }
         }
     }

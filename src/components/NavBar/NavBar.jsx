@@ -1,7 +1,3 @@
-import React from 'react';
-
-import styles from './NavBar.module.scss'
-
 import Home from '../MainPart/Home/Home'
 import Portfolio from '../MainPart/Portfolio/Portfolio'
 import About from '../MainPart/About/About'
@@ -10,7 +6,7 @@ import Infos from '../MainPart/Infos/Infos'
 const NavBar = ({ setTopText, setMainPart }) => {
 
     return (
-        <nav className={styles.navBar}>
+        <nav className="NavBar container">
             <ul>
                 <li>
                     <button onClick={() => setMainPart(<Home />)}>Accueil</button>

@@ -1,9 +1,9 @@
-import styles from './BottomBar.module.css'
-
-export default function BottomBar() {
+const BottomBar = () => {
     return (
-        <div className={styles.bottomBar}>
+        <div className="BottomBar container">
             <p>Made in Matoury</p>
         </div>
     )
 }
+
+export default BottomBar

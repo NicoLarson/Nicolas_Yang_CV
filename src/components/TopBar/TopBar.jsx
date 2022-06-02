@@ -1,8 +1,10 @@
-import style from './TopBar.module.css';
-export default function TopBar({text}) {
+
+const TopBar = ({ text }) => {
     return (
-        <div className={style.topBar}>
-        <p>{text}</p>
+        <div className="TopBar container">
+            <p>{text}</p>
         </div>
     )
 }
+
+export default TopBar

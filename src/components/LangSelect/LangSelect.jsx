@@ -1,8 +1,10 @@
-import styles from './LangSelect.module.css'
-export default function LangSelect() {
+import './LangSelect.module.scss'
+
+const  LangSelect = () => {
     return (
-        <div className={styles.langSelect}>
+        <div className="langSelect container">
             <p>FRA / ENG</p>
         </div>
     )
 }
+export default LangSelect
