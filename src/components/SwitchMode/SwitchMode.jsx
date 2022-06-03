@@ -2,7 +2,6 @@ import React from 'react';
 import './SwitchMode.module.scss'
 
 export default function SwitchMode() {
-    const modes = ['GameBoy', 'GruvBox']
     return (
         <div className="SwitchMode container">
             <p onClick={
