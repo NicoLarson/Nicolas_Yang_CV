@@ -5,7 +5,7 @@
 /* ======================================================== */
 body {
   background-color: base.$gb-bg-1;
-  border: base.$gb-border solid 1px;
+  border: base.$gb-border solid .1rem;
 
   h1,
   h2,
@@ -20,12 +20,12 @@ body {
 
   nav,
   div.container {
-    border: base.$gb-border solid 1px;
+    border: base.$gb-border solid .1rem;
+    border-radius: .12rem;
   }
 
   main,
-  nav,
-  button {
+  nav {
     background-color: base.$gb-bg-1;
   }
 }
@@ -63,6 +63,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
 @import "./components/BottomBar/BottomBar.module.scss";
 @import "./components/LangSelect/LangSelect.module.scss";

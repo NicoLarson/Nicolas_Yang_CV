@@ -8,8 +8,10 @@ const NavBar = ({ setTopText, setMainPart }) => {
     return (
         <nav className="NavBar container">
             <ul>
-                <li>
-                    <button onClick={() => setMainPart(<Home />)}>Accueil</button>
+                <li >
+                    <button
+                        onClick={() => setMainPart(<Home />)}
+                    >Accueil</button>
                 </li>
                 <li>
                     <button onClick={() => setMainPart(<Portfolio />)}>Portfolio</button>

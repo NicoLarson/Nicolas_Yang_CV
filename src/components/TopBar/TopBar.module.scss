@@ -11,3 +11,9 @@ div.TopBar {
         text-transform: uppercase;
     }
 }
+
+@media screen and (max-width: 768px) {
+    div.TopBar {
+        display: none;
+    }
+}
