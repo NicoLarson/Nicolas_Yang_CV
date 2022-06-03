@@ -1,7 +1,5 @@
 @use './assets/sass/themes';
 
-
-
 // LAYOUT
 body {
   height: 100vh;
@@ -51,3 +49,5 @@ body {
 @import "./components/MainPart/Home/Home.module.scss";
 @import "./components/MainPart/Portfolio/Portfolio.module.scss";
 @import "./components/MainPart/Infos/Infos.module.scss";
+
+@import "./pages/PageNotFound.scss";

@@ -1,6 +1,22 @@
 @use './base';
 
 /* ======================================================== */
+/* 404 */
+/* ======================================================== */
+
+.PageNotFound {
+  a {
+    border: base.$gb-d-border-0 double .8rem;
+
+    &:hover {
+      background-color: #fafafa;
+      color: #222;
+      border: #222 double .8rem;
+    }
+  }
+}
+
+/* ======================================================== */
 /* Game boy Dark theme*/
 /* ======================================================== */
 body {
@@ -88,7 +104,7 @@ body {
 /* ======================================================== */
 body.gb-light {
   background-color: base.$gb-l-bg-1;
-  border: base.$gb-l-border-0 solid .1rem;
+  border: base.$gb-l-border-0 solid .4rem;
 
   h1,
   h2,
@@ -102,12 +118,13 @@ body.gb-light {
   header .Logo.gb-light,
   header .TopBar.gb-light,
   header .SwitchMode.gb-light,
+  main.gb-light .NavBar.gb-light,
   main.gb-light .Home,
   main.gb-light .Portfolio,
   main.gb-light .Infos,
   footer .LangSelect.gb-light,
   footer .BottomBar.gb-light {
-    border: base.$gb-l-border-0 double .4rem;
+    border: base.$gb-l-border-0 double .8rem;
   }
 
   header {
@@ -124,8 +141,6 @@ body.gb-light {
     background-color: base.$gb-l-bg-1;
 
     .NavBar.gb-light {
-      border: base.$gb-l-border-0 double .4rem;
-
       li {
         :hover {
           background-color: base.$gb-l-bg-hover;

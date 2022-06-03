@@ -1,4 +1,3 @@
-
 const TopBar = ({ text }) => {
     return (
         <div className="TopBar container">
