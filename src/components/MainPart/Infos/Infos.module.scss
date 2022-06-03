@@ -17,10 +17,18 @@
                 display: block;
                 font-size: 2.4rem;
                 padding: 1rem;
-                i{
+
+                i {
                     padding: 0 1rem;
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .Infos {
+        height: 100%;
     }
 }

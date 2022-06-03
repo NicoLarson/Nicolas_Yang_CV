@@ -1,34 +1,6 @@
-@use './assets/sass/base';
+@use './assets/sass/themes';
 
-/* ======================================================== */
-/* LIGHT MODE */
-/* ======================================================== */
-body {
-  background-color: base.$gb-bg-1;
-  border: base.$gb-border solid .1rem;
 
-  h1,
-  h2,
-  p,
-  a,
-  li,
-  button {
-    color: base.$gb-ft-0;
-    font-family: 'JetBrains Mono', monospace;
-
-  }
-
-  nav,
-  div.container {
-    border: base.$gb-border solid .1rem;
-    border-radius: .12rem;
-  }
-
-  main,
-  nav {
-    background-color: base.$gb-bg-1;
-  }
-}
 
 // LAYOUT
 body {

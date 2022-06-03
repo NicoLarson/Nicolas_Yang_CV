@@ -1,5 +1,3 @@
-@use '../../assets/sass/base';
-
 .SwitchMode {
     width: 28rem;
     display: flex;
@@ -20,8 +18,4 @@
 
     }
 
-    :hover {
-        background-color: base.$gb-bg-hover-lang;
-        color: base.$gb-ft-hover-lang;
-    }
 }

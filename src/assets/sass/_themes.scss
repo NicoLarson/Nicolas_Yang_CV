@@ -1,0 +1,368 @@
+@use './base';
+
+/* ======================================================== */
+/* Game boy Dark theme*/
+/* ======================================================== */
+body {
+  background-color: base.$gb-d-bg-1;
+  border: base.$gb-d-border-0 solid .1rem;
+
+  h1,
+  h2,
+  p,
+  a,
+  li,
+  button {
+    color: base.$gb-d-ft-0;
+    font-family: 'JetBrains Mono', monospace;
+
+  }
+
+  nav,
+  div.container {
+    border: base.$gb-d-border-0 solid .2rem;
+    border-radius: .12rem;
+  }
+
+  header {
+    .SwitchMode {
+
+      :hover {
+        background-color: base.$gb-d-bg-hover;
+        color: base.$gb-d-ft-hover;
+      }
+    }
+  }
+
+  main {
+    background-color: base.$gb-d-bg-1;
+
+    .NavBar {
+      li {
+        :hover {
+          background-color: base.$gb-d-bg-hover;
+          color: base.$gb-d-ft-hover;
+        }
+
+        button {
+          background-color: base.$gb-d-bg-1;
+        }
+
+        button.focus {
+          background-color: base.$gb-d-border-0;
+        }
+      }
+    }
+
+    .Portfolio {
+      li.portfolio-item {
+        border-top: .1rem solid base.$gb-d-border-0;
+
+        &:hover {
+          background-color: base.$gb-d-bg-hover;
+          color: base.$gb-d-ft-hover;
+
+          i,
+          p {
+            color: base.$gb-d-ft-hover;
+
+          }
+
+        }
+      }
+    }
+  }
+
+  footer {
+    .LangSelect {
+      :hover {
+        background-color: base.$gb-d-bg-hover;
+        color: base.$gb-d-ft-hover;
+      }
+    }
+  }
+}
+
+/* ======================================================== */
+/* Game boy Light theme*/
+/* ======================================================== */
+body.gb-light {
+  background-color: base.$gb-l-bg-1;
+  border: base.$gb-l-border-0 solid .1rem;
+
+  h1,
+  h2,
+  p,
+  a,
+  li,
+  button {
+    color: base.$gb-l-ft-0;
+  }
+
+  header .Logo.gb-light,
+  header .TopBar.gb-light,
+  header .SwitchMode.gb-light,
+  main.gb-light .Home,
+  main.gb-light .Portfolio,
+  main.gb-light .Infos,
+  footer .LangSelect.gb-light,
+  footer .BottomBar.gb-light {
+    border: base.$gb-l-border-0 double .4rem;
+  }
+
+  header {
+
+    .SwitchMode.gb-light {
+      :hover {
+        background-color: base.$gb-l-bg-hover;
+        color: base.$gb-l-ft-hover;
+      }
+    }
+  }
+
+  main.gb-light {
+    background-color: base.$gb-l-bg-1;
+
+    .NavBar.gb-light {
+      border: base.$gb-l-border-0 double .4rem;
+
+      li {
+        :hover {
+          background-color: base.$gb-l-bg-hover;
+          color: base.$gb-l-ft-hover;
+        }
+
+        button {
+          background-color: base.$gb-l-bg-1;
+        }
+
+        button.focus {
+          background-color: base.$gb-l-border-0;
+        }
+      }
+    }
+
+    .Portfolio {
+      li.portfolio-item {
+        border-top: 1px solid base.$gb-l-border-0;
+
+        &:hover {
+          background-color: base.$gb-l-bg-hover;
+          color: base.$gb-l-ft-hover;
+
+          i,
+          p {
+            color: base.$gb-l-ft-hover;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .LangSelect.gb-light {
+      :hover {
+        background-color: base.$gb-l-bg-hover;
+        color: base.$gb-l-ft-hover;
+      }
+    }
+  }
+}
+
+
+/* ======================================================== */
+/* Gruvbox Light theme*/
+/* ======================================================== */
+body.gruvbox-light {
+  background-color: base.$gruvbox-l-bg-1;
+  border: base.$gruvbox-l-border-0 solid .1rem;
+
+  h1,
+  h2,
+  p,
+  a,
+  li,
+  button {
+    color: base.$gruvbox-l-ft-0;
+  }
+
+  header {
+
+    .Logo.gruvbox-light,
+    .TopBar.gruvbox-light {
+      border: base.$gruvbox-l-border-0 double .1rem;
+    }
+
+    .SwitchMode.gruvbox-light {
+      border: base.$gruvbox-l-border-0 double .1rem;
+
+      :hover {
+        background-color: base.$gruvbox-l-bg-hover;
+        color: base.$gruvbox-l-ft-hover;
+      }
+    }
+  }
+
+  main.gruvbox-light {
+    background-color: base.$gruvbox-l-bg-1;
+
+    .NavBar.gruvbox-light {
+      border: base.$gruvbox-l-border-0 double .1rem;
+
+      li {
+        :hover {
+          background-color: base.$gruvbox-l-bg-hover;
+          color: base.$gruvbox-l-ft-hover;
+        }
+
+        button {
+          background-color: base.$gruvbox-l-bg-1;
+        }
+
+        button.focus {
+          background-color: base.$gruvbox-l-border-0;
+        }
+      }
+    }
+
+    .Home,
+    .Portfolio,
+    .Infos {
+      border: base.$gruvbox-l-border-0 double .1rem;
+    }
+
+    .Home {
+      h2 {
+        color: base.$gruvbox-l-ft-red;
+      }
+    }
+
+    .Portfolio {
+
+      li.portfolio-item {
+        border-top: 1px solid base.$gruvbox-l-border-0;
+
+        &:hover {
+          background-color: base.$gruvbox-l-bg-hover;
+          color: base.$gruvbox-l-ft-hover;
+
+          i,
+          p {
+            color: base.$gruvbox-l-ft-hover;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .LangSelect.gruvbox-light,
+    .BottomBar.gruvbox-light {
+      border: base.$gruvbox-l-border-0 double .1rem;
+    }
+
+    .LangSelect.gruvbox-light {
+
+      :hover {
+        background-color: base.$gruvbox-l-bg-hover;
+        color: base.$gruvbox-l-ft-hover;
+      }
+    }
+  }
+}
+
+/* ======================================================== */
+/* Gruvbox DARK theme*/
+/* ======================================================== */
+body.gruvbox-dark {
+  background-color: base.$gruvbox-d-bg-1;
+  border: base.$gruvbox-d-border-0 solid .1rem;
+
+  h1,
+  h2,
+  p,
+  a,
+  li,
+  button {
+    color: base.$gruvbox-d-ft-0;
+  }
+
+  header {
+
+    .Logo.gruvbox-dark,
+    .TopBar.gruvbox-dark {
+      border: base.$gruvbox-d-border-0 double .1rem;
+    }
+
+    .SwitchMode.gruvbox-dark {
+      border: base.$gruvbox-d-border-0 double .1rem;
+
+      :hover {
+        background-color: base.$gruvbox-d-bg-hover;
+        color: base.$gruvbox-d-ft-hover;
+      }
+    }
+  }
+
+  main.gruvbox-dark {
+    background-color: base.$gruvbox-d-bg-1;
+
+    .NavBar.gruvbox-dark {
+      border: base.$gruvbox-d-border-0 double .1rem;
+
+      li {
+        :hover {
+          background-color: base.$gruvbox-d-bg-hover;
+          color: base.$gruvbox-d-ft-hover;
+        }
+
+        button {
+          background-color: base.$gruvbox-d-bg-1;
+        }
+
+        button.focus {
+          background-color: base.$gruvbox-d-border-0;
+        }
+      }
+    }
+
+    .Home,
+    .Portfolio,
+    .Infos {
+      border: base.$gruvbox-d-border-0 double .1rem;
+    }
+
+    .Portfolio {
+      li.portfolio-item {
+        border-top: 1px solid base.$gruvbox-d-border-0;
+
+        &:hover {
+          background-color: base.$gruvbox-d-bg-hover;
+          color: base.$gruvbox-d-ft-hover;
+
+          i,
+          p {
+            color: base.$gruvbox-d-ft-hover;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .LangSelect.gruvbox-dark,
+    .BottomBar.gruvbox-dark {
+      border: base.$gruvbox-d-border-0 double .1rem;
+    }
+
+    .LangSelect.gruvbox-dark {
+
+      :hover {
+        background-color: base.$gruvbox-d-bg-hover;
+        color: base.$gruvbox-d-ft-hover;
+      }
+    }
+  }
+}

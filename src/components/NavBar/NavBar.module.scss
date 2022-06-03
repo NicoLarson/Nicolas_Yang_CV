@@ -1,5 +1,3 @@
-@use '../../assets/sass/base';
-
 .NavBar {
     margin: 1rem 1rem 1rem 0;
 
@@ -13,9 +11,6 @@
         li {
             width: 100%;
 
-            :hover {
-                background-color: base.$gb-bg-0;
-            }
 
             button {
                 width: 100%;
@@ -24,13 +19,9 @@
                 font-size: 2.4rem;
                 font-weight: 800;
                 margin: .1rem 0;
-                background-color: base.$gb-bg-1;
                 cursor: pointer;
             }
 
-            button.focus {
-                background-color: base.$gb-bg-0;
-            }
         }
     }
 }
@@ -38,6 +29,7 @@
 @media screen and (max-width: 768px) {
     .NavBar {
         margin: 1rem 0 0 0;
+
         ul {
             flex-direction: row;
 

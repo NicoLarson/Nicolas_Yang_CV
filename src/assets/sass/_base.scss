@@ -45,16 +45,45 @@
     src: url('../fonts/MR\ ROBOT.ttf');
 }
 
-/* GameBoy Palette */
-// --color-gb-light0: #9BBC0F;
-// --color-gb-light1: #8BAC0F;
-// --color-gb-dark0: #306230;
-// --color-gb-dark1: #0F380F;
-$gb-bg-0: #306230;
-$gb-bg-1: #0F380F;
-$gb-border: #9BBC0F;
-$gb-border-hover: #8BAC0F;
-$gb-ft-0: #9BBC0F;
-$gb-ft-1: #8BAC0F;
-$gb-bg-hover-lang: #9BBC0F;
-$gb-ft-hover-lang: #0F380F;
+// GAMEBOY THEME
+// Light 
+$gb-l-bg-0: #9BBC0F;
+$gb-l-bg-1: #8BAC0F;
+$gb-l-border-0: #0F380F;
+$gb-l-border-1: #306230;
+$gb-l-ft-0: #0F380F;
+$gb-l-ft-1: #306230;
+$gb-l-bg-hover: #0F380F;
+$gb-l-ft-hover: #9BBC0F;
+// Dark
+$gb-d-bg-0: #306230;
+$gb-d-bg-1: #0F380F;
+$gb-d-border-0: #9BBC0F;
+$gb-d-border-1: #8BAC0F;
+$gb-d-ft-0: #9BBC0F;
+$gb-d-ft-1: #8BAC0F;
+$gb-d-bg-hover: #9BBC0F;
+$gb-d-ft-hover: #0F380F;
+
+// GRUVBOX LIGHT THEME
+$gruvbox-l-bg-0: #f9f5d7;
+$gruvbox-l-bg-1: #f9f5d7;
+$gruvbox-l-border-0: #1d2021;
+$gruvbox-l-border-1: #1d2021;
+$gruvbox-l-ft-0: #1d2021;
+$gruvbox-l-ft-1: #1d2021;
+$gruvbox-l-bg-hover: #1d2021;
+$gruvbox-l-ft-hover: #f9f5d7;
+$gruvbox-l-ft-red: #fb4934;
+
+
+// GRUVBOX DARK THEME
+$gruvbox-d-bg-0: #1d2021;
+$gruvbox-d-bg-1: #1d2021;
+$gruvbox-d-border-0: #d65d0e;
+$gruvbox-d-border-1: #d65d0e;
+$gruvbox-d-ft-0: #d65d0e;
+$gruvbox-d-ft-1: #d65d0e;
+$gruvbox-d-bg-hover: #d65d0e;
+$gruvbox-d-ft-hover: #0F380F;
+$gruvbox-d-ft-red: #fb4934;
