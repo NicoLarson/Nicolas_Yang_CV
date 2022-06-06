@@ -11,7 +11,7 @@ const NavBar = ({ setTopText, setMainPart }) => {
                 <li >
                     <button
                         onClick={() => setMainPart(<Home />)}
-                    >Accueil</button>
+                    >Home</button>
                 </li>
                 <li>
                     <button onClick={() => setMainPart(<Portfolio />)}>Portfolio</button>

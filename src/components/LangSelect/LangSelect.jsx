@@ -1,7 +1,7 @@
 const LangSelect = () => {
     return (
         <div className="LangSelect container">
-            <p>FRA / ENG</p>
+            <p>ENG</p>
         </div>
     )
 }

@@ -52,6 +52,7 @@ body {
 
   main {
     background-color: base.$gb-d-bg-1;
+
     .NavBar {
       li {
         :hover {
@@ -88,14 +89,8 @@ body {
     }
   }
 
-  footer {
-    .LangSelect {
-      :hover {
-        background-color: base.$gb-d-bg-hover;
-        color: base.$gb-d-ft-hover;
-      }
-    }
-  }
+
+
 }
 
 /* ======================================================== */
@@ -139,6 +134,7 @@ body.gb-light {
   main.gb-light {
     background-color: base.$gb-l-bg-1;
     max-height: 100%;
+
     .Home {
       background-origin: content-box;
       background: url("../images/wallpaper.jpg");
@@ -181,14 +177,7 @@ body.gb-light {
     }
   }
 
-  footer {
-    .LangSelect.gb-light {
-      :hover {
-        background-color: base.$gb-l-bg-hover;
-        color: base.$gb-l-ft-hover;
-      }
-    }
-  }
+
 }
 
 
@@ -196,8 +185,10 @@ body.gb-light {
 /* Gruvbox Light theme*/
 /* ======================================================== */
 body.gruvbox-light {
-  background-color: base.$gruvbox-l-bg-1;
-  border: base.$gruvbox-l-border-0 solid .1rem;
+  border: rgba(255, 255, 255, 0.25) solid .4rem;
+  background: url("../images/WallpaperDog-5447432.jpg");
+  background-size: cover;
+
 
   h1,
   h2,
@@ -205,44 +196,22 @@ body.gruvbox-light {
   a,
   li,
   button {
-    color: base.$gruvbox-l-ft-0;
-  }
-
-  header {
-
-    .Logo.gruvbox-light,
-    .TopBar.gruvbox-light {
-      border: base.$gruvbox-l-border-0 double .1rem;
-    }
-
-    .SwitchMode.gruvbox-light {
-      border: base.$gruvbox-l-border-0 double .1rem;
-
-      :hover {
-        background-color: base.$gruvbox-l-bg-hover;
-        color: base.$gruvbox-l-ft-hover;
-      }
-    }
+    color: #fafafa;
   }
 
   main.gruvbox-light {
-    background-color: base.$gruvbox-l-bg-1;
+    background: none;
 
-    .NavBar.gruvbox-light {
-      border: base.$gruvbox-l-border-0 double .1rem;
+    nav {
+      border: none;
 
-      li {
-        :hover {
-          background-color: base.$gruvbox-l-bg-hover;
-          color: base.$gruvbox-l-ft-hover;
-        }
+      ul {
 
-        button {
-          background-color: base.$gruvbox-l-bg-1;
-        }
+        li {
 
-        button.focus {
-          background-color: base.$gruvbox-l-border-0;
+          button {
+            background: none;
+          }
         }
       }
     }
@@ -250,48 +219,77 @@ body.gruvbox-light {
     .Home,
     .Portfolio,
     .Infos {
-      border: base.$gruvbox-l-border-0 double .1rem;
+      border: none;
     }
+  }
 
-    .Home {
-      h2 {
-        color: base.$gruvbox-l-ft-red;
+  div.gruvbox-light,
+  main.gruvbox-light nav,
+  main.gruvbox-light .Home,
+  main.gruvbox-light .Portfolio,
+  main.gruvbox-light .Infos {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  main.gruvbox-light .Home {
+    h2 {
+      color: red;
+    }
+  }
+
+  .SwitchMode.gruvbox-light p {
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #222;
+    }
+  }
+
+  main.gruvbox-light nav {
+    button {
+      &:hover {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        color: #222;
       }
     }
 
-    .Portfolio {
+    li:nth-child(1) button {
+      &:hover {
+        border-radius: 12px 0 0 12px;
+      }
+    }
 
-      li.portfolio-item {
-        border-top: 1px solid base.$gruvbox-l-border-0;
+    li:nth-child(3) button {
+      &:hover {
+        border-radius: 0 12px 12px 0;
+      }
+    }
 
-        &:hover {
-          background-color: base.$gruvbox-l-bg-hover;
-          color: base.$gruvbox-l-ft-hover;
+  }
 
-          i,
-          p {
-            color: base.$gruvbox-l-ft-hover;
-          }
-        }
+  main.gruvbox-light .Portfolio {
+    ul.portfolio-container > li {
+      border: 1px solid rgba(255, 255, 255, 0.125);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        color: #222;
       }
     }
   }
 
-  footer {
 
-    .LangSelect.gruvbox-light,
-    .BottomBar.gruvbox-light {
-      border: base.$gruvbox-l-border-0 double .1rem;
-    }
-
-    .LangSelect.gruvbox-light {
-
-      :hover {
-        background-color: base.$gruvbox-l-bg-hover;
-        color: base.$gruvbox-l-ft-hover;
-      }
-    }
-  }
 }
 
 /* ======================================================== */
@@ -379,13 +377,6 @@ body.gruvbox-dark {
       border: base.$gruvbox-d-border-0 double .1rem;
     }
 
-    .LangSelect.gruvbox-dark {
 
-      :hover {
-        background-color: base.$gruvbox-d-bg-hover;
-        color: base.$gruvbox-d-ft-hover;
-      }
-    }
   }
 }
-
