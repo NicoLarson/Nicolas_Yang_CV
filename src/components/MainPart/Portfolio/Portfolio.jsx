@@ -19,10 +19,10 @@ const Portfolio = () => {
                         </ul>
                         <ul className="portfolio-link-list">
                             <li>
-                                <a rel="noreferrer" href={item.github} target="_blank" > <i class="devicon-github-original"></i></a>
+                                <a rel="noreferrer" href={item.github} target="_blank" > <i class="devicon-github-original"></i><i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </li>
                             {item.link !== 0 ? <li>
-                                <a rel="noreferrer" href={item.link} target="_blank"><img src={linkPicture} alt="link" /></a>
+                                <a rel="noreferrer" href={item.link} target="_blank"><img src={linkPicture} alt="link" /><i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </li> : null}
                         </ul>
                         <p>{item.year}</p>

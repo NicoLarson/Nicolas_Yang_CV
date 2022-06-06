@@ -52,7 +52,6 @@ body {
 
   main {
     background-color: base.$gb-d-bg-1;
-
     .NavBar {
       li {
         :hover {
@@ -139,6 +138,14 @@ body.gb-light {
 
   main.gb-light {
     background-color: base.$gb-l-bg-1;
+    max-height: 100%;
+    .Home {
+      background-origin: content-box;
+      background: url("../images/wallpaper.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
     .NavBar.gb-light {
       li {
@@ -381,3 +388,4 @@ body.gruvbox-dark {
     }
   }
 }
+
