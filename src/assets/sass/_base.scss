@@ -47,14 +47,14 @@
 
 // GAMEBOY THEME
 // Light 
-$gb-l-bg-0: #DFF8D0;
-$gb-l-bg-1: #89C06F;
-$gb-l-border-0: #0F380F;
-$gb-l-border-1: #306230;
-$gb-l-ft-0: #061920;
-$gb-l-ft-1: #306230;
-$gb-l-bg-hover: #0F380F;
-$gb-l-ft-hover: #9BBC0F;
+$gb-l-bg-0: #e0f8d0;
+$gb-l-bg-1: #88c070;
+$gb-l-border-0: #081820;
+$gb-l-border-1: #346856;
+$gb-l-ft-0: #081820;
+$gb-l-ft-1: #346856;
+$gb-l-bg-hover: #081820;
+$gb-l-ft-hover: #88c070;
 // Dark
 $gb-d-bg-0: #306230;
 $gb-d-bg-1: #0F380F;
@@ -64,6 +64,17 @@ $gb-d-ft-0: #9BBC0F;
 $gb-d-ft-1: #8BAC0F;
 $gb-d-bg-hover: #9BBC0F;
 $gb-d-ft-hover: #0F380F;
+
+
+// $gb-d-bg-0: #346856;
+// $gb-d-bg-1: #081820;
+// $gb-d-border-0: #e0f8d0;
+// $gb-d-border-1: #88c070;
+// $gb-d-ft-0: #e0f8d0;
+// $gb-d-ft-1: #88c070;
+// $gb-d-bg-hover: #e0f8d0;
+// $gb-d-ft-hover: #081820;
+
 
 // GRUVBOX LIGHT THEME
 $gruvbox-l-bg-0: #f9f5d7;
@@ -85,5 +96,5 @@ $gruvbox-d-border-1: #d65d0e;
 $gruvbox-d-ft-0: #d65d0e;
 $gruvbox-d-ft-1: #d65d0e;
 $gruvbox-d-bg-hover: #d65d0e;
-$gruvbox-d-ft-hover: #0F380F;
+$gruvbox-d-ft-hover: #1d2021;
 $gruvbox-d-ft-red: #fb4934;

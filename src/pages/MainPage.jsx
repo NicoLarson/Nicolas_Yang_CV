@@ -14,6 +14,11 @@ const MainPage = () => {
 
     return (
         <div className="App">
+            <video id="background-video" loop autoPlay>
+
+                <source src="https://static.videezy.com/system/resources/previews/000/041/249/original/4K_2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <header>
                 <Logo />
                 <TopBar text={topText} />

@@ -19,9 +19,14 @@
 /* ======================================================== */
 /* Game boy Dark theme*/
 /* ======================================================== */
+
 body {
   background-color: base.$gb-d-bg-1;
-  border: base.$gb-d-border-0 solid .1rem;
+  border: base.$gb-d-border-0 solid .2rem;
+
+  video {
+    display: none;
+  }
 
   h1,
   h2,
@@ -31,7 +36,6 @@ body {
   button {
     color: base.$gb-d-ft-0;
     font-family: 'JetBrains Mono', monospace;
-
   }
 
   nav,
@@ -40,32 +44,32 @@ body {
     border-radius: .12rem;
   }
 
-  header {
-    .SwitchMode {
+  .SwitchMode:hover {
+    background-color: base.$gb-d-bg-hover;
 
-      :hover {
-        background-color: base.$gb-d-bg-hover;
-        color: base.$gb-d-ft-hover;
-      }
+    p {
+      color: base.$gb-d-ft-hover;
     }
   }
 
-  main {
+  main,
+  .NavBar {
     background-color: base.$gb-d-bg-1;
 
     .NavBar {
       li {
-        :hover {
-          background-color: base.$gb-d-bg-hover;
+        &:hover {
           color: base.$gb-d-ft-hover;
         }
 
         button {
           background-color: base.$gb-d-bg-1;
+          color: base.$gb-d-ft-0;
         }
 
-        button.focus {
+        button:focus {
           background-color: base.$gb-d-border-0;
+          color: base.$gb-d-ft-hover;
         }
       }
     }
@@ -78,23 +82,20 @@ body {
           background-color: base.$gb-d-bg-hover;
           color: base.$gb-d-ft-hover;
 
-          i,
+          li.portfolio-techno-item,
+          ul.portfolio-link-list li a i,
           p {
             color: base.$gb-d-ft-hover;
 
           }
-
         }
       }
     }
   }
-
-
-
 }
 
 /* ======================================================== */
-/* Game boy Light theme*/
+/* Light 2 theme*/
 /* ======================================================== */
 body.gb-light {
   background-color: base.$gb-l-bg-1;
@@ -109,86 +110,97 @@ body.gb-light {
     color: base.$gb-l-ft-0;
   }
 
-  header .Logo.gb-light,
-  header .TopBar.gb-light,
-  header .SwitchMode.gb-light,
-  main.gb-light .NavBar.gb-light,
-  main.gb-light .Home,
-  main.gb-light .Portfolio,
-  main.gb-light .Infos,
-  footer .LangSelect.gb-light,
-  footer .BottomBar.gb-light {
+  .Logo,
+  .TopBar,
+  .SwitchMode,
+  .NavBar,
+  .Home,
+  .Portfolio,
+  .Infos,
+  .LangSelect,
+  .BottomBar {
     border: base.$gb-l-border-0 double .8rem;
+    border-radius: .12rem;
   }
 
-  header {
+  .SwitchMode:hover {
+    background-color: base.$gb-l-bg-hover;
 
-    .SwitchMode.gb-light {
-      :hover {
-        background-color: base.$gb-l-bg-hover;
-        color: base.$gb-l-ft-hover;
-      }
+    p {
+      color: base.$gb-l-ft-hover;
     }
   }
 
-  main.gb-light {
+  main,
+  .NavBar {
     background-color: base.$gb-l-bg-1;
-    max-height: 100%;
+    background: none;
 
-    .Home {
-      background-origin: content-box;
-      background: url("../images/wallpaper.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .NavBar.gb-light {
+    .NavBar {
       li {
-        :hover {
-          background-color: base.$gb-l-bg-hover;
+        &:hover {
           color: base.$gb-l-ft-hover;
         }
 
         button {
           background-color: base.$gb-l-bg-1;
+          color: base.$gb-l-ft-0;
+          background: none;
+
         }
 
-        button.focus {
+        button:focus {
           background-color: base.$gb-l-border-0;
+          color: base.$gb-l-ft-hover;
         }
       }
     }
 
+    .Home {
+      background-image: url("../images/wallpaper.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
     .Portfolio {
       li.portfolio-item {
-        border-top: 1px solid base.$gb-l-border-0;
+        border-top: .1rem solid base.$gb-l-border-0;
 
         &:hover {
           background-color: base.$gb-l-bg-hover;
           color: base.$gb-l-ft-hover;
 
-          i,
+          li.portfolio-techno-item,
+          ul.portfolio-link-list li a i,
           p {
             color: base.$gb-l-ft-hover;
+
           }
         }
       }
     }
   }
-
-
 }
 
-
 /* ======================================================== */
-/* Gruvbox Light theme*/
+/* Gruvbox Light 2 theme*/
 /* ======================================================== */
 body.gruvbox-light {
-  border: rgba(255, 255, 255, 0.25) solid .4rem;
+  border: rgba(255, 255, 255, 0.25) solid .2rem;
   background: url("../images/WallpaperDog-5447432.jpg");
   background-size: cover;
 
+  video {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
 
   h1,
   h2,
@@ -199,35 +211,15 @@ body.gruvbox-light {
     color: #fafafa;
   }
 
-  main.gruvbox-light {
-    background: none;
-
-    nav {
-      border: none;
-
-      ul {
-
-        li {
-
-          button {
-            background: none;
-          }
-        }
-      }
-    }
-
-    .Home,
-    .Portfolio,
-    .Infos {
-      border: none;
-    }
-  }
-
-  div.gruvbox-light,
-  main.gruvbox-light nav,
-  main.gruvbox-light .Home,
-  main.gruvbox-light .Portfolio,
-  main.gruvbox-light .Infos {
+  .Logo,
+  .TopBar,
+  .SwitchMode,
+  .NavBar,
+  .Home,
+  .Portfolio,
+  .Infos,
+  .LangSelect,
+  .BottomBar {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
@@ -235,65 +227,111 @@ body.gruvbox-light {
     border: 1px solid rgba(255, 255, 255, 0.125);
   }
 
-  main.gruvbox-light .Home {
-    h2 {
-      color: red;
+  .SwitchMode:hover {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #222;
+  }
+
+  main {
+    flex-direction: column;
+
+    nav {
+      ul {
+        flex-direction: row;
+      }
+    }
+
+    div.container {
+      height: 100%;
     }
   }
 
-  .SwitchMode.gruvbox-light p {
-    &:hover {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+  main,
+  .NavBar {
+    background: none;
+
+    .NavBar {
+
+      border: none;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.75);
       border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #222;
-    }
-  }
-
-  main.gruvbox-light nav {
-    button {
-      &:hover {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        color: #222;
-      }
-    }
-
-    li:nth-child(1) button {
-      &:hover {
-        border-radius: 12px 0 0 12px;
-      }
-    }
-
-    li:nth-child(3) button {
-      &:hover {
-        border-radius: 0 12px 12px 0;
-      }
-    }
-
-  }
-
-  main.gruvbox-light .Portfolio {
-    ul.portfolio-container > li {
       border: 1px solid rgba(255, 255, 255, 0.125);
 
-      &:hover {
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        color: #222;
+      li {
+        &:hover {
+          color: base.$gb-l-ft-hover;
+        }
+
+        button {
+          background: none;
+          color: #fafafa;
+        }
+
+        button:focus {
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          color: #222;
+        }
+
+        button:hover {
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          color: #222;
+        }
+      }
+
+      li:nth-child(1) button {
+
+        &:hover,
+        &:focus {
+          border-radius: 12px 0 0 12px;
+        }
+      }
+
+      li:nth-child(3) button {
+
+        &:hover,
+        &:focus {
+          border-radius: 0 12px 12px 0;
+        }
+
+      }
+    }
+
+    .Home h2 {
+      color: base.$gruvbox-l-ft-red;
+    }
+
+    .Portfolio {
+      li.portfolio-item {
+        border-top: .1rem solid rgba(255, 255, 255, 0.4);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          color: #222;
+
+          li.portfolio-techno-item,
+          ul.portfolio-link-list li a i,
+          p {
+            color: #222;
+
+          }
+        }
       }
     }
   }
-
-
 }
 
 /* ======================================================== */
-/* Gruvbox DARK theme*/
+/* Gruvbox dark 2 theme*/
 /* ======================================================== */
 body.gruvbox-dark {
   background-color: base.$gruvbox-d-bg-1;
@@ -308,75 +346,77 @@ body.gruvbox-dark {
     color: base.$gruvbox-d-ft-0;
   }
 
-  header {
+  .Logo,
+  .TopBar,
+  .SwitchMode,
+  .NavBar,
+  .Home,
+  .Portfolio,
+  .Infos,
+  .LangSelect,
+  .BottomBar {
+    background-color: base.$gruvbox-d-bg-1;
+    border: base.$gruvbox-d-border-0 solid .1rem;
+  }
 
-    .Logo.gruvbox-dark,
-    .TopBar.gruvbox-dark {
-      border: base.$gruvbox-d-border-0 double .1rem;
-    }
+  .SwitchMode:hover {
+    background: base.$gruvbox-d-bg-hover;
 
-    .SwitchMode.gruvbox-dark {
-      border: base.$gruvbox-d-border-0 double .1rem;
+    p {
+      color: base.$gruvbox-d-ft-hover;
 
-      :hover {
-        background-color: base.$gruvbox-d-bg-hover;
-        color: base.$gruvbox-d-ft-hover;
-      }
     }
   }
 
-  main.gruvbox-dark {
+  main,
+  .NavBar {
     background-color: base.$gruvbox-d-bg-1;
 
-    .NavBar.gruvbox-dark {
-      border: base.$gruvbox-d-border-0 double .1rem;
+    .NavBar {
+      background-color: base.$gruvbox-d-bg-1;
+      color: base.$gruvbox-d-ft-1;
 
       li {
-        :hover {
-          background-color: base.$gruvbox-d-bg-hover;
-          color: base.$gruvbox-d-ft-hover;
-        }
 
         button {
           background-color: base.$gruvbox-d-bg-1;
+          color: base.$gruvbox-d-ft-1;
         }
 
-        button.focus {
-          background-color: base.$gruvbox-d-border-0;
+        button:focus {
+          background: base.$gruvbox-d-bg-hover;
+          color: base.$gruvbox-d-ft-hover;
+        }
+
+        cursor: pointer;
+
+        button:hover {
+          background: base.$gruvbox-d-bg-hover;
+          color: base.$gruvbox-d-ft-hover;
         }
       }
     }
 
-    .Home,
-    .Portfolio,
-    .Infos {
-      border: base.$gruvbox-d-border-0 double .1rem;
+    .Home h2 {
+      color: base.$gruvbox-d-ft-red;
     }
 
     .Portfolio {
       li.portfolio-item {
-        border-top: 1px solid base.$gruvbox-d-border-0;
+        border: base.$gruvbox-d-border-0 solid .1rem;
 
         &:hover {
-          background-color: base.$gruvbox-d-bg-hover;
+          background: base.$gruvbox-d-bg-hover;
           color: base.$gruvbox-d-ft-hover;
 
-          i,
+          li.portfolio-techno-item,
+          ul.portfolio-link-list li a i,
           p {
             color: base.$gruvbox-d-ft-hover;
+
           }
         }
       }
     }
-  }
-
-  footer {
-
-    .LangSelect.gruvbox-dark,
-    .BottomBar.gruvbox-dark {
-      border: base.$gruvbox-d-border-0 double .1rem;
-    }
-
-
   }
 }
